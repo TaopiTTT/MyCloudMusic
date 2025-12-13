@@ -1,0 +1,6 @@
+framework module Pods_MyCloudMusic_MyCloudMusicUITests {
+  umbrella header "Pods-MyCloudMusic-MyCloudMusicUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

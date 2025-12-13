@@ -1,0 +1,242 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'MyCloudMusic' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MyCloudMusic
+  #提供类似Android中更高层级的布局框架
+  #https://github.com/youngsoft/TangramKit
+  pod 'TangramKit'
+  
+  #将资源（图片，文件等）生成类，方便到代码中方法
+  #例如：let icon = R.image.settingsIcon()
+  #let font = R.font.sanFrancisco(size: 42)
+  #let color = R.color.indicatorHighlight()
+  #let viewController = CustomViewController(nib: R.nib.customView)
+  #let string = R.string.localizable.welcomeWithName("Arthur Dent")
+  #https://github.com/mac-cain13/R.swift
+  # pod 'R.swift'
+  
+  #颜色工具类
+  #https://github.com/yannickl/DynamicColor
+  # pod "DynamicColor"
+  
+  #腾讯开源的UI框架，提供了很多功能，例如：圆角按钮，空心按钮，TextView支持placeholder
+  #https://github.com/QMUI/QMUIDemo_iOS
+  #https://qmuiteam.com/ios/get-started
+  # pod "QMUIKit"
+  
+  #图片加载
+  #https://github.com/SDWebImage/SDWebImage
+  # pod 'SDWebImage'
+  
+  # 网络请求框架
+  # https://github.com/Moya/Moya
+  # pod 'Moya/RxSwift'
+
+  #避免每个界面定义disposeBag
+  #https://github.com/RxSwiftCommunity/NSObject-Rx
+  # pod "NSObject+Rx"
+  
+  # JSON解析为对象
+  # https://github.com/alibaba/HandyJSON
+  # pod "HandyJSON"
+  
+  #提示框架
+  #https://github.com/jdg/MBProgressHUD
+  # pod 'MBProgressHUD'
+  
+  #Swift图片加载
+  #https://github.com/onevcat/Kingfisher
+  # pod "Kingfisher","7.9.1"
+  
+  #Swift扩展，像字符串，数组等
+  #https://github.com/SwifterSwift/SwifterSwift
+  # pod 'SwifterSwift'
+  
+  # 发布订阅框架
+  # https://github.com/cesarferreira/SwiftEventBus
+  # pod "SwiftEventBus"
+  
+  #下拉刷新
+  #https://github.com/CoderMJLee/MJRefresh
+  # pod 'MJRefresh'
+  
+  #富文本框架
+  #https://github.com/a1049145827/BSText
+  #OC版本：https://github.com/ibireme/YYText
+  # pod "BSText"
+  
+  #腾讯开源的偏好存储框架
+  #https://github.com/Tencent/MMKV
+  # pod 'MMKV'
+  
+  #验证码输入框
+  #https://github.com/feaskters/MHVerifyCodeView
+  # pod 'MHVerifyCodeView'
+  
+  #腾讯WCDB是一个高效、完整、易用的移动数据库框架，基于SQLCipher，支持iOS, macOS和Android
+  #https://github.com/Tencent/wcdb
+  # pod 'WCDB.swift'
+  
+  #面向泛前端产品研发全生命周期的效率平台，查看数据库,网络请求,内存泄漏
+  #https://xingyun.xiaojukeji.com/docs/dokit/#/iosGuide
+    # pod 'DoraemonKit/Core', :configurations => ['Debug'] #必选
+  #  pod 'DoraemonKit/WithGPS', '~> 3.0.4', :configurations => ['Debug'] #可选
+  #  pod 'DoraemonKit/WithLoad', '~> 3.0.4', :configurations => ['Debug'] #可选
+  #  pod 'DoraemonKit/WithLogger', '~> 3.0.4', :configurations => ['Debug'] #可选
+    # pod 'DoraemonKit/WithDatabase',  :configurations => ['Debug'] #可选
+  #  pod 'DoraemonKit/WithMLeaksFinder',  :configurations => ['Debug'] #可选
+  #  pod 'DoraemonKit/WithWeex', '~> 3.0.4', :configurations => ['Debug'] #可选
+  
+  #腾讯云开源的一款播放器组件，简单几行代码即可拥有类似腾讯视频强大的播放功能，包括横竖屏切换、清晰度选择、手势和小窗等基础功能，还支持视频缓存，软硬解切换和倍速播放等特殊功能，相比系统播放器，支持格式更多，兼容性更好，功能更强大，同时还具备首屏秒开、低延迟的优点，以及视频缩略图等高级能力。
+  #https://cloud.tencent.com/document/product/881/20208
+  #编译报错解决方法：https://www.jianshu.com/p/103c0bf7d523
+  # pod 'SuperPlayer'
+  
+  #图片预览框架，效果都不是很好，后面会重写
+  #https://github.com/fcbox/Lantern
+  # pod 'Lantern'
+  
+  #图片选择框架，预览框架
+  #https://github.com/longitachi/ZLPhotoBrowser
+  # pod 'ZLPhotoBrowser'
+  
+  # 阿里云OSS
+  # 用来上传发布带图片动态
+  # https://help.aliyun.com/document_detail/32055.html
+  # pod 'AliyunOSSiOS'
+  
+  #高德地图
+  #https://lbs.amap.com/api/ios-sdk/guide/create-project/cocoapods
+  #这里用的是没有IDFA的sdk，更多说明：https://lbs.amap.com/api/ios-sdk/guide/create-project/idfa-guide
+  # pod 'AMap3DMap-NO-IDFA'
+
+  #高德地图POI
+  # pod 'AMapSearch-NO-IDFA'
+  
+  #用户详情头部视图
+  # https://github.com/pujiaxin33/JXPagingView
+  # pod 'JXPagingView/Paging'
+
+  #指示器
+  # https://github.com/pujiaxin33/JXSegmentedView
+  # pod 'JXSegmentedView'
+  
+  #支付宝支付
+  #https://docs.open.alipay.com/204/105295/
+  # pod 'AlipaySDK-iOS'
+  
+  #融云聊天
+  #https://doc.rongcloud.cn/im/IOS/5.X/noui/import
+  # pod 'RongCloudIM/IMLib'
+  
+  # share sdk
+  #https://mob.com/wiki/detailed?wiki=4&id=14
+  # 主模块(必须)
+  # pod 'mob_sharesdk'
+
+  # UI模块(非必须，需要用到ShareSDK提供的分享菜单栏和分享编辑页面需要以下1行)
+  # pod 'mob_sharesdk/ShareSDKUI'
+
+  # 平台SDK模块(对照一下平台，需要的加上。如果只需要QQ、微信、新浪微博，只需要以下3行)
+  # pod 'mob_sharesdk/ShareSDKPlatforms/QQ'
+  # pod 'mob_sharesdk/ShareSDKPlatforms/SinaWeibo'
+
+  #（微信sdk不带支付的命令）
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/WeChat'
+
+  #（微信sdk带支付的命令，和上面不带支付的不能共存，只能选择一个）
+  # pod 'mob_sharesdk/ShareSDKPlatforms/WeChatFull'
+
+  #需要精简版QQ，微信，微博，Facebook的可以加这3个命令（精简版去掉了这4个平台的原生SDK）
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/QQ_Lite'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/SinaWeibo_Lite'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/WeChat_Lite'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/Facebook_Lite'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/KuaiShou_Lite'
+
+  # ShareSDKPlatforms模块其他平台，按需添加
+
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/TikTok'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/SnapChat'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/Oasis'
+
+  #苹果登录
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/Apple'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/WeWork'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/RenRen'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/AliPaySocial'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/Kakao'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/Yixin'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/Facebook'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/Messenger'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/Copy'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/Evernote'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/GooglePlus'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/Instagram'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/Instapaper'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/Line'
+
+  # pod 'mob_sharesdk/ShareSDKPlatforms/Mail'
+  # pod 'mob_sharesdk/ShareSDKPlatforms/SMS'
+
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/WhatsApp'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/MeiPai'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/DingTalk'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/YouTube'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/Twitter'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/Dropbox'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/DingTalk'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/CMCC'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/Telegram'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/Reddit'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/DouBan'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/Flickr'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/LinkedIn'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/MingDao'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/Pinterest'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/Pocket'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/Print'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/TencentWeibo'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/Tumblr'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/VKontakte'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/YouDaoNote'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/ESurfing'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/FacebookAccount'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/Douyin'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/KuaiShou'
+  #  pod 'mob_sharesdk/ShareSDKPlatforms/WatermelonVideo'
+
+  # 使用配置文件分享模块（非必须）
+  #  pod 'mob_sharesdk/ShareSDKConfigFile'
+
+  # 闭环分享依赖（非必须）
+  #  pod 'mob_sharesdk/ShareSDKRestoreScene'
+
+  # 扩展模块（在调用可以弹出我们UI分享方法的时候是必需的）
+  # pod 'mob_sharesdk/ShareSDKExtension'
+  #end share sdk
+
+  target 'MyCloudMusicTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'MyCloudMusicUITests' do
+    # Pods for testing
+  end
+
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      #config.build_settings.delete 'IPHONEOS_DEPLOYMENT_TARGET'
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+      config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
+    end
+  end
+end
