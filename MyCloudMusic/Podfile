@@ -21,7 +21,7 @@ target 'MyCloudMusic' do
   
   #颜色工具类
   #https://github.com/yannickl/DynamicColor
-  # pod "DynamicColor"
+  pod "DynamicColor"
   
   #腾讯开源的UI框架，提供了很多功能，例如：圆角按钮，空心按钮，TextView支持placeholder
   #https://github.com/QMUI/QMUIDemo_iOS

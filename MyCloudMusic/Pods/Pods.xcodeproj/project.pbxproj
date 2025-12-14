@@ -7,201 +7,258 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		020891B8DBB7563A45357ED261CD5FB3 /* ColorResource+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D678482BB65FF2F1D41A8A3052AF54F0 /* ColorResource+Integrations.swift */; };
-		048C43003B647DADDECC1A4660D23794 /* TGLayoutSizeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2511553FA6BA75A16F05727FC9472561 /* TGLayoutSizeClass.swift */; };
-		06D569745965998E09FC22AC510F16BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		0718CB1A15D89FACC437E38675703DD5 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574B4D4DBA31E76A49A998DFFD0B354B /* Reusable.swift */; };
-		08086B3B13C983EDAE422958927E5F80 /* Pods-MyCloudMusic-MyCloudMusicUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 583A49C0D8BF7BA1FE5A7AA2EFC139FF /* Pods-MyCloudMusic-MyCloudMusicUITests-dummy.m */; };
-		0E6DC15202E6383417BD78E7958BFC90 /* TGFrameLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A089693F5117B6B5034E6779D01EF9C /* TGFrameLayout.swift */; };
-		1349234165FADA4114A6C9F7906D4349 /* FontResource+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD09DAF7651A64DDD2D9449B836115B /* FontResource+Integrations.swift */; };
-		147D63BFAC30F63D8666CBB08A5C640E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		27093D2C5DCCE8226BC0CAC93F924858 /* StringParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0966F768D718EDF0F6384ABD59F1B0E1 /* StringParam.swift */; };
-		31C6FEAB5D1205B6E687077AFFDE5384 /* FileResource+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE8D6AC5CA0240A2B15BC023F53FB48 /* FileResource+Integrations.swift */; };
-		32EF1EF97440878F4F742A06F9173FB4 /* ReuseIdentifier+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DEBBF23D6E264D7D4B8609CD3A345F /* ReuseIdentifier+Integrations.swift */; };
-		3B3A25E4844013919D04B9475C39609D /* NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98BCA4255EE9B897981D38DB50DE01B /* NibResource.swift */; };
-		3CACC1BE73EC19170BE1F06DB01E4001 /* DeploymentTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB70AEDFE76327CED7E969343523DF7 /* DeploymentTarget.swift */; };
-		4138F0781214B022C48EBD032458179D /* TGTableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FFC294CA73774DE15CAE371C414E58 /* TGTableLayout.swift */; };
-		47A9E6B55D3C371D3D9ECC2EA704CAE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		4F6FADA93E698823F866AD21EE09B4A8 /* Unifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91A9597F8FA6A74B8E0816766F8C1E /* Unifiable.swift */; };
-		4FCB48A8EDAB12B4134DB5E51FA54C20 /* Pods-MyCloudMusic-MyCloudMusicUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DBA9FD4589996B375FC8A90B9D267A /* Pods-MyCloudMusic-MyCloudMusicUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4FDFD8C914B1246A13E6C63B071B72AF /* TGBaseLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784FA8C6AC6E49A87CA6BC34FF2E332 /* TGBaseLayout.swift */; };
-		500EEC5A101486742FDEBA4251BFA340 /* ImageResource+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D595622C900BECE80E418675556D65 /* ImageResource+Integrations.swift */; };
-		56A453D622EEE5E0FD22D183CA5DBAE0 /* TGLayoutPos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE628E511979E9393BCD92F3960B79 /* TGLayoutPos.swift */; };
-		58C251767ADAF69BC4584A3F43EC5A85 /* TangramKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10143B67E2816AC265E6E2F8EE8747CF /* TangramKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A28BC1EEC4B585CB9C8D6D876DE9BA6 /* TGFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA54F12DF15A4C249B5AABD5D4FC2B52 /* TGFlowLayout.swift */; };
-		5B403736922B6820A4CCB2FD0C5E9462 /* Pods-MyCloudMusic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 781689C537C7A3C7E8C2440A54CD66F6 /* Pods-MyCloudMusic-dummy.m */; };
-		5C6792D7FE0D65D94BFAFF2D58DFC25D /* AssetCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7DFD6BBC399068F058C0854C4156B1 /* AssetCatalog.swift */; };
-		6646B098B0F059AF3D83DB4900BB1632 /* TGLinearLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDF1E321BB9B4015B99BCA4C3609E80 /* TGLinearLayout.swift */; };
-		67A9C5A90CB423CF2ADD7F024937FDA6 /* FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEEEBA7B2D6E540EAC7932CDB648B7 /* FileResource.swift */; };
-		724EFEE26A25761A792C41E725C5A099 /* TGFloatLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA7FBDB8B79AC767C574B27BDD00795 /* TGFloatLayout.swift */; };
-		76EBCA468C6E4B204D23D6CC37748BB8 /* DataResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA3E83E0E2B87323118877A911D0866 /* DataResource.swift */; };
-		778866614CD49C69A0DCFF0198D4D0E2 /* StringResource+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5175A703E568105491626F65D348DB /* StringResource+Integrations.swift */; };
-		7B3FCAB09544BDD509D5D7145BC09B1A /* TangramKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A79589461805263096350F946EEF817 /* TangramKit.swift */; };
-		7FDC43F578BCF977616DCE517F634A8D /* PropertyListResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0CF20575C7D24AABA694C3CF2E5826 /* PropertyListResource.swift */; };
-		82D623C76815DA384FF5A1E94946EC38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		877D8F603DBCA622C99D71A6AF7AE861 /* NameCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D4F1702FDAE780963664711FA75924 /* NameCatalog.swift */; };
-		8881799A2E4C4F0772EB90998CF7FD4C /* TGLayoutSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303E41041716F4F3AD30F4328E15898D /* TGLayoutSize.swift */; };
-		8E3A6E0637368ACD14C96FA2EF3A6A16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		9242B7A5D65A2E2E644257E5B8029485 /* TGPathLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ADA55C8AB6E819064C6BFC4B7D01BD /* TGPathLayout.swift */; };
-		925663A9880372E5890122A7EBC7A7E7 /* TGDimeAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A3D23393DA7330716272B67BF4999 /* TGDimeAdapter.swift */; };
-		9657283C2834C4C9A272E328101151F8 /* ModuleReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5582ACEC523882154FCD199F709EFFE7 /* ModuleReference.swift */; };
-		996918C542708D92D90A67FD1D16A4B3 /* FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A31292CD4473E96FA8CF78626693A /* FontResource.swift */; };
-		9AF02522D5957F6CAD775F1AF2A03E6A /* TypeReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E01AB77EBC3E4575723E84BD14FED2 /* TypeReference.swift */; };
+		020891B8DBB7563A45357ED261CD5FB3 /* ColorResource+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F83EF0364D6CE453E2B347804BC43F /* ColorResource+Integrations.swift */; };
+		048C43003B647DADDECC1A4660D23794 /* TGLayoutSizeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976EFDC7FD52F9708AE975AFDDFFB206 /* TGLayoutSizeClass.swift */; };
+		066DB282328A6286E7CE4FA8679ACF99 /* DynamicColor+XYZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983B3F995B88CEDDD5C2BC24FDD8C0AF /* DynamicColor+XYZ.swift */; };
+		06D569745965998E09FC22AC510F16BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
+		0718CB1A15D89FACC437E38675703DD5 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE4F0AFF0BA884DC1118E735AB3B456 /* Reusable.swift */; };
+		0E4FD9801B22712CECC2E72D266268F5 /* DynamicColor+Mixing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F20E04A5731AEC7A0E5FB0DB0C688D /* DynamicColor+Mixing.swift */; };
+		0E6DC15202E6383417BD78E7958BFC90 /* TGFrameLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B748F0EA51715F83CBF605A23DD4A0 /* TGFrameLayout.swift */; };
+		1349234165FADA4114A6C9F7906D4349 /* FontResource+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B015C8C64F966459FBFCA3EF587CB0 /* FontResource+Integrations.swift */; };
+		147D63BFAC30F63D8666CBB08A5C640E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
+		2249598791E368EF14D2E2DED5FA9609 /* Pods-MyCloudMusic-MyCloudMusicUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DBA9FD4589996B375FC8A90B9D267A /* Pods-MyCloudMusic-MyCloudMusicUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		248A326D4C093469F3A278BFBBDCF85E /* Pods-MyCloudMusic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 781689C537C7A3C7E8C2440A54CD66F6 /* Pods-MyCloudMusic-dummy.m */; };
+		27093D2C5DCCE8226BC0CAC93F924858 /* StringParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70E8553870D7E6F3BE1BB566DA7ACD5 /* StringParam.swift */; };
+		2C1341A75FCB9B0C9F8073341A59685F /* DynamicGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E726E46BF69642A026998F11999E97C5 /* DynamicGradient.swift */; };
+		31C6FEAB5D1205B6E687077AFFDE5384 /* FileResource+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F566540EE45297D6E0CE972ED29C5758 /* FileResource+Integrations.swift */; };
+		32EF1EF97440878F4F742A06F9173FB4 /* ReuseIdentifier+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C22E2CBB0B3207A2D452A739ED624E4 /* ReuseIdentifier+Integrations.swift */; };
+		3B3A25E4844013919D04B9475C39609D /* NibResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717134645B694DEBD9E3088A6BFA5FC1 /* NibResource.swift */; };
+		3CACC1BE73EC19170BE1F06DB01E4001 /* DeploymentTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6117E81F5438C1E8A8428CA1745D6AAF /* DeploymentTarget.swift */; };
+		4138F0781214B022C48EBD032458179D /* TGTableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9086560E0016A63FC43304B803681164 /* TGTableLayout.swift */; };
+		47A9E6B55D3C371D3D9ECC2EA704CAE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
+		4F6FADA93E698823F866AD21EE09B4A8 /* Unifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373617ACCEBB508077DE74E9D7F3E41 /* Unifiable.swift */; };
+		4FDFD8C914B1246A13E6C63B071B72AF /* TGBaseLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0BD016A55A0217030ED8A92208E451 /* TGBaseLayout.swift */; };
+		500EEC5A101486742FDEBA4251BFA340 /* ImageResource+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A18DD9F9A3F62CAA2C1C64E1FD0142 /* ImageResource+Integrations.swift */; };
+		565582DB05908A2D3E5AB77F91E3B129 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39B3A441055BB197A15680F80C1BCB8 /* Array.swift */; };
+		56A453D622EEE5E0FD22D183CA5DBAE0 /* TGLayoutPos.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1C9EAF6BD0F0C0D32D2C51B7A3B8E3 /* TGLayoutPos.swift */; };
+		58C251767ADAF69BC4584A3F43EC5A85 /* TangramKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F72210D990B91D88C9D5D47ECF63558 /* TangramKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A28BC1EEC4B585CB9C8D6D876DE9BA6 /* TGFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7C3B9A0DEE1F3C5ED9B28A0CA62B14 /* TGFlowLayout.swift */; };
+		5B6CE598D5A2EFDEE2731A2A8A1D063B /* DynamicColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478C6A5034537B9FCBEBBA1D8FF90DDE /* DynamicColor+RGBA.swift */; };
+		5C6792D7FE0D65D94BFAFF2D58DFC25D /* AssetCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D2467E4E5CBB394FBCC39E66E16CC7 /* AssetCatalog.swift */; };
+		6646B098B0F059AF3D83DB4900BB1632 /* TGLinearLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F053199BA99674BC4481EEF68564D1C /* TGLinearLayout.swift */; };
+		67A9C5A90CB423CF2ADD7F024937FDA6 /* FileResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FE57EE8816D54EE1C64C24AECEFFEB /* FileResource.swift */; };
+		68C89C31EB432547F06404649B6099CD /* DynamicColor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB446C31481933A1D13CBFABD2A6B009 /* DynamicColor-dummy.m */; };
+		6D08C9F7C8202567FCEBE762943333CC /* Pods-MyCloudMusic-MyCloudMusicUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 583A49C0D8BF7BA1FE5A7AA2EFC139FF /* Pods-MyCloudMusic-MyCloudMusicUITests-dummy.m */; };
+		724EFEE26A25761A792C41E725C5A099 /* TGFloatLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C78F34B21F9C989A6A3988403BAFF9 /* TGFloatLayout.swift */; };
+		76EBCA468C6E4B204D23D6CC37748BB8 /* DataResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F518D2E94C8F48E11CA183BE5EF928 /* DataResource.swift */; };
+		778866614CD49C69A0DCFF0198D4D0E2 /* StringResource+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B1B77EAE8BE3AD337D48BC322054A9 /* StringResource+Integrations.swift */; };
+		7B3FCAB09544BDD509D5D7145BC09B1A /* TangramKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CC9691BE301A8B9FFC674F3C9701CD /* TangramKit.swift */; };
+		7C190900B6066DA524A6AB2930C0EC64 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34B45CF0EC0F7C5F26C5280A3B108CC /* Utils.swift */; };
+		7FDC43F578BCF977616DCE517F634A8D /* PropertyListResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5FFEAD14FBE5EBB4818BF977F4B16 /* PropertyListResource.swift */; };
+		877D8F603DBCA622C99D71A6AF7AE861 /* NameCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B495CF6EC0DB4A36C0A723DD0F693B0B /* NameCatalog.swift */; };
+		8881799A2E4C4F0772EB90998CF7FD4C /* TGLayoutSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234B4A84FE6478DB54973EC4584101E9 /* TGLayoutSize.swift */; };
+		8FCC8EB11965F867DDA36738ECB0F89E /* SwiftUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891A913C882DD44328EB739659B3F526 /* SwiftUIColor.swift */; };
+		917FEC6F8B94E15B15B6A0C38CA3239D /* DynamicColor+HSB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1B0A31CB3DC85BBEAF8EC3E9123B31 /* DynamicColor+HSB.swift */; };
+		9242B7A5D65A2E2E644257E5B8029485 /* TGPathLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21F5E6417F1476EA7CE4DC3A4240D15 /* TGPathLayout.swift */; };
+		925663A9880372E5890122A7EBC7A7E7 /* TGDimeAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE3699890D391006F7D867A1D2F60A0 /* TGDimeAdapter.swift */; };
+		9657283C2834C4C9A272E328101151F8 /* ModuleReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA38122BABFA97B557BCF478EB644419 /* ModuleReference.swift */; };
+		996918C542708D92D90A67FD1D16A4B3 /* FontResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46E720C78026A4C5ABE1A538C7FB33 /* FontResource.swift */; };
+		9AF02522D5957F6CAD775F1AF2A03E6A /* TypeReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C958DCCC3AB1018E5D2D99B18C7BEE /* TypeReference.swift */; };
 		9C9EB6AD993B09397037B406DDC35451 /* Pods-MyCloudMusicTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE6B455187A2EDA0078242D747AC342 /* Pods-MyCloudMusicTests-dummy.m */; };
-		A5AAD357854CD447259D751B55D8D744 /* R.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94EDDDF4C9D80F0AD41F6F57711657A8 /* R.swift-dummy.m */; };
-		AAA4FDF159D2426DB93F592141534271 /* R.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4627DA6D83FF480152698108AED971DE /* R.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5AAD357854CD447259D751B55D8D744 /* R.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D755473D968C6F85AF89CDABFDC11A /* R.swift-dummy.m */; };
+		AAA4FDF159D2426DB93F592141534271 /* R.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3BD04DFE20E82766C2EA1E96ADD925F /* R.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF57CFAD7DB200626EA433F62739C4A6 /* DynamicColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7637CF6A84405767120562CDD6524E3 /* DynamicColor.swift */; };
 		B2FD3792F421CEA652FA614847E2E3A1 /* Pods-MyCloudMusicTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FA640B14C797943BAAA0ABA45E7FDC /* Pods-MyCloudMusicTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B30659D96396326C7A2CA95F524E0FA6 /* StringResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4416FFC50DF70025B35610E2901E2E8D /* StringResource.swift */; };
-		B8668BE11DEF6CB85A1ACFB2D4ABEDDA /* StringsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54641548DC63E54A4BE881ABC4652149 /* StringsTable.swift */; };
-		B97A55F85AE8E29295FE4DCEFEE922B1 /* NibReference+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C614BE106768478909A13A8357DD367 /* NibReference+Integrations.swift */; };
-		BC222EBB01AD730C4A2F245472EDFF72 /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F741D6E1FF3203E24E99E41E5532CD65 /* ImageResource.swift */; };
-		BF3026D713DC364B0D8FFAB4DA1825A7 /* TangramKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B44027AF556A71EA25C460AB3013456 /* TangramKit-dummy.m */; };
-		C0382725FF8360EC4C26537FE319C1F2 /* LocaleReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D63CF0DF230922E7E5E6E9B1B3EC055 /* LocaleReference.swift */; };
-		C3E4AAD2EAB37883F5F361FA5DB5F20F /* DataResource+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25647BB94720465A50BE15AEF96F170D /* DataResource+Integrations.swift */; };
-		C504204FCDEB4AE95D60F96D25B6F46C /* Pods-MyCloudMusic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DEF010267486CE2F83CF66AFE34C445 /* Pods-MyCloudMusic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA604F841BCE79F1A7B378583F794D6E /* StringParam+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397CC6DE4960D0CCB3549711392AFF76 /* StringParam+Extensions.swift */; };
-		CB1D78A91078E4D00486A07F7D1449B7 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA6E1FC79876B2B2EFDBAD0B42114E /* ValidationError.swift */; };
-		CEFC6C72EE2C964B0998FEC1B687FA6F /* SegueIdentifier+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EF26AD4FC3542CEBF8110A5CC2B876 /* SegueIdentifier+Integrations.swift */; };
-		D640820D8F2333F1FC2953B78D186FEF /* StoryboardReference+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FF6E9F0D7E420F92627667EDE6E5F1 /* StoryboardReference+Integrations.swift */; };
-		ED60A5DC1FBA322B8829D17DACF25FC5 /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4C06AE3F16313192A54E9F64141854 /* ColorResource.swift */; };
-		F3620ACD4DD871900B4F47F927EDFD86 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5828B6F939DB60AC74008D1323DC52E /* Bundle+Extensions.swift */; };
-		F36718AFEBB9AF283D159FD32544826E /* StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E5A3EC45CDE161C2147DD8606B4636 /* StoryboardResource.swift */; };
-		FBCF2E627085A82784544DF73801DB07 /* StoryboardReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB97806E00B6B5713F320C5BC3792A8D /* StoryboardReference.swift */; };
-		FC2D5F4D4194C9F3088D4D5FF86784A8 /* TGRelativeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361B155A72C13031F34FD97AF0C6EEBC /* TGRelativeLayout.swift */; };
+		B30659D96396326C7A2CA95F524E0FA6 /* StringResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471AD714FF471911C3E8792EEABE7045 /* StringResource.swift */; };
+		B8668BE11DEF6CB85A1ACFB2D4ABEDDA /* StringsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F24AF55E9FEAD34E4EC088B8709A30 /* StringsTable.swift */; };
+		B97A55F85AE8E29295FE4DCEFEE922B1 /* NibReference+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A89BC85142DEB6EC145D200DC3CBE71 /* NibReference+Integrations.swift */; };
+		BAC36EC60DC4D689490625328F4DC549 /* DynamicColor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC2DAE9B950BC5C32C4F60B05A9A937F /* DynamicColor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC222EBB01AD730C4A2F245472EDFF72 /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFDBCBDD0E62C15E4CFFD0EC09C7FCF /* ImageResource.swift */; };
+		BF3026D713DC364B0D8FFAB4DA1825A7 /* TangramKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D35BC744DC1993C40CC62CAB06632A /* TangramKit-dummy.m */; };
+		C0382725FF8360EC4C26537FE319C1F2 /* LocaleReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = A427F19979416CBCF90386602F4A7DDC /* LocaleReference.swift */; };
+		C3E4AAD2EAB37883F5F361FA5DB5F20F /* DataResource+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FA715802C19B8EDBB1499D00294F81 /* DataResource+Integrations.swift */; };
+		C4F42BAD7E7EC061EC02440690344374 /* DynamicColor+Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA811895D8226B6785DCE2E83DB8564 /* DynamicColor+Lab.swift */; };
+		CA604F841BCE79F1A7B378583F794D6E /* StringParam+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2AF033B0E64B53AB0FB568322A9053 /* StringParam+Extensions.swift */; };
+		CB1D78A91078E4D00486A07F7D1449B7 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE41B8AB7C0827E73FBD37C8BC687E7B /* ValidationError.swift */; };
+		CCE8A7977291139F8F0B537FD87579BB /* DynamicColor+Deriving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E00D3DEB27F0C30E0C55659640B65D /* DynamicColor+Deriving.swift */; };
+		CEFC6C72EE2C964B0998FEC1B687FA6F /* SegueIdentifier+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D54318A67CC5570479CD6CC228FDC3 /* SegueIdentifier+Integrations.swift */; };
+		D27BFA95589CD661951F0C3F1261C7A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
+		D640820D8F2333F1FC2953B78D186FEF /* StoryboardReference+Integrations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F1E443ACD3BC604A004A43509BEEC2 /* StoryboardReference+Integrations.swift */; };
+		D95252289063580093D4E6C625758996 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
+		E6A6EF7D04696005BB381831444A36DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
+		EBFAD19EE43EE6A5740BECE62E752ECD /* Pods-MyCloudMusic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DEF010267486CE2F83CF66AFE34C445 /* Pods-MyCloudMusic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC083B83B4909CF0E8B5AC2532A360D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */; };
+		ED60A5DC1FBA322B8829D17DACF25FC5 /* ColorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B9D2E24DC79ED404380766001717D2 /* ColorResource.swift */; };
+		F3620ACD4DD871900B4F47F927EDFD86 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68ABAA449EB6706DAAB27CA830EC12E /* Bundle+Extensions.swift */; };
+		F36718AFEBB9AF283D159FD32544826E /* StoryboardResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6110485DAA5AA8CE7BFB0F762B3FBCD /* StoryboardResource.swift */; };
+		F7D20A6997CD15D4458A5D3A33817C5D /* ContrastDisplayContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E46DA2A21CC850285AE2BA411B84B2 /* ContrastDisplayContext.swift */; };
+		F8517D0E5282225612952B5861708DD4 /* DynamicColor+HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF79281D9D9F3C55D34E4AB835C43308 /* DynamicColor+HSL.swift */; };
+		F911BAD5CDA4E70705B0033463926A21 /* HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661E807F60383AD153A4A8AAEE8425D3 /* HSL.swift */; };
+		FBCF2E627085A82784544DF73801DB07 /* StoryboardReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46F59B7ACF34B2D86314E465B496685 /* StoryboardReference.swift */; };
+		FC2D5F4D4194C9F3088D4D5FF86784A8 /* TGRelativeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F9E5A5142A823368DA6C59D5DA5E64 /* TGRelativeLayout.swift */; };
+		FD907F56475D4DFDE0BEFAD32257F24C /* DynamicColorSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2CAAF5EB3A8CB0B6FFA3A84AE9DD7F /* DynamicColorSpace.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		04C68E34B63107D6F18EC09929B16208 /* PBXContainerItemProxy */ = {
+		111E47B5C02781BCD1920630516565C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E6ED8BD47AE620F69E17C0AB4190847;
+			remoteInfo = TangramKit;
+		};
+		40458CA96E6660E88A454DF4C4E28097 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BE46138990F7DCC62B61021F6E3A79EA;
 			remoteInfo = "Pods-MyCloudMusic";
 		};
-		977E91B1E78FF684FC1F42DA87BCD56A /* PBXContainerItemProxy */ = {
+		6820B9135D27031157B735145AD72245 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02365F2640C87181DBDCB1D175FA6C00;
+			remoteInfo = DynamicColor;
+		};
+		835F1A2FD641939D5249DACFC906FDC0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 230984053C6652DFF510F450F21C5CF7;
 			remoteInfo = R.swift;
 		};
-		A8080F7132E5E9ED5E17485758B8AC41 /* PBXContainerItemProxy */ = {
+		C018E9E4C0F6E206EE486B8744CA4504 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02365F2640C87181DBDCB1D175FA6C00;
+			remoteInfo = DynamicColor;
+		};
+		DB7B46A831DCB3D9B80C9D076CC1DBCC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3E6ED8BD47AE620F69E17C0AB4190847;
 			remoteInfo = TangramKit;
 		};
-		C7E133E4E9330C371481D0286F8B64C9 /* PBXContainerItemProxy */ = {
+		DF70E9F9C7ED680B3EC8E77CCB0A5746 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 230984053C6652DFF510F450F21C5CF7;
 			remoteInfo = R.swift;
-		};
-		EA7705454C28B97FBDF671072C1EC4B6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3E6ED8BD47AE620F69E17C0AB4190847;
-			remoteInfo = TangramKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0966F768D718EDF0F6384ABD59F1B0E1 /* StringParam.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringParam.swift; path = Sources/RswiftResources/Shared/StringParam.swift; sourceTree = "<group>"; };
-		09ADA55C8AB6E819064C6BFC4B7D01BD /* TGPathLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGPathLayout.swift; path = TangramKit/TGPathLayout.swift; sourceTree = "<group>"; };
-		10143B67E2816AC265E6E2F8EE8747CF /* TangramKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TangramKit-umbrella.h"; sourceTree = "<group>"; };
-		15FF6E9F0D7E420F92627667EDE6E5F1 /* StoryboardReference+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StoryboardReference+Integrations.swift"; path = "Sources/RswiftResources/Integrations/StoryboardReference+Integrations.swift"; sourceTree = "<group>"; };
+		0232CA624D13A09105C92D127F1C49DA /* R.swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.debug.xcconfig; sourceTree = "<group>"; };
+		08A18DD9F9A3F62CAA2C1C64E1FD0142 /* ImageResource+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageResource+Integrations.swift"; path = "Sources/RswiftResources/Integrations/ImageResource+Integrations.swift"; sourceTree = "<group>"; };
+		0D0BC249730A23D8DA9C9C645140DAB9 /* R.swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.release.xcconfig; sourceTree = "<group>"; };
+		110D0A6ACA25640E899809AB4B5378DA /* R.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = R.swift.modulemap; sourceTree = "<group>"; };
 		16C592BA6E280A40596F4D3281773C8F /* Pods-MyCloudMusic-MyCloudMusicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyCloudMusic-MyCloudMusicUITests.release.xcconfig"; sourceTree = "<group>"; };
-		17EA6E1FC79876B2B2EFDBAD0B42114E /* ValidationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationError.swift; path = Sources/RswiftResources/Shared/ValidationError.swift; sourceTree = "<group>"; };
 		1CB755181206555646E8BE54C0059EA4 /* Pods-MyCloudMusic-MyCloudMusicUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyCloudMusic-MyCloudMusicUITests-frameworks.sh"; sourceTree = "<group>"; };
-		2511553FA6BA75A16F05727FC9472561 /* TGLayoutSizeClass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGLayoutSizeClass.swift; path = TangramKit/TGLayoutSizeClass.swift; sourceTree = "<group>"; };
-		25647BB94720465A50BE15AEF96F170D /* DataResource+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DataResource+Integrations.swift"; path = "Sources/RswiftResources/Integrations/DataResource+Integrations.swift"; sourceTree = "<group>"; };
-		2C5175A703E568105491626F65D348DB /* StringResource+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringResource+Integrations.swift"; path = "Sources/RswiftResources/Integrations/StringResource+Integrations.swift"; sourceTree = "<group>"; };
-		2C614BE106768478909A13A8357DD367 /* NibReference+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NibReference+Integrations.swift"; path = "Sources/RswiftResources/Integrations/NibReference+Integrations.swift"; sourceTree = "<group>"; };
-		2D91A9597F8FA6A74B8E0816766F8C1E /* Unifiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Unifiable.swift; path = Sources/RswiftResources/Shared/Unifiable.swift; sourceTree = "<group>"; };
+		1EA811895D8226B6785DCE2E83DB8564 /* DynamicColor+Lab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+Lab.swift"; path = "Sources/DynamicColor+Lab.swift"; sourceTree = "<group>"; };
+		234B4A84FE6478DB54973EC4584101E9 /* TGLayoutSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGLayoutSize.swift; path = TangramKit/TGLayoutSize.swift; sourceTree = "<group>"; };
+		25C958DCCC3AB1018E5D2D99B18C7BEE /* TypeReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypeReference.swift; path = Sources/RswiftResources/Shared/TypeReference.swift; sourceTree = "<group>"; };
+		25E00D3DEB27F0C30E0C55659640B65D /* DynamicColor+Deriving.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+Deriving.swift"; path = "Sources/DynamicColor+Deriving.swift"; sourceTree = "<group>"; };
 		2E50CE08C0DA5FCDEE1B9C4041170CE9 /* Pods-MyCloudMusicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyCloudMusicTests.release.xcconfig"; sourceTree = "<group>"; };
-		303E41041716F4F3AD30F4328E15898D /* TGLayoutSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGLayoutSize.swift; path = TangramKit/TGLayoutSize.swift; sourceTree = "<group>"; };
-		30DEBBF23D6E264D7D4B8609CD3A345F /* ReuseIdentifier+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ReuseIdentifier+Integrations.swift"; path = "Sources/RswiftResources/Integrations/ReuseIdentifier+Integrations.swift"; sourceTree = "<group>"; };
-		361B155A72C13031F34FD97AF0C6EEBC /* TGRelativeLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGRelativeLayout.swift; path = TangramKit/TGRelativeLayout.swift; sourceTree = "<group>"; };
-		37D4F1702FDAE780963664711FA75924 /* NameCatalog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NameCatalog.swift; path = Sources/RswiftResources/Shared/NameCatalog.swift; sourceTree = "<group>"; };
-		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		397CC6DE4960D0CCB3549711392AFF76 /* StringParam+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringParam+Extensions.swift"; path = "Sources/RswiftResources/Shared/StringParam+Extensions.swift"; sourceTree = "<group>"; };
-		3A089693F5117B6B5034E6779D01EF9C /* TGFrameLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGFrameLayout.swift; path = TangramKit/TGFrameLayout.swift; sourceTree = "<group>"; };
+		2F1B0A31CB3DC85BBEAF8EC3E9123B31 /* DynamicColor+HSB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+HSB.swift"; path = "Sources/DynamicColor+HSB.swift"; sourceTree = "<group>"; };
+		35FE57EE8816D54EE1C64C24AECEFFEB /* FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileResource.swift; path = Sources/RswiftResources/FileResource.swift; sourceTree = "<group>"; };
+		36C02608134D8381FEADD70FAE914631 /* TangramKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TangramKit-Info.plist"; sourceTree = "<group>"; };
 		3A84BE6A41AE5C7B5BDE84F03BF7C947 /* TangramKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TangramKit; path = TangramKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EA5BDD6DA462D45C28EA963654D95D3 /* R.swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = R.swift; path = RswiftResources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FA7FBDB8B79AC767C574B27BDD00795 /* TGFloatLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGFloatLayout.swift; path = TangramKit/TGFloatLayout.swift; sourceTree = "<group>"; };
 		417ADA9D5C846F8734E6897A74CE27B9 /* Pods-MyCloudMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyCloudMusic.release.xcconfig"; sourceTree = "<group>"; };
+		42D54318A67CC5570479CD6CC228FDC3 /* SegueIdentifier+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SegueIdentifier+Integrations.swift"; path = "Sources/RswiftResources/Integrations/SegueIdentifier+Integrations.swift"; sourceTree = "<group>"; };
 		42DBA9FD4589996B375FC8A90B9D267A /* Pods-MyCloudMusic-MyCloudMusicUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyCloudMusic-MyCloudMusicUITests-umbrella.h"; sourceTree = "<group>"; };
-		4416FFC50DF70025B35610E2901E2E8D /* StringResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringResource.swift; path = Sources/RswiftResources/StringResource.swift; sourceTree = "<group>"; };
-		4627DA6D83FF480152698108AED971DE /* R.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift-umbrella.h"; sourceTree = "<group>"; };
-		4784FA8C6AC6E49A87CA6BC34FF2E332 /* TGBaseLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGBaseLayout.swift; path = TangramKit/TGBaseLayout.swift; sourceTree = "<group>"; };
-		4A901CED17814B7F84F30C7A503E325D /* R.swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.debug.xcconfig; sourceTree = "<group>"; };
+		4603757534A157D07CF86D75DA0641F9 /* DynamicColor */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DynamicColor; path = DynamicColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		471AD714FF471911C3E8792EEABE7045 /* StringResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringResource.swift; path = Sources/RswiftResources/StringResource.swift; sourceTree = "<group>"; };
+		478C6A5034537B9FCBEBBA1D8FF90DDE /* DynamicColor+RGBA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+RGBA.swift"; path = "Sources/DynamicColor+RGBA.swift"; sourceTree = "<group>"; };
+		47B015C8C64F966459FBFCA3EF587CB0 /* FontResource+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FontResource+Integrations.swift"; path = "Sources/RswiftResources/Integrations/FontResource+Integrations.swift"; sourceTree = "<group>"; };
+		4E0BD016A55A0217030ED8A92208E451 /* TGBaseLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGBaseLayout.swift; path = TangramKit/TGBaseLayout.swift; sourceTree = "<group>"; };
 		4E0E7AC7EDA164B7F30CF40F0F63BA4E /* Pods-MyCloudMusic-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyCloudMusic-Info.plist"; sourceTree = "<group>"; };
-		51E5A3EC45CDE161C2147DD8606B4636 /* StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardResource.swift; path = Sources/RswiftResources/StoryboardResource.swift; sourceTree = "<group>"; };
 		539FC89B850BADEC9006EAF6108EF792 /* Pods-MyCloudMusic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MyCloudMusic.modulemap"; sourceTree = "<group>"; };
-		54641548DC63E54A4BE881ABC4652149 /* StringsTable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringsTable.swift; path = Sources/RswiftResources/Shared/StringsTable.swift; sourceTree = "<group>"; };
-		5582ACEC523882154FCD199F709EFFE7 /* ModuleReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModuleReference.swift; path = Sources/RswiftResources/Shared/ModuleReference.swift; sourceTree = "<group>"; };
-		574B4D4DBA31E76A49A998DFFD0B354B /* Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reusable.swift; path = Sources/RswiftResources/Shared/Reusable.swift; sourceTree = "<group>"; };
-		575135E66DA7E924EC600F036C5F3DF4 /* R.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = R.swift.modulemap; sourceTree = "<group>"; };
+		53EA7826CE6218E69D4F68C56B3113F3 /* DynamicColor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DynamicColor.debug.xcconfig; sourceTree = "<group>"; };
+		557698F246517B573007ACE62F418D77 /* DynamicColor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynamicColor-prefix.pch"; sourceTree = "<group>"; };
+		55C78F34B21F9C989A6A3988403BAFF9 /* TGFloatLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGFloatLayout.swift; path = TangramKit/TGFloatLayout.swift; sourceTree = "<group>"; };
+		55F24AF55E9FEAD34E4EC088B8709A30 /* StringsTable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringsTable.swift; path = Sources/RswiftResources/Shared/StringsTable.swift; sourceTree = "<group>"; };
 		583A49C0D8BF7BA1FE5A7AA2EFC139FF /* Pods-MyCloudMusic-MyCloudMusicUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyCloudMusic-MyCloudMusicUITests-dummy.m"; sourceTree = "<group>"; };
-		5EA3E83E0E2B87323118877A911D0866 /* DataResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataResource.swift; path = Sources/RswiftResources/DataResource.swift; sourceTree = "<group>"; };
-		6219EB3CC4DFB626CF0D72EB23B5D187 /* TangramKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TangramKit.debug.xcconfig; sourceTree = "<group>"; };
+		59F1E443ACD3BC604A004A43509BEEC2 /* StoryboardReference+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StoryboardReference+Integrations.swift"; path = "Sources/RswiftResources/Integrations/StoryboardReference+Integrations.swift"; sourceTree = "<group>"; };
+		59FA715802C19B8EDBB1499D00294F81 /* DataResource+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DataResource+Integrations.swift"; path = "Sources/RswiftResources/Integrations/DataResource+Integrations.swift"; sourceTree = "<group>"; };
+		5A89BC85142DEB6EC145D200DC3CBE71 /* NibReference+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NibReference+Integrations.swift"; path = "Sources/RswiftResources/Integrations/NibReference+Integrations.swift"; sourceTree = "<group>"; };
+		5C2CAAF5EB3A8CB0B6FFA3A84AE9DD7F /* DynamicColorSpace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicColorSpace.swift; path = Sources/DynamicColorSpace.swift; sourceTree = "<group>"; };
+		5DFDBCBDD0E62C15E4CFFD0EC09C7FCF /* ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageResource.swift; path = Sources/RswiftResources/ImageResource.swift; sourceTree = "<group>"; };
+		6117E81F5438C1E8A8428CA1745D6AAF /* DeploymentTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeploymentTarget.swift; path = Sources/RswiftResources/Shared/DeploymentTarget.swift; sourceTree = "<group>"; };
+		61B9D2E24DC79ED404380766001717D2 /* ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorResource.swift; path = Sources/RswiftResources/ColorResource.swift; sourceTree = "<group>"; };
 		6379FFC2BB3F8A1388C1B6CC610F6C43 /* Pods-MyCloudMusic-MyCloudMusicUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MyCloudMusic-MyCloudMusicUITests"; path = Pods_MyCloudMusic_MyCloudMusicUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		661E807F60383AD153A4A8AAEE8425D3 /* HSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HSL.swift; path = Sources/HSL.swift; sourceTree = "<group>"; };
 		67872700F55938A8E5418B98E3455030 /* Pods-MyCloudMusic-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyCloudMusic-acknowledgements.plist"; sourceTree = "<group>"; };
-		69BD10451237AF32A2B8E1F333E1EB2B /* R.swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = R.swift.release.xcconfig; sourceTree = "<group>"; };
-		6B44027AF556A71EA25C460AB3013456 /* TangramKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TangramKit-dummy.m"; sourceTree = "<group>"; };
-		6BFE628E511979E9393BCD92F3960B79 /* TGLayoutPos.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGLayoutPos.swift; path = TangramKit/TGLayoutPos.swift; sourceTree = "<group>"; };
-		6D97DC48D60B637B720BD48541D3F403 /* TangramKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TangramKit.modulemap; sourceTree = "<group>"; };
+		6A46E720C78026A4C5ABE1A538C7FB33 /* FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontResource.swift; path = Sources/RswiftResources/FontResource.swift; sourceTree = "<group>"; };
+		6F053199BA99674BC4481EEF68564D1C /* TGLinearLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGLinearLayout.swift; path = TangramKit/TGLinearLayout.swift; sourceTree = "<group>"; };
 		6F5148ACD01EF3AA39407DA769842358 /* Pods-MyCloudMusic-MyCloudMusicUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyCloudMusic-MyCloudMusicUITests-Info.plist"; sourceTree = "<group>"; };
+		717134645B694DEBD9E3088A6BFA5FC1 /* NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibResource.swift; path = Sources/RswiftResources/NibResource.swift; sourceTree = "<group>"; };
 		73E5AD64B9131E3798B636A002939353 /* Pods-MyCloudMusicTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyCloudMusicTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		77E01AB77EBC3E4575723E84BD14FED2 /* TypeReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypeReference.swift; path = Sources/RswiftResources/Shared/TypeReference.swift; sourceTree = "<group>"; };
-		77EF26AD4FC3542CEBF8110A5CC2B876 /* SegueIdentifier+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SegueIdentifier+Integrations.swift"; path = "Sources/RswiftResources/Integrations/SegueIdentifier+Integrations.swift"; sourceTree = "<group>"; };
+		73F5FFEAD14FBE5EBB4818BF977F4B16 /* PropertyListResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PropertyListResource.swift; path = Sources/RswiftResources/PropertyListResource.swift; sourceTree = "<group>"; };
 		781689C537C7A3C7E8C2440A54CD66F6 /* Pods-MyCloudMusic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyCloudMusic-dummy.m"; sourceTree = "<group>"; };
 		7945AEB24A21B2D2F24F9F8E00583BB3 /* Pods-MyCloudMusic-MyCloudMusicUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MyCloudMusic-MyCloudMusicUITests.modulemap"; sourceTree = "<group>"; };
-		82FFC294CA73774DE15CAE371C414E58 /* TGTableLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGTableLayout.swift; path = TangramKit/TGTableLayout.swift; sourceTree = "<group>"; };
-		830A31292CD4473E96FA8CF78626693A /* FontResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FontResource.swift; path = Sources/RswiftResources/FontResource.swift; sourceTree = "<group>"; };
+		8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		834C8D5D2F99FC73CF9AAB07E2D5CA87 /* TangramKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TangramKit-prefix.pch"; sourceTree = "<group>"; };
+		8373617ACCEBB508077DE74E9D7F3E41 /* Unifiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Unifiable.swift; path = Sources/RswiftResources/Shared/Unifiable.swift; sourceTree = "<group>"; };
+		891A913C882DD44328EB739659B3F526 /* SwiftUIColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftUIColor.swift; path = Sources/SwiftUIColor.swift; sourceTree = "<group>"; };
 		8CE6B455187A2EDA0078242D747AC342 /* Pods-MyCloudMusicTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyCloudMusicTests-dummy.m"; sourceTree = "<group>"; };
-		8CE8D6AC5CA0240A2B15BC023F53FB48 /* FileResource+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FileResource+Integrations.swift"; path = "Sources/RswiftResources/Integrations/FileResource+Integrations.swift"; sourceTree = "<group>"; };
 		8DEF010267486CE2F83CF66AFE34C445 /* Pods-MyCloudMusic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyCloudMusic-umbrella.h"; sourceTree = "<group>"; };
 		8F4FBD73BCA6A5FCCC4DE664F2761F3C /* Pods-MyCloudMusic-MyCloudMusicUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyCloudMusic-MyCloudMusicUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		94ACD668DE148BEC2878750DFB837744 /* TangramKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TangramKit-Info.plist"; sourceTree = "<group>"; };
-		94EDDDF4C9D80F0AD41F6F57711657A8 /* R.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "R.swift-dummy.m"; sourceTree = "<group>"; };
-		9A79589461805263096350F946EEF817 /* TangramKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TangramKit.swift; path = TangramKit/TangramKit.swift; sourceTree = "<group>"; };
-		9BD09DAF7651A64DDD2D9449B836115B /* FontResource+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FontResource+Integrations.swift"; path = "Sources/RswiftResources/Integrations/FontResource+Integrations.swift"; sourceTree = "<group>"; };
+		8F72210D990B91D88C9D5D47ECF63558 /* TangramKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TangramKit-umbrella.h"; sourceTree = "<group>"; };
+		8F7C3B9A0DEE1F3C5ED9B28A0CA62B14 /* TGFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGFlowLayout.swift; path = TangramKit/TGFlowLayout.swift; sourceTree = "<group>"; };
+		9086560E0016A63FC43304B803681164 /* TGTableLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGTableLayout.swift; path = TangramKit/TGTableLayout.swift; sourceTree = "<group>"; };
+		976EFDC7FD52F9708AE975AFDDFFB206 /* TGLayoutSizeClass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGLayoutSizeClass.swift; path = TangramKit/TGLayoutSizeClass.swift; sourceTree = "<group>"; };
+		983B3F995B88CEDDD5C2BC24FDD8C0AF /* DynamicColor+XYZ.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+XYZ.swift"; path = "Sources/DynamicColor+XYZ.swift"; sourceTree = "<group>"; };
 		9BE5C7F73CA13D513A19E5DA96783C4E /* Pods-MyCloudMusicTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MyCloudMusicTests.modulemap"; sourceTree = "<group>"; };
-		9D63CF0DF230922E7E5E6E9B1B3EC055 /* LocaleReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocaleReference.swift; path = Sources/RswiftResources/Shared/LocaleReference.swift; sourceTree = "<group>"; };
+		9C22E2CBB0B3207A2D452A739ED624E4 /* ReuseIdentifier+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ReuseIdentifier+Integrations.swift"; path = "Sources/RswiftResources/Integrations/ReuseIdentifier+Integrations.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9EE4F9245ADD1C8AD7BF8C387F3064E1 /* TangramKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TangramKit.release.xcconfig; sourceTree = "<group>"; };
+		9D966907075518E2DB2C47452A39386D /* TangramKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TangramKit.modulemap; sourceTree = "<group>"; };
+		A0CC9691BE301A8B9FFC674F3C9701CD /* TangramKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TangramKit.swift; path = TangramKit/TangramKit.swift; sourceTree = "<group>"; };
 		A3FA640B14C797943BAAA0ABA45E7FDC /* Pods-MyCloudMusicTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyCloudMusicTests-umbrella.h"; sourceTree = "<group>"; };
+		A427F19979416CBCF90386602F4A7DDC /* LocaleReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocaleReference.swift; path = Sources/RswiftResources/Shared/LocaleReference.swift; sourceTree = "<group>"; };
+		A68ABAA449EB6706DAAB27CA830EC12E /* Bundle+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Extensions.swift"; path = "Sources/RswiftResources/Integrations/Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		A9F9E5A5142A823368DA6C59D5DA5E64 /* TGRelativeLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGRelativeLayout.swift; path = TangramKit/TGRelativeLayout.swift; sourceTree = "<group>"; };
 		AA98EE9831437B1972AD3AF6A8B28CE2 /* Pods-MyCloudMusicTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyCloudMusicTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AD4C06AE3F16313192A54E9F64141854 /* ColorResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorResource.swift; path = Sources/RswiftResources/ColorResource.swift; sourceTree = "<group>"; };
+		AB446C31481933A1D13CBFABD2A6B009 /* DynamicColor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DynamicColor-dummy.m"; sourceTree = "<group>"; };
+		ADD79214CB0280B8858ECD6C60EF6E27 /* DynamicColor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DynamicColor-Info.plist"; sourceTree = "<group>"; };
+		B21F5E6417F1476EA7CE4DC3A4240D15 /* TGPathLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGPathLayout.swift; path = TangramKit/TGPathLayout.swift; sourceTree = "<group>"; };
+		B39B3A441055BB197A15680F80C1BCB8 /* Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Array.swift; path = Sources/Array.swift; sourceTree = "<group>"; };
+		B47E30837A121ECCF5F9F46EF233AD58 /* TangramKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TangramKit.debug.xcconfig; sourceTree = "<group>"; };
+		B495CF6EC0DB4A36C0A723DD0F693B0B /* NameCatalog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NameCatalog.swift; path = Sources/RswiftResources/Shared/NameCatalog.swift; sourceTree = "<group>"; };
 		B4EB5498934ADC72066840A9D620934C /* Pods-MyCloudMusic-MyCloudMusicUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyCloudMusic-MyCloudMusicUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B6D1390785CA1318FC119991AB2B0C8B /* Pods-MyCloudMusic-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyCloudMusic-frameworks.sh"; sourceTree = "<group>"; };
-		BB97806E00B6B5713F320C5BC3792A8D /* StoryboardReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardReference.swift; path = Sources/RswiftResources/Shared/StoryboardReference.swift; sourceTree = "<group>"; };
-		BDEF5E8AC021ACC916966CD4DF587215 /* R.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "R.swift-Info.plist"; sourceTree = "<group>"; };
+		B6D35BC744DC1993C40CC62CAB06632A /* TangramKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TangramKit-dummy.m"; sourceTree = "<group>"; };
+		BB2AF033B0E64B53AB0FB568322A9053 /* StringParam+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringParam+Extensions.swift"; path = "Sources/RswiftResources/Shared/StringParam+Extensions.swift"; sourceTree = "<group>"; };
 		BE208A5A70C67576347DED47201F4BDB /* Pods-MyCloudMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyCloudMusic.debug.xcconfig"; sourceTree = "<group>"; };
-		BE5A3D23393DA7330716272B67BF4999 /* TGDimeAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGDimeAdapter.swift; path = TangramKit/TGDimeAdapter.swift; sourceTree = "<group>"; };
-		CA54F12DF15A4C249B5AABD5D4FC2B52 /* TGFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGFlowLayout.swift; path = TangramKit/TGFlowLayout.swift; sourceTree = "<group>"; };
+		C0C7E91A315A95C6FD0C5D9C31220E97 /* DynamicColor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DynamicColor.release.xcconfig; sourceTree = "<group>"; };
+		C0F518D2E94C8F48E11CA183BE5EF928 /* DataResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataResource.swift; path = Sources/RswiftResources/DataResource.swift; sourceTree = "<group>"; };
+		C3BD04DFE20E82766C2EA1E96ADD925F /* R.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift-umbrella.h"; sourceTree = "<group>"; };
+		C7637CF6A84405767120562CDD6524E3 /* DynamicColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicColor.swift; path = Sources/DynamicColor.swift; sourceTree = "<group>"; };
+		C7D755473D968C6F85AF89CDABFDC11A /* R.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "R.swift-dummy.m"; sourceTree = "<group>"; };
+		C9F83EF0364D6CE453E2B347804BC43F /* ColorResource+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ColorResource+Integrations.swift"; path = "Sources/RswiftResources/Integrations/ColorResource+Integrations.swift"; sourceTree = "<group>"; };
 		CA90F8A13CFFD9CC3B4B13B911020C65 /* Pods-MyCloudMusicTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MyCloudMusicTests"; path = Pods_MyCloudMusicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD7DFD6BBC399068F058C0854C4156B1 /* AssetCatalog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetCatalog.swift; path = Sources/RswiftResources/AssetCatalog.swift; sourceTree = "<group>"; };
-		D07AA73DDAAD0C1AA940BBD190B15790 /* R.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift-prefix.pch"; sourceTree = "<group>"; };
-		D678482BB65FF2F1D41A8A3052AF54F0 /* ColorResource+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ColorResource+Integrations.swift"; path = "Sources/RswiftResources/Integrations/ColorResource+Integrations.swift"; sourceTree = "<group>"; };
+		CC2DAE9B950BC5C32C4F60B05A9A937F /* DynamicColor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynamicColor-umbrella.h"; sourceTree = "<group>"; };
+		CE1C9EAF6BD0F0C0D32D2C51B7A3B8E3 /* TGLayoutPos.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGLayoutPos.swift; path = TangramKit/TGLayoutPos.swift; sourceTree = "<group>"; };
+		D02365133CBC39A24EC5C27785A4DF8F /* R.swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "R.swift-Info.plist"; sourceTree = "<group>"; };
+		D0D2467E4E5CBB394FBCC39E66E16CC7 /* AssetCatalog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssetCatalog.swift; path = Sources/RswiftResources/AssetCatalog.swift; sourceTree = "<group>"; };
+		D34B45CF0EC0F7C5F26C5280A3B108CC /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/Utils.swift; sourceTree = "<group>"; };
+		D5FF31A1B32DB3018609F206E50F4838 /* R.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "R.swift-prefix.pch"; sourceTree = "<group>"; };
+		D6110485DAA5AA8CE7BFB0F762B3FBCD /* StoryboardResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardResource.swift; path = Sources/RswiftResources/StoryboardResource.swift; sourceTree = "<group>"; };
 		D74D3B652C963D72F3F8D770757ADCBC /* Pods-MyCloudMusic-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyCloudMusic-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D98BCA4255EE9B897981D38DB50DE01B /* NibResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NibResource.swift; path = Sources/RswiftResources/NibResource.swift; sourceTree = "<group>"; };
-		DB0CF20575C7D24AABA694C3CF2E5826 /* PropertyListResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PropertyListResource.swift; path = Sources/RswiftResources/PropertyListResource.swift; sourceTree = "<group>"; };
+		DAE4F0AFF0BA884DC1118E735AB3B456 /* Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reusable.swift; path = Sources/RswiftResources/Shared/Reusable.swift; sourceTree = "<group>"; };
+		DD15D7D61C62B339B296902423B6A196 /* TangramKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TangramKit.release.xcconfig; sourceTree = "<group>"; };
 		DDE57480B0CEAED3BDAD19B2EF0B5B04 /* Pods-MyCloudMusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyCloudMusicTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E5828B6F939DB60AC74008D1323DC52E /* Bundle+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+Extensions.swift"; path = "Sources/RswiftResources/Integrations/Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		E0E46DA2A21CC850285AE2BA411B84B2 /* ContrastDisplayContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContrastDisplayContext.swift; path = Sources/ContrastDisplayContext.swift; sourceTree = "<group>"; };
+		E70E8553870D7E6F3BE1BB566DA7ACD5 /* StringParam.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringParam.swift; path = Sources/RswiftResources/Shared/StringParam.swift; sourceTree = "<group>"; };
+		E726E46BF69642A026998F11999E97C5 /* DynamicGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicGradient.swift; path = Sources/DynamicGradient.swift; sourceTree = "<group>"; };
+		E9F20E04A5731AEC7A0E5FB0DB0C688D /* DynamicColor+Mixing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+Mixing.swift"; path = "Sources/DynamicColor+Mixing.swift"; sourceTree = "<group>"; };
+		EA38122BABFA97B557BCF478EB644419 /* ModuleReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModuleReference.swift; path = Sources/RswiftResources/Shared/ModuleReference.swift; sourceTree = "<group>"; };
+		EAA7818A25192A27BC4B84649BC7DC70 /* DynamicColor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DynamicColor.modulemap; sourceTree = "<group>"; };
 		EBA94DED32507F7B7F52F033820B9E37 /* Pods-MyCloudMusic-MyCloudMusicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyCloudMusic-MyCloudMusicUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		ECDF1E321BB9B4015B99BCA4C3609E80 /* TGLinearLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGLinearLayout.swift; path = TangramKit/TGLinearLayout.swift; sourceTree = "<group>"; };
-		EFEEEEBA7B2D6E540EAC7932CDB648B7 /* FileResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileResource.swift; path = Sources/RswiftResources/FileResource.swift; sourceTree = "<group>"; };
-		F24F1D27E9F925F0358CE544B958CC34 /* TangramKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TangramKit-prefix.pch"; sourceTree = "<group>"; };
-		F6D595622C900BECE80E418675556D65 /* ImageResource+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageResource+Integrations.swift"; path = "Sources/RswiftResources/Integrations/ImageResource+Integrations.swift"; sourceTree = "<group>"; };
-		F741D6E1FF3203E24E99E41E5532CD65 /* ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageResource.swift; path = Sources/RswiftResources/ImageResource.swift; sourceTree = "<group>"; };
+		ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		EE41B8AB7C0827E73FBD37C8BC687E7B /* ValidationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationError.swift; path = Sources/RswiftResources/Shared/ValidationError.swift; sourceTree = "<group>"; };
+		EF79281D9D9F3C55D34E4AB835C43308 /* DynamicColor+HSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+HSL.swift"; path = "Sources/DynamicColor+HSL.swift"; sourceTree = "<group>"; };
+		F1B1B77EAE8BE3AD337D48BC322054A9 /* StringResource+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringResource+Integrations.swift"; path = "Sources/RswiftResources/Integrations/StringResource+Integrations.swift"; sourceTree = "<group>"; };
+		F46F59B7ACF34B2D86314E465B496685 /* StoryboardReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoryboardReference.swift; path = Sources/RswiftResources/Shared/StoryboardReference.swift; sourceTree = "<group>"; };
+		F566540EE45297D6E0CE972ED29C5758 /* FileResource+Integrations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FileResource+Integrations.swift"; path = "Sources/RswiftResources/Integrations/FileResource+Integrations.swift"; sourceTree = "<group>"; };
 		F7FA3847495893255BCCC156A81B6B20 /* Pods-MyCloudMusicTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyCloudMusicTests-Info.plist"; sourceTree = "<group>"; };
+		F8B748F0EA51715F83CBF605A23DD4A0 /* TGFrameLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGFrameLayout.swift; path = TangramKit/TGFrameLayout.swift; sourceTree = "<group>"; };
 		FC26652D3909C1202BE5EA80FA77E544 /* Pods-MyCloudMusic */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MyCloudMusic"; path = Pods_MyCloudMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFB70AEDFE76327CED7E969343523DF7 /* DeploymentTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeploymentTarget.swift; path = Sources/RswiftResources/Shared/DeploymentTarget.swift; sourceTree = "<group>"; };
+		FDE3699890D391006F7D867A1D2F60A0 /* TGDimeAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TGDimeAdapter.swift; path = TangramKit/TGDimeAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +267,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				47A9E6B55D3C371D3D9ECC2EA704CAE5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C6DDD3DA6DA57A110C85A77361F0330 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6A6EF7D04696005BB381831444A36DE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		546D546372FFD00A5E74B6FC1966FC04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95252289063580093D4E6C625758996 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A501B192DED830F5321FE757FC99D8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D27BFA95589CD661951F0C3F1261C7A8 /* Foundation.framework in Frameworks */,
+				EC083B83B4909CF0E8B5AC2532A360D8 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,25 +311,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E334EAF656A83E06A9C90002AA5E254F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8E3A6E0637368ACD14C96FA2EF3A6A16 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FEC5812CE446D355C432A64B770E0AB4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				82D623C76815DA384FF5A1E94946EC38 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05EEF34AA2F9856CCEBDB7530443E7F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51C1EED6F4BBBE2836E5001FF16D1A5F /* DynamicColor */,
+				8DD6CE9BABADCCE1AB22FEEB40F19565 /* R.swift */,
+				4A8004DBCA5520D0FDE1AB30E474B621 /* TangramKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		101AB74AE6B8867C267ED515BA335745 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,58 +350,21 @@
 			path = "Target Support Files/Pods-MyCloudMusicTests";
 			sourceTree = "<group>";
 		};
-		1D02805565EB09D1328AE6FE7A528A14 /* Products */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FC26652D3909C1202BE5EA80FA77E544 /* Pods-MyCloudMusic */,
-				6379FFC2BB3F8A1388C1B6CC610F6C43 /* Pods-MyCloudMusic-MyCloudMusicUITests */,
-				CA90F8A13CFFD9CC3B4B13B911020C65 /* Pods-MyCloudMusicTests */,
-				3EA5BDD6DA462D45C28EA963654D95D3 /* R.swift */,
-				3A84BE6A41AE5C7B5BDE84F03BF7C947 /* TangramKit */,
+				1DE6440B6853131A80C53DDA34375AAB /* iOS */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2ABED0736395F34417D7DAB7853F661F /* R.swift */ = {
+		1DE6440B6853131A80C53DDA34375AAB /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				CD7DFD6BBC399068F058C0854C4156B1 /* AssetCatalog.swift */,
-				E5828B6F939DB60AC74008D1323DC52E /* Bundle+Extensions.swift */,
-				AD4C06AE3F16313192A54E9F64141854 /* ColorResource.swift */,
-				D678482BB65FF2F1D41A8A3052AF54F0 /* ColorResource+Integrations.swift */,
-				5EA3E83E0E2B87323118877A911D0866 /* DataResource.swift */,
-				25647BB94720465A50BE15AEF96F170D /* DataResource+Integrations.swift */,
-				FFB70AEDFE76327CED7E969343523DF7 /* DeploymentTarget.swift */,
-				EFEEEEBA7B2D6E540EAC7932CDB648B7 /* FileResource.swift */,
-				8CE8D6AC5CA0240A2B15BC023F53FB48 /* FileResource+Integrations.swift */,
-				830A31292CD4473E96FA8CF78626693A /* FontResource.swift */,
-				9BD09DAF7651A64DDD2D9449B836115B /* FontResource+Integrations.swift */,
-				F741D6E1FF3203E24E99E41E5532CD65 /* ImageResource.swift */,
-				F6D595622C900BECE80E418675556D65 /* ImageResource+Integrations.swift */,
-				9D63CF0DF230922E7E5E6E9B1B3EC055 /* LocaleReference.swift */,
-				5582ACEC523882154FCD199F709EFFE7 /* ModuleReference.swift */,
-				37D4F1702FDAE780963664711FA75924 /* NameCatalog.swift */,
-				2C614BE106768478909A13A8357DD367 /* NibReference+Integrations.swift */,
-				D98BCA4255EE9B897981D38DB50DE01B /* NibResource.swift */,
-				DB0CF20575C7D24AABA694C3CF2E5826 /* PropertyListResource.swift */,
-				574B4D4DBA31E76A49A998DFFD0B354B /* Reusable.swift */,
-				30DEBBF23D6E264D7D4B8609CD3A345F /* ReuseIdentifier+Integrations.swift */,
-				77EF26AD4FC3542CEBF8110A5CC2B876 /* SegueIdentifier+Integrations.swift */,
-				BB97806E00B6B5713F320C5BC3792A8D /* StoryboardReference.swift */,
-				15FF6E9F0D7E420F92627667EDE6E5F1 /* StoryboardReference+Integrations.swift */,
-				51E5A3EC45CDE161C2147DD8606B4636 /* StoryboardResource.swift */,
-				0966F768D718EDF0F6384ABD59F1B0E1 /* StringParam.swift */,
-				397CC6DE4960D0CCB3549711392AFF76 /* StringParam+Extensions.swift */,
-				4416FFC50DF70025B35610E2901E2E8D /* StringResource.swift */,
-				2C5175A703E568105491626F65D348DB /* StringResource+Integrations.swift */,
-				54641548DC63E54A4BE881ABC4652149 /* StringsTable.swift */,
-				77E01AB77EBC3E4575723E84BD14FED2 /* TypeReference.swift */,
-				2D91A9597F8FA6A74B8E0816766F8C1E /* Unifiable.swift */,
-				17EA6E1FC79876B2B2EFDBAD0B42114E /* ValidationError.swift */,
-				70C074223574698E29CA1927861C8DA9 /* Support Files */,
+				8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */,
+				ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */,
 			);
-			name = R.swift;
-			path = R.swift;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		4670B6E127C27D959CB8CD75BF38DED6 /* Pods-MyCloudMusic */ = {
@@ -345,6 +384,65 @@
 			path = "Target Support Files/Pods-MyCloudMusic";
 			sourceTree = "<group>";
 		};
+		4A8004DBCA5520D0FDE1AB30E474B621 /* TangramKit */ = {
+			isa = PBXGroup;
+			children = (
+				A0CC9691BE301A8B9FFC674F3C9701CD /* TangramKit.swift */,
+				4E0BD016A55A0217030ED8A92208E451 /* TGBaseLayout.swift */,
+				FDE3699890D391006F7D867A1D2F60A0 /* TGDimeAdapter.swift */,
+				55C78F34B21F9C989A6A3988403BAFF9 /* TGFloatLayout.swift */,
+				8F7C3B9A0DEE1F3C5ED9B28A0CA62B14 /* TGFlowLayout.swift */,
+				F8B748F0EA51715F83CBF605A23DD4A0 /* TGFrameLayout.swift */,
+				CE1C9EAF6BD0F0C0D32D2C51B7A3B8E3 /* TGLayoutPos.swift */,
+				234B4A84FE6478DB54973EC4584101E9 /* TGLayoutSize.swift */,
+				976EFDC7FD52F9708AE975AFDDFFB206 /* TGLayoutSizeClass.swift */,
+				6F053199BA99674BC4481EEF68564D1C /* TGLinearLayout.swift */,
+				B21F5E6417F1476EA7CE4DC3A4240D15 /* TGPathLayout.swift */,
+				A9F9E5A5142A823368DA6C59D5DA5E64 /* TGRelativeLayout.swift */,
+				9086560E0016A63FC43304B803681164 /* TGTableLayout.swift */,
+				BAEF4D77CF02D1DFF3F5A7E78C0FD061 /* Support Files */,
+			);
+			name = TangramKit;
+			path = TangramKit;
+			sourceTree = "<group>";
+		};
+		51C1EED6F4BBBE2836E5001FF16D1A5F /* DynamicColor */ = {
+			isa = PBXGroup;
+			children = (
+				B39B3A441055BB197A15680F80C1BCB8 /* Array.swift */,
+				E0E46DA2A21CC850285AE2BA411B84B2 /* ContrastDisplayContext.swift */,
+				C7637CF6A84405767120562CDD6524E3 /* DynamicColor.swift */,
+				25E00D3DEB27F0C30E0C55659640B65D /* DynamicColor+Deriving.swift */,
+				2F1B0A31CB3DC85BBEAF8EC3E9123B31 /* DynamicColor+HSB.swift */,
+				EF79281D9D9F3C55D34E4AB835C43308 /* DynamicColor+HSL.swift */,
+				1EA811895D8226B6785DCE2E83DB8564 /* DynamicColor+Lab.swift */,
+				E9F20E04A5731AEC7A0E5FB0DB0C688D /* DynamicColor+Mixing.swift */,
+				478C6A5034537B9FCBEBBA1D8FF90DDE /* DynamicColor+RGBA.swift */,
+				983B3F995B88CEDDD5C2BC24FDD8C0AF /* DynamicColor+XYZ.swift */,
+				5C2CAAF5EB3A8CB0B6FFA3A84AE9DD7F /* DynamicColorSpace.swift */,
+				E726E46BF69642A026998F11999E97C5 /* DynamicGradient.swift */,
+				661E807F60383AD153A4A8AAEE8425D3 /* HSL.swift */,
+				891A913C882DD44328EB739659B3F526 /* SwiftUIColor.swift */,
+				D34B45CF0EC0F7C5F26C5280A3B108CC /* Utils.swift */,
+				6BC346492DAF2DBA4611213B5F02A53F /* Support Files */,
+			);
+			name = DynamicColor;
+			path = DynamicColor;
+			sourceTree = "<group>";
+		};
+		5A68A1D06EEF5086D311A63B97385B84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4603757534A157D07CF86D75DA0641F9 /* DynamicColor */,
+				FC26652D3909C1202BE5EA80FA77E544 /* Pods-MyCloudMusic */,
+				6379FFC2BB3F8A1388C1B6CC610F6C43 /* Pods-MyCloudMusic-MyCloudMusicUITests */,
+				CA90F8A13CFFD9CC3B4B13B911020C65 /* Pods-MyCloudMusicTests */,
+				3EA5BDD6DA462D45C28EA963654D95D3 /* R.swift */,
+				3A84BE6A41AE5C7B5BDE84F03BF7C947 /* TangramKit */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5AF45109EC07DCAAE973622315EA5770 /* Pods-MyCloudMusic-MyCloudMusicUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,53 +460,88 @@
 			path = "Target Support Files/Pods-MyCloudMusic-MyCloudMusicUITests";
 			sourceTree = "<group>";
 		};
-		5B28BCBC129002DE8CB76FC2098C03C9 /* TangramKit */ = {
+		6BC346492DAF2DBA4611213B5F02A53F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9A79589461805263096350F946EEF817 /* TangramKit.swift */,
-				4784FA8C6AC6E49A87CA6BC34FF2E332 /* TGBaseLayout.swift */,
-				BE5A3D23393DA7330716272B67BF4999 /* TGDimeAdapter.swift */,
-				3FA7FBDB8B79AC767C574B27BDD00795 /* TGFloatLayout.swift */,
-				CA54F12DF15A4C249B5AABD5D4FC2B52 /* TGFlowLayout.swift */,
-				3A089693F5117B6B5034E6779D01EF9C /* TGFrameLayout.swift */,
-				6BFE628E511979E9393BCD92F3960B79 /* TGLayoutPos.swift */,
-				303E41041716F4F3AD30F4328E15898D /* TGLayoutSize.swift */,
-				2511553FA6BA75A16F05727FC9472561 /* TGLayoutSizeClass.swift */,
-				ECDF1E321BB9B4015B99BCA4C3609E80 /* TGLinearLayout.swift */,
-				09ADA55C8AB6E819064C6BFC4B7D01BD /* TGPathLayout.swift */,
-				361B155A72C13031F34FD97AF0C6EEBC /* TGRelativeLayout.swift */,
-				82FFC294CA73774DE15CAE371C414E58 /* TGTableLayout.swift */,
-				718D7E6F7B777BF42B256F3C4E053AB2 /* Support Files */,
+				EAA7818A25192A27BC4B84649BC7DC70 /* DynamicColor.modulemap */,
+				AB446C31481933A1D13CBFABD2A6B009 /* DynamicColor-dummy.m */,
+				ADD79214CB0280B8858ECD6C60EF6E27 /* DynamicColor-Info.plist */,
+				557698F246517B573007ACE62F418D77 /* DynamicColor-prefix.pch */,
+				CC2DAE9B950BC5C32C4F60B05A9A937F /* DynamicColor-umbrella.h */,
+				53EA7826CE6218E69D4F68C56B3113F3 /* DynamicColor.debug.xcconfig */,
+				C0C7E91A315A95C6FD0C5D9C31220E97 /* DynamicColor.release.xcconfig */,
 			);
-			name = TangramKit;
-			path = TangramKit;
+			name = "Support Files";
+			path = "../Target Support Files/DynamicColor";
 			sourceTree = "<group>";
 		};
-		70C074223574698E29CA1927861C8DA9 /* Support Files */ = {
+		8DD6CE9BABADCCE1AB22FEEB40F19565 /* R.swift */ = {
 			isa = PBXGroup;
 			children = (
-				575135E66DA7E924EC600F036C5F3DF4 /* R.swift.modulemap */,
-				94EDDDF4C9D80F0AD41F6F57711657A8 /* R.swift-dummy.m */,
-				BDEF5E8AC021ACC916966CD4DF587215 /* R.swift-Info.plist */,
-				D07AA73DDAAD0C1AA940BBD190B15790 /* R.swift-prefix.pch */,
-				4627DA6D83FF480152698108AED971DE /* R.swift-umbrella.h */,
-				4A901CED17814B7F84F30C7A503E325D /* R.swift.debug.xcconfig */,
-				69BD10451237AF32A2B8E1F333E1EB2B /* R.swift.release.xcconfig */,
+				D0D2467E4E5CBB394FBCC39E66E16CC7 /* AssetCatalog.swift */,
+				A68ABAA449EB6706DAAB27CA830EC12E /* Bundle+Extensions.swift */,
+				61B9D2E24DC79ED404380766001717D2 /* ColorResource.swift */,
+				C9F83EF0364D6CE453E2B347804BC43F /* ColorResource+Integrations.swift */,
+				C0F518D2E94C8F48E11CA183BE5EF928 /* DataResource.swift */,
+				59FA715802C19B8EDBB1499D00294F81 /* DataResource+Integrations.swift */,
+				6117E81F5438C1E8A8428CA1745D6AAF /* DeploymentTarget.swift */,
+				35FE57EE8816D54EE1C64C24AECEFFEB /* FileResource.swift */,
+				F566540EE45297D6E0CE972ED29C5758 /* FileResource+Integrations.swift */,
+				6A46E720C78026A4C5ABE1A538C7FB33 /* FontResource.swift */,
+				47B015C8C64F966459FBFCA3EF587CB0 /* FontResource+Integrations.swift */,
+				5DFDBCBDD0E62C15E4CFFD0EC09C7FCF /* ImageResource.swift */,
+				08A18DD9F9A3F62CAA2C1C64E1FD0142 /* ImageResource+Integrations.swift */,
+				A427F19979416CBCF90386602F4A7DDC /* LocaleReference.swift */,
+				EA38122BABFA97B557BCF478EB644419 /* ModuleReference.swift */,
+				B495CF6EC0DB4A36C0A723DD0F693B0B /* NameCatalog.swift */,
+				5A89BC85142DEB6EC145D200DC3CBE71 /* NibReference+Integrations.swift */,
+				717134645B694DEBD9E3088A6BFA5FC1 /* NibResource.swift */,
+				73F5FFEAD14FBE5EBB4818BF977F4B16 /* PropertyListResource.swift */,
+				DAE4F0AFF0BA884DC1118E735AB3B456 /* Reusable.swift */,
+				9C22E2CBB0B3207A2D452A739ED624E4 /* ReuseIdentifier+Integrations.swift */,
+				42D54318A67CC5570479CD6CC228FDC3 /* SegueIdentifier+Integrations.swift */,
+				F46F59B7ACF34B2D86314E465B496685 /* StoryboardReference.swift */,
+				59F1E443ACD3BC604A004A43509BEEC2 /* StoryboardReference+Integrations.swift */,
+				D6110485DAA5AA8CE7BFB0F762B3FBCD /* StoryboardResource.swift */,
+				E70E8553870D7E6F3BE1BB566DA7ACD5 /* StringParam.swift */,
+				BB2AF033B0E64B53AB0FB568322A9053 /* StringParam+Extensions.swift */,
+				471AD714FF471911C3E8792EEABE7045 /* StringResource.swift */,
+				F1B1B77EAE8BE3AD337D48BC322054A9 /* StringResource+Integrations.swift */,
+				55F24AF55E9FEAD34E4EC088B8709A30 /* StringsTable.swift */,
+				25C958DCCC3AB1018E5D2D99B18C7BEE /* TypeReference.swift */,
+				8373617ACCEBB508077DE74E9D7F3E41 /* Unifiable.swift */,
+				EE41B8AB7C0827E73FBD37C8BC687E7B /* ValidationError.swift */,
+				9112378333A4FCD6FBC6E3CEBAC29278 /* Support Files */,
+			);
+			name = R.swift;
+			path = R.swift;
+			sourceTree = "<group>";
+		};
+		9112378333A4FCD6FBC6E3CEBAC29278 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				110D0A6ACA25640E899809AB4B5378DA /* R.swift.modulemap */,
+				C7D755473D968C6F85AF89CDABFDC11A /* R.swift-dummy.m */,
+				D02365133CBC39A24EC5C27785A4DF8F /* R.swift-Info.plist */,
+				D5FF31A1B32DB3018609F206E50F4838 /* R.swift-prefix.pch */,
+				C3BD04DFE20E82766C2EA1E96ADD925F /* R.swift-umbrella.h */,
+				0232CA624D13A09105C92D127F1C49DA /* R.swift.debug.xcconfig */,
+				0D0BC249730A23D8DA9C9C645140DAB9 /* R.swift.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/R.swift";
 			sourceTree = "<group>";
 		};
-		718D7E6F7B777BF42B256F3C4E053AB2 /* Support Files */ = {
+		BAEF4D77CF02D1DFF3F5A7E78C0FD061 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6D97DC48D60B637B720BD48541D3F403 /* TangramKit.modulemap */,
-				6B44027AF556A71EA25C460AB3013456 /* TangramKit-dummy.m */,
-				94ACD668DE148BEC2878750DFB837744 /* TangramKit-Info.plist */,
-				F24F1D27E9F925F0358CE544B958CC34 /* TangramKit-prefix.pch */,
-				10143B67E2816AC265E6E2F8EE8747CF /* TangramKit-umbrella.h */,
-				6219EB3CC4DFB626CF0D72EB23B5D187 /* TangramKit.debug.xcconfig */,
-				9EE4F9245ADD1C8AD7BF8C387F3064E1 /* TangramKit.release.xcconfig */,
+				9D966907075518E2DB2C47452A39386D /* TangramKit.modulemap */,
+				B6D35BC744DC1993C40CC62CAB06632A /* TangramKit-dummy.m */,
+				36C02608134D8381FEADD70FAE914631 /* TangramKit-Info.plist */,
+				834C8D5D2F99FC73CF9AAB07E2D5CA87 /* TangramKit-prefix.pch */,
+				8F72210D990B91D88C9D5D47ECF63558 /* TangramKit-umbrella.h */,
+				B47E30837A121ECCF5F9F46EF233AD58 /* TangramKit.debug.xcconfig */,
+				DD15D7D61C62B339B296902423B6A196 /* TangramKit.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/TangramKit";
@@ -418,36 +551,11 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				DA744007C0CAB2DA0EF16FB4856B0ECB /* Pods */,
-				1D02805565EB09D1328AE6FE7A528A14 /* Products */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				05EEF34AA2F9856CCEBDB7530443E7F6 /* Pods */,
+				5A68A1D06EEF5086D311A63B97385B84 /* Products */,
 				101AB74AE6B8867C267ED515BA335745 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DA744007C0CAB2DA0EF16FB4856B0ECB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2ABED0736395F34417D7DAB7853F661F /* R.swift */,
-				5B28BCBC129002DE8CB76FC2098C03C9 /* TangramKit */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -461,14 +569,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2132C49A983FAA69179119BE4E7AF2A0 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4FCB48A8EDAB12B4134DB5E51FA54C20 /* Pods-MyCloudMusic-MyCloudMusicUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		415DD90997D8295E9E178B8DEA444807 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -477,11 +577,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		75353361E563518C7C8B2653C1719245 /* Headers */ = {
+		65E94B253B94F9B8A81C1041B850BCDC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C504204FCDEB4AE95D60F96D25B6F46C /* Pods-MyCloudMusic-umbrella.h in Headers */,
+				EBFAD19EE43EE6A5740BECE62E752ECD /* Pods-MyCloudMusic-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E09E4F5F77E492FD6B7A7A0FD24587C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2249598791E368EF14D2E2DED5FA9609 /* Pods-MyCloudMusic-MyCloudMusicUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1DCEE6D30A3DA733E640292E8683E4B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAC36EC60DC4D689490625328F4DC549 /* DynamicColor-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +612,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		02365F2640C87181DBDCB1D175FA6C00 /* DynamicColor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5926A8126F81DE82189E65DD216CEEEB /* Build configuration list for PBXNativeTarget "DynamicColor" */;
+			buildPhases = (
+				D1DCEE6D30A3DA733E640292E8683E4B /* Headers */,
+				32236166939EAD905BBFAF2F5537071C /* Sources */,
+				8A501B192DED830F5321FE757FC99D8F /* Frameworks */,
+				C22977709C687AAA1859D965FA1111B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicColor;
+			productName = DynamicColor;
+			productReference = 4603757534A157D07CF86D75DA0641F9 /* DynamicColor */;
+			productType = "com.apple.product-type.framework";
+		};
 		230984053C6652DFF510F450F21C5CF7 /* R.swift */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C81B5E5506421CD1FC3F28542618BCC /* Build configuration list for PBXNativeTarget "R.swift" */;
@@ -544,7 +678,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				EFBF356681CF0CBE5DBE6FD59036C9B7 /* PBXTargetDependency */,
+				E37B3B564B279D15827EDA7FF41D0AD7 /* PBXTargetDependency */,
 			);
 			name = "Pods-MyCloudMusicTests";
 			productName = Pods_MyCloudMusicTests;
@@ -553,18 +687,19 @@
 		};
 		B6FEA87E8EEE7114317FCA8DFC0CB42A /* Pods-MyCloudMusic-MyCloudMusicUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DDF14ECB9B7BAB517899E6398B924B67 /* Build configuration list for PBXNativeTarget "Pods-MyCloudMusic-MyCloudMusicUITests" */;
+			buildConfigurationList = 31E2558A1565E559A5F88B7049B91323 /* Build configuration list for PBXNativeTarget "Pods-MyCloudMusic-MyCloudMusicUITests" */;
 			buildPhases = (
-				2132C49A983FAA69179119BE4E7AF2A0 /* Headers */,
-				3A24576D45BEAB7FB56B8B27BF92F252 /* Sources */,
-				FEC5812CE446D355C432A64B770E0AB4 /* Frameworks */,
-				3E5F4659C902B81E0966F82BEB19F238 /* Resources */,
+				8E09E4F5F77E492FD6B7A7A0FD24587C /* Headers */,
+				42335F3D23645ECE0D1C7ED1357FAE6C /* Sources */,
+				1C6DDD3DA6DA57A110C85A77361F0330 /* Frameworks */,
+				569A5CF9E465AAD7B52BF74F1C0E27BB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F705D1F16134F75D09FCB7BE2E503BD1 /* PBXTargetDependency */,
-				42AFEC4804BF5EAC620C78B85C85DA2D /* PBXTargetDependency */,
+				3DAF1F9C5239A3D0B8EB4AE4A6922C75 /* PBXTargetDependency */,
+				BB440BA58DD87816A8EC1483FCFF5ED5 /* PBXTargetDependency */,
+				2508F2934ED8CA1BB5D77C26981D7BE7 /* PBXTargetDependency */,
 			);
 			name = "Pods-MyCloudMusic-MyCloudMusicUITests";
 			productName = Pods_MyCloudMusic_MyCloudMusicUITests;
@@ -573,18 +708,19 @@
 		};
 		BE46138990F7DCC62B61021F6E3A79EA /* Pods-MyCloudMusic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D07F7C2EC0C7BF44358A916B9D437E3 /* Build configuration list for PBXNativeTarget "Pods-MyCloudMusic" */;
+			buildConfigurationList = 72DC070A03407DFB67D6BC4F9E6F1D43 /* Build configuration list for PBXNativeTarget "Pods-MyCloudMusic" */;
 			buildPhases = (
-				75353361E563518C7C8B2653C1719245 /* Headers */,
-				B2B61DFE550F06D385D9C68693E789A8 /* Sources */,
-				E334EAF656A83E06A9C90002AA5E254F /* Frameworks */,
-				7E1B2B2A24749EDEBAE34BF76E1646E2 /* Resources */,
+				65E94B253B94F9B8A81C1041B850BCDC /* Headers */,
+				47FEEB2748857487FE39044C743DB809 /* Sources */,
+				546D546372FFD00A5E74B6FC1966FC04 /* Frameworks */,
+				2D873B0E9DEE935F789F87EC00DA9189 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8A8BB111BF4898C06352DDA849B88F9F /* PBXTargetDependency */,
-				EC89A5E8B181D6D18695AD0908CE9F84 /* PBXTargetDependency */,
+				E4677E365F693BBA88D224CBFC0D177D /* PBXTargetDependency */,
+				847EA6D720B563B21C382C2CD4762B0A /* PBXTargetDependency */,
+				A124D450BE2FB7012360C61124E7EACD /* PBXTargetDependency */,
 			);
 			name = "Pods-MyCloudMusic";
 			productName = Pods_MyCloudMusic;
@@ -611,10 +747,11 @@
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			minimizedProjectReferenceProxies = 0;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 1D02805565EB09D1328AE6FE7A528A14 /* Products */;
+			productRefGroup = 5A68A1D06EEF5086D311A63B97385B84 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				02365F2640C87181DBDCB1D175FA6C00 /* DynamicColor */,
 				BE46138990F7DCC62B61021F6E3A79EA /* Pods-MyCloudMusic */,
 				B6FEA87E8EEE7114317FCA8DFC0CB42A /* Pods-MyCloudMusic-MyCloudMusicUITests */,
 				6E05447DC7F0012CF8ACA7F3C80FF6AC /* Pods-MyCloudMusicTests */,
@@ -625,7 +762,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3E5F4659C902B81E0966F82BEB19F238 /* Resources */ = {
+		2D873B0E9DEE935F789F87EC00DA9189 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		569A5CF9E465AAD7B52BF74F1C0E27BB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -639,14 +783,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7E1B2B2A24749EDEBAE34BF76E1646E2 /* Resources */ = {
+		AAD156F6F5F89D199BA987619581D76D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AAD156F6F5F89D199BA987619581D76D /* Resources */ = {
+		C22977709C687AAA1859D965FA1111B1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -671,11 +815,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A24576D45BEAB7FB56B8B27BF92F252 /* Sources */ = {
+		32236166939EAD905BBFAF2F5537071C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08086B3B13C983EDAE422958927E5F80 /* Pods-MyCloudMusic-MyCloudMusicUITests-dummy.m in Sources */,
+				565582DB05908A2D3E5AB77F91E3B129 /* Array.swift in Sources */,
+				F7D20A6997CD15D4458A5D3A33817C5D /* ContrastDisplayContext.swift in Sources */,
+				AF57CFAD7DB200626EA433F62739C4A6 /* DynamicColor.swift in Sources */,
+				CCE8A7977291139F8F0B537FD87579BB /* DynamicColor+Deriving.swift in Sources */,
+				917FEC6F8B94E15B15B6A0C38CA3239D /* DynamicColor+HSB.swift in Sources */,
+				F8517D0E5282225612952B5861708DD4 /* DynamicColor+HSL.swift in Sources */,
+				C4F42BAD7E7EC061EC02440690344374 /* DynamicColor+Lab.swift in Sources */,
+				0E4FD9801B22712CECC2E72D266268F5 /* DynamicColor+Mixing.swift in Sources */,
+				5B6CE598D5A2EFDEE2731A2A8A1D063B /* DynamicColor+RGBA.swift in Sources */,
+				066DB282328A6286E7CE4FA8679ACF99 /* DynamicColor+XYZ.swift in Sources */,
+				68C89C31EB432547F06404649B6099CD /* DynamicColor-dummy.m in Sources */,
+				FD907F56475D4DFDE0BEFAD32257F24C /* DynamicColorSpace.swift in Sources */,
+				2C1341A75FCB9B0C9F8073341A59685F /* DynamicGradient.swift in Sources */,
+				F911BAD5CDA4E70705B0033463926A21 /* HSL.swift in Sources */,
+				8FCC8EB11965F867DDA36738ECB0F89E /* SwiftUIColor.swift in Sources */,
+				7C190900B6066DA524A6AB2930C0EC64 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42335F3D23645ECE0D1C7ED1357FAE6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D08C9F7C8202567FCEBE762943333CC /* Pods-MyCloudMusic-MyCloudMusicUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47FEEB2748857487FE39044C743DB809 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248A326D4C093469F3A278BFBBDCF85E /* Pods-MyCloudMusic-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,14 +895,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B2B61DFE550F06D385D9C68693E789A8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B403736922B6820A4CCB2FD0C5E9462 /* Pods-MyCloudMusic-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B9FD4E70D817C052CD67498AFEFAC724 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -752,40 +919,52 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		42AFEC4804BF5EAC620C78B85C85DA2D /* PBXTargetDependency */ = {
+		2508F2934ED8CA1BB5D77C26981D7BE7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TangramKit;
 			target = 3E6ED8BD47AE620F69E17C0AB4190847 /* TangramKit */;
-			targetProxy = A8080F7132E5E9ED5E17485758B8AC41 /* PBXContainerItemProxy */;
+			targetProxy = 111E47B5C02781BCD1920630516565C2 /* PBXContainerItemProxy */;
 		};
-		8A8BB111BF4898C06352DDA849B88F9F /* PBXTargetDependency */ = {
+		3DAF1F9C5239A3D0B8EB4AE4A6922C75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DynamicColor;
+			target = 02365F2640C87181DBDCB1D175FA6C00 /* DynamicColor */;
+			targetProxy = 6820B9135D27031157B735145AD72245 /* PBXContainerItemProxy */;
+		};
+		847EA6D720B563B21C382C2CD4762B0A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = R.swift;
 			target = 230984053C6652DFF510F450F21C5CF7 /* R.swift */;
-			targetProxy = C7E133E4E9330C371481D0286F8B64C9 /* PBXContainerItemProxy */;
+			targetProxy = DF70E9F9C7ED680B3EC8E77CCB0A5746 /* PBXContainerItemProxy */;
 		};
-		EC89A5E8B181D6D18695AD0908CE9F84 /* PBXTargetDependency */ = {
+		A124D450BE2FB7012360C61124E7EACD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TangramKit;
 			target = 3E6ED8BD47AE620F69E17C0AB4190847 /* TangramKit */;
-			targetProxy = EA7705454C28B97FBDF671072C1EC4B6 /* PBXContainerItemProxy */;
+			targetProxy = DB7B46A831DCB3D9B80C9D076CC1DBCC /* PBXContainerItemProxy */;
 		};
-		EFBF356681CF0CBE5DBE6FD59036C9B7 /* PBXTargetDependency */ = {
+		BB440BA58DD87816A8EC1483FCFF5ED5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = R.swift;
+			target = 230984053C6652DFF510F450F21C5CF7 /* R.swift */;
+			targetProxy = 835F1A2FD641939D5249DACFC906FDC0 /* PBXContainerItemProxy */;
+		};
+		E37B3B564B279D15827EDA7FF41D0AD7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-MyCloudMusic";
 			target = BE46138990F7DCC62B61021F6E3A79EA /* Pods-MyCloudMusic */;
-			targetProxy = 04C68E34B63107D6F18EC09929B16208 /* PBXContainerItemProxy */;
+			targetProxy = 40458CA96E6660E88A454DF4C4E28097 /* PBXContainerItemProxy */;
 		};
-		F705D1F16134F75D09FCB7BE2E503BD1 /* PBXTargetDependency */ = {
+		E4677E365F693BBA88D224CBFC0D177D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = R.swift;
-			target = 230984053C6652DFF510F450F21C5CF7 /* R.swift */;
-			targetProxy = 977E91B1E78FF684FC1F42DA87BCD56A /* PBXContainerItemProxy */;
+			name = DynamicColor;
+			target = 02365F2640C87181DBDCB1D175FA6C00 /* DynamicColor */;
+			targetProxy = C018E9E4C0F6E206EE486B8744CA4504 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0A7B9077F46429EE5E54F9FC1AFEB075 /* Release */ = {
+		1022606B24720550CEB5EC6098228A6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 16C592BA6E280A40596F4D3281773C8F /* Pods-MyCloudMusic-MyCloudMusicUITests.release.xcconfig */;
 			buildSettings = {
@@ -828,7 +1007,7 @@
 		};
 		156E952CF1BD724F917BF8B37410EFA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6219EB3CC4DFB626CF0D72EB23B5D187 /* TangramKit.debug.xcconfig */;
+			baseConfigurationReference = B47E30837A121ECCF5F9F46EF233AD58 /* TangramKit.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -867,7 +1046,7 @@
 		};
 		2E065A2D81F084182962B2EABD55539D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9EE4F9245ADD1C8AD7BF8C387F3064E1 /* TangramKit.release.xcconfig */;
+			baseConfigurationReference = DD15D7D61C62B339B296902423B6A196 /* TangramKit.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -905,49 +1084,9 @@
 			};
 			name = Release;
 		};
-		3A458E863340643908D6E8E523AA38AA /* Debug */ = {
+		4D68C0CB1FDD36F16A7727413113F7F2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBA94DED32507F7B7F52F033820B9E37 /* Pods-MyCloudMusic-MyCloudMusicUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
-				INFOPLIST_FILE = "Target Support Files/Pods-MyCloudMusic-MyCloudMusicUITests/Pods-MyCloudMusic-MyCloudMusicUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MyCloudMusic-MyCloudMusicUITests/Pods-MyCloudMusic-MyCloudMusicUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3ED1731063B75DB2F3E178804B707714 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE208A5A70C67576347DED47201F4BDB /* Pods-MyCloudMusic.debug.xcconfig */;
+			baseConfigurationReference = 417ADA9D5C846F8734E6897A74CE27B9 /* Pods-MyCloudMusic.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -980,14 +1119,15 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		57079CB423776276EB3A5C6FEE61AD3D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69BD10451237AF32A2B8E1F333E1EB2B /* R.swift.release.xcconfig */;
+			baseConfigurationReference = 0D0BC249730A23D8DA9C9C645140DAB9 /* R.swift.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1026,9 +1166,50 @@
 			};
 			name = Release;
 		};
+		5A6596DC55A34D63739C4F3259677720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0C7E91A315A95C6FD0C5D9C31220E97 /* DynamicColor.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_PREFIX_HEADER = "Target Support Files/DynamicColor/DynamicColor-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/DynamicColor/DynamicColor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DynamicColor/DynamicColor.modulemap";
+				PRODUCT_MODULE_NAME = DynamicColor;
+				PRODUCT_NAME = DynamicColor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		618CFCD292927F58C6D763BBCE9281DB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A901CED17814B7F84F30C7A503E325D /* R.swift.debug.xcconfig */;
+			baseConfigurationReference = 0232CA624D13A09105C92D127F1C49DA /* R.swift.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1275,9 +1456,9 @@
 			};
 			name = Release;
 		};
-		BDEEEB3A39EF2E677FCB658440773792 /* Release */ = {
+		A23EBA731A3A3C0C876DBBCB7133AF19 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 417ADA9D5C846F8734E6897A74CE27B9 /* Pods-MyCloudMusic.release.xcconfig */;
+			baseConfigurationReference = BE208A5A70C67576347DED47201F4BDB /* Pods-MyCloudMusic.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1310,20 +1491,99 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
+		};
+		B002A2E0ED4A09BD4A670B0FA7875FD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBA94DED32507F7B7F52F033820B9E37 /* Pods-MyCloudMusic-MyCloudMusicUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				INFOPLIST_FILE = "Target Support Files/Pods-MyCloudMusic-MyCloudMusicUITests/Pods-MyCloudMusic-MyCloudMusicUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyCloudMusic-MyCloudMusicUITests/Pods-MyCloudMusic-MyCloudMusicUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E3D9AEBDC919CCA57B421D135357350C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53EA7826CE6218E69D4F68C56B3113F3 /* DynamicColor.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_PREFIX_HEADER = "Target Support Files/DynamicColor/DynamicColor-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/DynamicColor/DynamicColor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DynamicColor/DynamicColor.modulemap";
+				PRODUCT_MODULE_NAME = DynamicColor;
+				PRODUCT_NAME = DynamicColor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3D07F7C2EC0C7BF44358A916B9D437E3 /* Build configuration list for PBXNativeTarget "Pods-MyCloudMusic" */ = {
+		31E2558A1565E559A5F88B7049B91323 /* Build configuration list for PBXNativeTarget "Pods-MyCloudMusic-MyCloudMusicUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3ED1731063B75DB2F3E178804B707714 /* Debug */,
-				BDEEEB3A39EF2E677FCB658440773792 /* Release */,
+				B002A2E0ED4A09BD4A670B0FA7875FD3 /* Debug */,
+				1022606B24720550CEB5EC6098228A6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1346,6 +1606,24 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5926A8126F81DE82189E65DD216CEEEB /* Build configuration list for PBXNativeTarget "DynamicColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3D9AEBDC919CCA57B421D135357350C /* Debug */,
+				5A6596DC55A34D63739C4F3259677720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72DC070A03407DFB67D6BC4F9E6F1D43 /* Build configuration list for PBXNativeTarget "Pods-MyCloudMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A23EBA731A3A3C0C876DBBCB7133AF19 /* Debug */,
+				4D68C0CB1FDD36F16A7727413113F7F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7C81B5E5506421CD1FC3F28542618BCC /* Build configuration list for PBXNativeTarget "R.swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1360,15 +1638,6 @@
 			buildConfigurations = (
 				884493DCC8162ECE0DB62E853FBC1DE6 /* Debug */,
 				6B5368DA7A247DCE32741CB3229ED327 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DDF14ECB9B7BAB517899E6398B924B67 /* Build configuration list for PBXNativeTarget "Pods-MyCloudMusic-MyCloudMusicUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3A458E863340643908D6E8E523AA38AA /* Debug */,
-				0A7B9077F46429EE5E54F9FC1AFEB075 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

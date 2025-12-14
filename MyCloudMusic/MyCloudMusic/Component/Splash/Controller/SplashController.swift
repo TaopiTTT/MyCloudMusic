@@ -12,7 +12,7 @@ class SplashController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .colorBackground
         
         // 创建一个相对容器
         let container = TGRelativeLayout()
