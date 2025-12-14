@@ -31,7 +31,7 @@ class SplashController: UIViewController {
         bannerView.tg_height.equal(309)
         bannerView.tg_top.equal(120)
         bannerView.tg_centerX.equal(0)
-        bannerView.image = UIImage(named: "SplashBanner")
+        bannerView.image = R.image.splashBanner()
         container.addSubview(bannerView)
         
         // 版权
@@ -47,7 +47,7 @@ class SplashController: UIViewController {
         container.addSubview(copyrightView)
         
         // LOGO
-        let logoView = UIImageView(image: UIImage(named: "SplashLogo"))
+        let logoView = UIImageView(image: R.image.splashLogo())
         logoView.tg_width.equal(188)
         logoView.tg_height.equal(31)
         logoView.tg_bottom.equal(copyrightView.tg_top).offset(16)

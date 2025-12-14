@@ -17,7 +17,7 @@ target 'MyCloudMusic' do
   #let viewController = CustomViewController(nib: R.nib.customView)
   #let string = R.string.localizable.welcomeWithName("Arthur Dent")
   #https://github.com/mac-cain13/R.swift
-  # pod 'R.swift'
+  pod 'R.swift'
   
   #颜色工具类
   #https://github.com/yannickl/DynamicColor
