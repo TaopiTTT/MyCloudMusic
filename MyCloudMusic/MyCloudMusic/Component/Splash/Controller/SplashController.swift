@@ -8,22 +8,13 @@
 import UIKit
 import TangramKit
 
-class SplashController: UIViewController {
+class SplashController: BaseLogicController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .colorBackground
         
-        // 创建一个相对容器
-        let container = TGRelativeLayout()
-        
-        //从安全区开始
-        container.tg_top.equal(TGLayoutPos.tg_safeAreaMargin)
-        container.tg_leading.equal(TGLayoutPos.tg_safeAreaMargin)
-        container.tg_trailing.equal(TGLayoutPos.tg_safeAreaMargin)
-        container.tg_bottom.equal(TGLayoutPos.tg_safeAreaMargin)
-//        container.backgroundColor = .gray
-        view.addSubview(container)
+        self.initRelativeLayoutSafeArea()
         
         // banner
         let bannerView = UIImageView()
