@@ -110,13 +110,13 @@ class BaseLogicController: BaseCommonController {
         scrollView.addSubview(contentContainer)
     }
     
-//    /// 在initLinearLayoutSafeArea基础上，设置padding，子控件间距
-//    func initLinearLayoutInputSafeArea() {
-//        initLinearLayoutSafeArea()
-//        
-//        container.tg_padding = UIEdgeInsets(top: PADDING_OUTER, left: PADDING_OUTER, bottom: 0, right: PADDING_OUTER)
-//        container.tg_space = PADDING_OUTER
-//    }
+    /// 在initLinearLayoutSafeArea基础上，设置padding，子控件间距
+    func initLinearLayoutInputSafeArea() {
+        initLinearLayoutSafeArea()
+        
+        container.tg_padding = UIEdgeInsets(top: PADDING_OUTER, left: PADDING_OUTER, bottom: 0, right: PADDING_OUTER)
+        container.tg_space = PADDING_OUTER
+    }
     
     /// 初始化垂直方向LinearLayout容器，只有顶部不在安全区
     func initLinearLayoutTopNotSafeArea() {

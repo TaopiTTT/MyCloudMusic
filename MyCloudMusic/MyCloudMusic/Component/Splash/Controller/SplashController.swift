@@ -12,8 +12,6 @@ class SplashController: BaseLogicController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .colorBackground
-        
         self.initRelativeLayoutSafeArea()
         
         // banner
@@ -49,7 +47,25 @@ class SplashController: BaseLogicController {
     
     override func initDatum() {
         super.initDatum()
-        showTermsServiceAgreementDialog()
+        if DefaultPreferenceUtil.isAcceptTermsServiceAgreement() {
+            //已经同意了用户协议
+            prepareNext()
+        } else {
+            showTermsServiceAgreementDialog()
+        }
+    }
+    
+    func prepareNext() {
+//        AppDelegate.shared.onInit()
+        next()
+    }
+    
+    @objc func next() {
+//        if PreferenceUtil.isLogin() {
+//            AppDelegate.shared.toAd()
+//        } else {
+            AppDelegate.shared.toMain()
+//        }
     }
     
     /// 显示服务条款对话框
@@ -63,5 +79,14 @@ class SplashController: BaseLogicController {
         r.primaryButton.addTarget(self, action: #selector(primaryClick), for: .touchUpInside)
         return r
     }()
+    
+    @objc func primaryClick() {
+        dialogController.hide()
+//        AppDelegate.shared.onInit()
+        
+        DefaultPreferenceUtil.setAcceptTermsServiceAgreement(true)
+        
+        AppDelegate.shared.toGuide()
+    }
     
 }
