@@ -37,10 +37,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setRootViewController(r)
     }
     
-    // 跳转到主界面
+    /// 跳转到登录首页
+    func toLogin() {
+        toMain()
+        
+        //然后发送一个跳转到登录界面的通知，在发现界面处理
+        DispatchQueue.main.async {
+            NotificationCenter.default.post(name: NSNotification.Name(Constant.EVENT_LOGIN_CLICK), object: nil)
+        }
+    }
+    
+    /// 跳转到首页
     func toMain() {
         let r = MainController()
-        setRootViewController(r)
+        let t = UINavigationController(rootViewController: r)
+        setRootViewController(t)
     }
     
     func setRootViewController(_ data:UIViewController) {
