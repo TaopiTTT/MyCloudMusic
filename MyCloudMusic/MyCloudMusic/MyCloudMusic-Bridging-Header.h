@@ -11,3 +11,6 @@
 
 //图片加载框架
 #import "SDWebImage/UIImageView+WebCache.h"
+
+//指示器
+#import <MBProgressHUD/MBProgressHUD.h>

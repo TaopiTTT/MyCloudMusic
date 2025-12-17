@@ -38,15 +38,15 @@ target 'MyCloudMusic' do
 
   #避免每个界面定义disposeBag
   #https://github.com/RxSwiftCommunity/NSObject-Rx
-  # pod "NSObject+Rx"
+  pod "NSObject+Rx"
   
   # JSON解析为对象
   # https://github.com/alibaba/HandyJSON
-  # pod "HandyJSON"
+  pod "HandyJSON"
   
   #提示框架
   #https://github.com/jdg/MBProgressHUD
-  # pod 'MBProgressHUD'
+  pod 'MBProgressHUD'
   
   #Swift图片加载
   #https://github.com/onevcat/Kingfisher

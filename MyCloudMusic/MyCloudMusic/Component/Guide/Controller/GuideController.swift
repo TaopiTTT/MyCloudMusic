@@ -8,6 +8,8 @@
 import UIKit
 import TangramKit
 import Moya
+import RxSwift
+import NSObject_Rx
 
 class GuideController: BaseLogicController {
     var bannerView:YJBannerView!
@@ -79,24 +81,26 @@ class GuideController: BaseLogicController {
     ///立即体验按钮点击
     /// - Parameter sender: <#sender description#>
     @objc func enterClick(_ sender:QMUIButton) {
-        AppDelegate.shared.toMain()
+        //        AppDelegate.shared.toMain()
         
-//        let provider = MoyaProvider<DefaultService>()
-//        provider.request(.sheets(size: 10)){ result in
-//            print(result)
-//            switch result {
-//            case let .success(response):
-//                let data = response.data
-//                let stautsCode = response.statusCode
-//                
-//                let dataString = String(data: data, encoding: .utf8)!
-//                print("sucess \(stautsCode) \(dataString)")
-//            case let .failure(error):
-//                print("error \(error)")
-//            }
-//        }
+        let provider = MoyaProvider<DefaultService>()
+        
+        //rxSwift方式
+        provider.rx.request(.ads(position: VALUE10))
+            .asObservable()
+            .mapString()
+            .mapObject(ListResponse<Ad>.self)
+            .subscribe { event in
+            switch event {
+            case .next(let data):
+                print(data.data.data![0].title)
+            case .error(let error):
+                print("error \(error)")
+            case .completed:
+                print("completed")
+            }
+        }.disposed(by: rx.disposeBag)
     }
-    
 }
 
 // MARK: - YJBannerViewDataSource
