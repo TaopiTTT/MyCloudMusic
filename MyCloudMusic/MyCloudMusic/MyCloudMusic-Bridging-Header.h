@@ -2,4 +2,12 @@
 //  Use this file to import your target's public headers that you would like to expose to Swift.
 //
 
+// 腾讯开源框架
 #import <QMUIKit/QMUIKit.h>
+
+// 轮播图组件
+#import "YJBannerView.h"
+#import "YJBannerViewCell.h"
+
+//图片加载框架
+#import "SDWebImage/UIImageView+WebCache.h"

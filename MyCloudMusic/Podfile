@@ -30,11 +30,11 @@ target 'MyCloudMusic' do
   
   #图片加载
   #https://github.com/SDWebImage/SDWebImage
-  # pod 'SDWebImage'
+  pod 'SDWebImage'
   
   # 网络请求框架
   # https://github.com/Moya/Moya
-  # pod 'Moya/RxSwift'
+  pod 'Moya/RxSwift'
 
   #避免每个界面定义disposeBag
   #https://github.com/RxSwiftCommunity/NSObject-Rx
