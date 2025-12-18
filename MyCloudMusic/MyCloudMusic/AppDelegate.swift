@@ -57,5 +57,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func setRootViewController(_ data:UIViewController) {
         window!.rootViewController = data
     }
+    
+    func logout() {
+        
+    }
 }
 

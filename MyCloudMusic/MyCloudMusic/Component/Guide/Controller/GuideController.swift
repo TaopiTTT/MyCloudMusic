@@ -13,7 +13,7 @@ import NSObject_Rx
 
 class GuideController: BaseLogicController {
     var bannerView:YJBannerView!
-
+    
     override func initViews() {
         super.initViews()
         initLinearLayoutSafeArea()
@@ -75,7 +75,7 @@ class GuideController: BaseLogicController {
     ///登录注册按钮点击
     /// - Parameter sender: <#sender description#>
     @objc func primaryClick(_ sender:QMUIButton) {
-//        AppDelegate.shared.toLogin()
+        //        AppDelegate.shared.toLogin()
     }
     
     ///立即体验按钮点击
@@ -83,23 +83,15 @@ class GuideController: BaseLogicController {
     @objc func enterClick(_ sender:QMUIButton) {
         //        AppDelegate.shared.toMain()
         
-        let provider = MoyaProvider<DefaultService>()
+        DefaultRepository.shared.sheets(size: VALUE10)
+            .subscribeSuccess { data in
+                print(data)
+            }.disposed(by: rx.disposeBag)
         
-        //rxSwift方式
-        provider.rx.request(.ads(position: VALUE10))
-            .asObservable()
-            .mapString()
-            .mapObject(ListResponse<Ad>.self)
-            .subscribe { event in
-            switch event {
-            case .next(let data):
-                print(data.data.data![0].title)
-            case .error(let error):
-                print("error \(error)")
-            case .completed:
-                print("completed")
-            }
-        }.disposed(by: rx.disposeBag)
+        DefaultRepository.shared.sheetDetail("1")
+            .subscribeSuccess { data in
+                print(data)
+            }.disposed(by: rx.disposeBag)
     }
 }
 
