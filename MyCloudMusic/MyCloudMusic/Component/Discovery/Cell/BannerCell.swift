@@ -102,4 +102,16 @@ extension BannerCell:YJBannerViewDataSource,YJBannerViewDelegate{
         
         return cell
     }
+    
+    /// banner点击回调方法
+    ///
+    /// - Parameters:
+    ///   - bannerView: <#bannerView description#>
+    ///   - index: <#index description#>
+    func bannerView(_ bannerView: YJBannerView!, didSelectItemAt index: Int) {
+        //获取当前点击的广告对象
+        let r = data.data[index]
+        
+        bannerClick(r)
+    }
 }
