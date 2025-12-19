@@ -9,9 +9,16 @@ import UIKit
 
 class DiscoveryController: BaseLogicController {
 
+    
     override func initViews() {
         super.initViews()
-//        setBackgroundColor(.gray)
+        
+        //初始化TableView结构
+        initTableViewSafeArea()
+        
+        //注册轮播图cell
+        tableView.register(BannerCell.self, forCellReuseIdentifier: Constant.CELL)
+        
     }
     
     override func initDatum() {
@@ -35,7 +42,7 @@ class DiscoveryController: BaseLogicController {
                 
 //                //请求歌单数据
 //                self?.loadSheetData()
-                
+                self?.tableView.reloadData()
             }.disposed(by: rx.disposeBag)
     }
     
