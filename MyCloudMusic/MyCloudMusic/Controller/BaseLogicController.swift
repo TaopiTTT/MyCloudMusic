@@ -80,16 +80,16 @@ class BaseLogicController: BaseCommonController {
         initFooterContainer()
     }
     
-//    /// 初始化TableView，四边都在安全区内
-//    func initTableViewSafeArea() {
-//        //外面添加一层容器，是方便在真实内容控件前后添加内容
-//        initLinearLayoutSafeArea()
-//        
-//        //tableView
-//        createTableView()
-//        
-//        container.addSubview(tableView)
-//    }
+    /// 初始化TableView，四边都在安全区内
+    func initTableViewSafeArea() {
+        //外面添加一层容器，是方便在真实内容控件前后添加内容
+        initLinearLayoutSafeArea()
+        
+        //tableView
+        createTableView()
+        
+        container.addSubview(tableView)
+    }
     
     /// 初始化ScrollView容器，四边都在安全区内
     func initScrollSafeArea() {
@@ -137,12 +137,12 @@ class BaseLogicController: BaseCommonController {
         initHeaderContainer()
     }
     
-//    /// 创建TableView，不会添加到任何布局
-//    func createTableView() {
-//        tableView = ViewFactoryUtil.tableView()
-//        tableView.delegate = self
-//        tableView.dataSource = self
-//    }
+    /// 创建TableView，不会添加到任何布局
+    func createTableView() {
+        tableView = ViewFactoryUtil.tableView()
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
     
     /// 使用默认分割线
     func initDefaultTableViewDivider() {

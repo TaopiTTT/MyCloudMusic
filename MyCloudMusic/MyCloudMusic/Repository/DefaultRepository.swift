@@ -21,6 +21,28 @@ class DefaultRepository {
     
     private var provider:MoyaProvider<DefaultService>!
     
+    /// 轮播图广告
+    /// - Returns: <#description#>
+    func bannerAds() -> Observable<ListResponse<Ad>> {
+        return provider
+                .rx
+                .request(.ads(position: VALUE0))
+                .asObservable()
+                .mapString()
+                .mapObject(ListResponse<Ad>.self)
+    }
+    
+    /// 启动界面广告
+    /// - Returns: <#description#>
+    func splashAds() -> Observable<ListResponse<Ad>> {
+        return provider
+                .rx
+                .request(.ads(position: VALUE10))
+                .asObservable()
+                .mapString()
+                .mapObject(ListResponse<Ad>.self)
+    }
+    
     /// 歌单列表
     /// - Parameter size: <#size description#>
     /// - Returns: <#description#>
@@ -44,6 +66,7 @@ class DefaultRepository {
                 .mapString()
                 .mapObject(DetailResponse<Sheet>.self)
     }
+    
     
     /// 私有构造方法
     private init() {

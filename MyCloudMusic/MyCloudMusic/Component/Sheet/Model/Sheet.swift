@@ -32,7 +32,7 @@ class Sheet:BaseCommon {
     /// 歌单创建者
     var user:User!
 
-//    /// 歌曲列表
+    /// 歌曲列表
 //    var songs:Array<Song>?
     
     var detail:String?

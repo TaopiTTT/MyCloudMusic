@@ -62,6 +62,37 @@ class ViewFactoryUtil {
         return r
     }
     
-    
-    
+    /// 创建TableView
+    static func tableView() -> UITableView {
+        let r = QMUITableView()
+        r.backgroundColor = .clear
+        
+        //去掉没有数据cell的分割线
+        r.tableFooterView = UIView()
+        
+        //去掉默认分割线
+        r.separatorStyle = .none
+        
+        //修复默认分割线，向右偏移问题
+        r.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        
+        r.tg_width.equal(.fill)
+        r.tg_height.equal(.fill)
+        
+        //设置所有cell的高度为高度自适应，如果cell高度是动态的请这么设置。 如果不同的cell有差异那么可以通过实现协议方法-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+        //如果您最低要支持到iOS7那么请您实现-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath方法来代替这个属性的设置。
+        r.rowHeight = UITableView.automaticDimension
+        
+        r.estimatedRowHeight = UITableView.automaticDimension
+        
+        //不显示滚动条
+        r.showsVerticalScrollIndicator = false
+        
+        r.allowsSelection = true
+        
+        //分割线颜色
+        r.separatorColor = .colorDivider
+        
+        return r
+    }
 }

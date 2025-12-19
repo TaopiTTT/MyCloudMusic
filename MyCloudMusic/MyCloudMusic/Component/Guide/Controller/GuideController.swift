@@ -81,17 +81,17 @@ class GuideController: BaseLogicController {
     ///立即体验按钮点击
     /// - Parameter sender: <#sender description#>
     @objc func enterClick(_ sender:QMUIButton) {
-        //        AppDelegate.shared.toMain()
+        AppDelegate.shared.toMain()
         
-        DefaultRepository.shared.sheets(size: VALUE10)
-            .subscribeSuccess { data in
-                print(data)
-            }.disposed(by: rx.disposeBag)
-        
-        DefaultRepository.shared.sheetDetail("1")
-            .subscribeSuccess { data in
-                print(data)
-            }.disposed(by: rx.disposeBag)
+//        DefaultRepository.shared.sheets(size: VALUE10)
+//            .subscribeSuccess { data in
+//                print(data)
+//            }.disposed(by: rx.disposeBag)
+//        
+//        DefaultRepository.shared.sheetDetail("1")
+//            .subscribeSuccess { data in
+//                print(data)
+//            }.disposed(by: rx.disposeBag)
     }
 }
 
