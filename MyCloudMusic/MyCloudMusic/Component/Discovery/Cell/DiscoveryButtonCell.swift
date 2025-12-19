@@ -20,7 +20,6 @@ class DiscoveryButtonCell: BaseTableViewCell {
         if contentContainer.subviews.count > 0 {
             return
         }
-        
         let containerWidth=(UIScreen.main.bounds.width-10*2)/5.5
         for it in data.datum {
             let buttonView = DiscoveryButtonView()
