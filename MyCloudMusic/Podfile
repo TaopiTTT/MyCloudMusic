@@ -45,20 +45,20 @@ target 'MyCloudMusic' do
   pod "HandyJSON"
   
   #提示框架
-  #https://github.com/jdg/MBProgressHUD
+  # https://github.com/jdg/MBProgressHUD
   pod 'MBProgressHUD'
   
   #Swift图片加载
-  #https://github.com/onevcat/Kingfisher
-  # pod "Kingfisher","7.9.1"
+  # https://github.com/onevcat/Kingfisher
+  pod "Kingfisher","7.9.1"
   
   #Swift扩展，像字符串，数组等
   #https://github.com/SwifterSwift/SwifterSwift
-  # pod 'SwifterSwift'
+  pod 'SwifterSwift'
   
   # 发布订阅框架
   # https://github.com/cesarferreira/SwiftEventBus
-  # pod "SwiftEventBus"
+  pod "SwiftEventBus"
   
   #下拉刷新
   #https://github.com/CoderMJLee/MJRefresh

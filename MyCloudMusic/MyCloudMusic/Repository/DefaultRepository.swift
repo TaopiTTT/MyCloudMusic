@@ -67,6 +67,30 @@ class DefaultRepository {
                 .mapObject(DetailResponse<Sheet>.self)
     }
     
+    /// 音乐列表
+    /// - Parameter size: <#size description#>
+    /// - Returns: <#description#>
+    func songs() -> Observable<ListResponse<Song>> {
+        return provider
+                .rx
+                .request(.songs)
+                .asObservable()
+                .mapString()
+                .mapObject(ListResponse<Song>.self)
+    }
+    
+    /// 音乐详情
+    /// - Parameter data: <#data description#>
+    /// - Returns: <#description#>
+    func songDetail(_ data:String) -> Observable<DetailResponse<Song>> {
+        return provider
+                .rx
+                .request(.songDetail(data: data))
+                .asObservable()
+                .mapString()
+                .mapObject(DetailResponse<Song>.self)
+    }
+    
     
     /// 私有构造方法
     private init() {

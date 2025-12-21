@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftEventBus
 
 class DiscoveryController: BaseLogicController {
 
@@ -20,7 +21,7 @@ class DiscoveryController: BaseLogicController {
         tableView.register(BannerCell.self, forCellReuseIdentifier: Constant.CELL)
         tableView.register(DiscoveryButtonCell.self, forCellReuseIdentifier: DiscoveryButtonCell.NAME)
         tableView.register(SheetGroupCell.self, forCellReuseIdentifier: SheetGroupCell.NAME)
-//        tableView.register(SongGroupCell.self, forCellReuseIdentifier: SongGroupCell.NAME)
+        tableView.register(SongGroupCell.self, forCellReuseIdentifier: SongGroupCell.NAME)
 //        tableView.register(DiscoveryFooterCell.self, forCellReuseIdentifier: DiscoveryFooterCell.NAME)
         
     }
@@ -59,7 +60,26 @@ class DiscoveryController: BaseLogicController {
                 self?.datum.append(SheetData(data.data!.data!))
                 
                 //请求单曲数据
-//                self?.loadSongData()
+                self?.loadSongData()
+                
+            }.disposed(by: rx.disposeBag)
+    }
+    
+    func loadSongData() {
+        DefaultRepository.shared.songs()
+            .subscribeSuccess {[weak self] data in
+//                self?.endRefresh()
+                
+                //添加单曲数据
+                self?.datum.append(SongData(data.data!.data!))
+                
+//                //添加尾部数据
+//                self?.datum.append(FooterData())
+                
+                self?.tableView.reloadData()
+                
+                //请求启动界面广告，当然也可以和轮播图接口一起返回
+//                self?.loadSplashAd()
                 self?.tableView.reloadData()
             }.disposed(by: rx.disposeBag)
     }
@@ -68,6 +88,22 @@ class DiscoveryController: BaseLogicController {
     /// - Parameter data: <#data description#>
     func processAdClick(_ data:Ad) {
         print("ClickResult: \(data.title)")
+    }
+    
+    override func initListeners() {
+        super.initListeners()
+        //监听单曲点击事件
+        SwiftEventBus.onMainThread(self, name: Constant.EVENT_SONG_CLICK) {[weak self] data in
+            self?.processSongClick(data?.object as! Song)
+        }
+        
+        
+    }
+    
+    /// 单曲点击
+    /// - Parameter data: <#data description#>
+    func processSongClick(_ data:Song) {
+        print("DiscoveryController processSongClick \(data.title)")
     }
     
     /// 获取列表类型
@@ -82,9 +118,10 @@ class DiscoveryController: BaseLogicController {
         else if data is SheetData{
             return .sheet
         }
-//      else if data is SongData{
-//            return .song
-//        }else if data is FooterData{
+        else if data is SongData{
+            return .song
+        }
+//        else if data is FooterData{
 //            return .footer
 //        }
         
@@ -119,7 +156,15 @@ extension DiscoveryController{
             let cell = tableView.dequeueReusableCell(withIdentifier: SheetGroupCell.NAME, for: indexPath) as! SheetGroupCell
             
             cell.bind(data as! SheetData)
-//            cell.delegate = self
+            cell.delegate = self
+            return cell
+        case .song:
+            //单曲
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: SongGroupCell.NAME, for: indexPath) as! SongGroupCell
+            
+            cell.bind(data as! SongData)
+            
             return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: Constant.CELL, for: indexPath) as! BannerCell
@@ -135,3 +180,9 @@ extension DiscoveryController{
     }
 }
     
+// 实现歌单组协议
+extension DiscoveryController:SheetGroupDelegate{
+    func sheetClick(data: Sheet) {
+        print("SheetDetailController sheetClick \(data.title)")
+    }
+}

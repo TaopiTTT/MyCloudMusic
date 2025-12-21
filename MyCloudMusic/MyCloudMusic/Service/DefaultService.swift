@@ -16,6 +16,9 @@ enum DefaultService {
     case sheets(size:Int)
     case sheetDetail(data:String)
     case register(data:User)
+    
+    case songs
+    case songDetail(data:String)
 }
 
 extension DefaultService:TargetType{
@@ -34,6 +37,11 @@ extension DefaultService:TargetType{
             return "v1/sheets/\(data)"
         case .register(_):
             return "v1/users"
+            
+        case .songs:
+            return "v1/songs"
+        case .songDetail(let data):
+            return "v1/songs/\(data)"
         default:
             fatalError("DefaultService path is null")
         }

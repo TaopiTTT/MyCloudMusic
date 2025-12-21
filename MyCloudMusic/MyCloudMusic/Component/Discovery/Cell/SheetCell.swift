@@ -22,7 +22,7 @@ class SheetCell: BaseCollectionViewCell {
 //            let r = ResourceUtil.resourceUri(r)
 //            iconView.sd_setImage(with: URL(string: r), placeholderImage: R.image.placeholder())
 //        }
-//        iconView.show(data.icon)
+        iconView.show(data.icon)
         
         titleView.text = data.title
     }
