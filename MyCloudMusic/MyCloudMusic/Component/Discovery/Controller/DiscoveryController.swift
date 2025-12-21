@@ -19,6 +19,9 @@ class DiscoveryController: BaseLogicController {
         //注册轮播图cell
         tableView.register(BannerCell.self, forCellReuseIdentifier: Constant.CELL)
         tableView.register(DiscoveryButtonCell.self, forCellReuseIdentifier: DiscoveryButtonCell.NAME)
+        tableView.register(SheetGroupCell.self, forCellReuseIdentifier: SheetGroupCell.NAME)
+//        tableView.register(SongGroupCell.self, forCellReuseIdentifier: SongGroupCell.NAME)
+//        tableView.register(DiscoveryFooterCell.self, forCellReuseIdentifier: DiscoveryFooterCell.NAME)
         
     }
     
@@ -41,8 +44,22 @@ class DiscoveryController: BaseLogicController {
                 //添加快捷按钮
                 self?.datum.append(ButtonData())
                 
-//                //请求歌单数据
-//                self?.loadSheetData()
+                //请求歌单数据
+                self?.loadSheetData()
+                
+            }.disposed(by: rx.disposeBag)
+    }
+    
+    /// 请求歌单数据
+    func loadSheetData() {
+        DefaultRepository.shared
+            .sheets(size: VALUE12)
+            .subscribeSuccess {[weak self] data in
+                //添加歌单数据
+                self?.datum.append(SheetData(data.data!.data!))
+                
+                //请求单曲数据
+//                self?.loadSongData()
                 self?.tableView.reloadData()
             }.disposed(by: rx.disposeBag)
     }
@@ -62,9 +79,10 @@ class DiscoveryController: BaseLogicController {
             //按钮
             return .button
         }
-//        else if data is SheetData{
-//            return .sheet
-//        }else if data is SongData{
+        else if data is SheetData{
+            return .sheet
+        }
+//      else if data is SongData{
 //            return .song
 //        }else if data is FooterData{
 //            return .footer
@@ -91,12 +109,17 @@ extension DiscoveryController{
         switch type {
         case .button:
             //按钮
-            
             //取出一个Cell
             let cell = tableView.dequeueReusableCell(withIdentifier: DiscoveryButtonCell.NAME, for: indexPath) as! DiscoveryButtonCell
             
             cell.bind(data as! ButtonData)
+            return cell
+        case .sheet:
+            //歌单
+            let cell = tableView.dequeueReusableCell(withIdentifier: SheetGroupCell.NAME, for: indexPath) as! SheetGroupCell
             
+            cell.bind(data as! SheetData)
+//            cell.delegate = self
             return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: Constant.CELL, for: indexPath) as! BannerCell
@@ -109,9 +132,6 @@ extension DiscoveryController{
             
             return cell
         }
-        
-
     }
-    
 }
     

@@ -95,4 +95,48 @@ class ViewFactoryUtil {
         
         return r
     }
+    
+    /// 创建CollectionView
+    static func collectionView() -> UICollectionView {
+        let r = UICollectionView(frame: CGRect.zero, collectionViewLayout: collectionViewFlowLayout())
+        
+        r.backgroundColor = .clear
+        
+        //不显示滚动条
+        r.showsHorizontalScrollIndicator = false
+        r.showsVerticalScrollIndicator = false
+        
+        //collectionView的内容从collectionView顶部距离开始显示，不要自动偏移状态栏尺寸
+        r.contentInsetAdjustmentBehavior = .never
+        
+        r.tg_width.equal(.fill)
+        r.tg_height.equal(.fill)
+        
+        return r
+    }
+    
+    static func collectionViewFlowLayout() -> UICollectionViewFlowLayout {
+        let r = UICollectionViewFlowLayout()
+        r.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        
+        //滚动方向
+        r.scrollDirection = .vertical
+        
+        //每个Cell的行间距
+        r.minimumLineSpacing = 0
+        
+        //每个Cell的列间距
+        r.minimumInteritemSpacing = 0
+        
+        return r
+    }
+    
+    /// 创建小水平分割线
+    static func smallDivider() -> UIView {
+        let r = UIView()
+        r.tg_width.equal(.fill)
+        r.tg_height.equal(PADDING_MIN)
+        r.backgroundColor = .colorDivider
+        return r
+    }
 }
