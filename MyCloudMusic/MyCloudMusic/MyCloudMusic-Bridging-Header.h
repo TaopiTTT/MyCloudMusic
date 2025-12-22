@@ -14,3 +14,6 @@
 
 //指示器
 #import <MBProgressHUD/MBProgressHUD.h>
+
+//下拉刷新
+#import <MJRefresh/MJRefresh.h>

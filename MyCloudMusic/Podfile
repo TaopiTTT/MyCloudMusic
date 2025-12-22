@@ -62,7 +62,7 @@ target 'MyCloudMusic' do
   
   #下拉刷新
   #https://github.com/CoderMJLee/MJRefresh
-  # pod 'MJRefresh'
+  pod 'MJRefresh'
   
   #富文本框架
   #https://github.com/a1049145827/BSText

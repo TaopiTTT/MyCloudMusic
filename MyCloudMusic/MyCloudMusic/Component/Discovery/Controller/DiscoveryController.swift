@@ -17,19 +17,41 @@ class DiscoveryController: BaseLogicController {
         //初始化TableView结构
         initTableViewSafeArea()
         
+        //下拉刷新
+        let header=MJRefreshNormalHeader {
+            [weak self] in
+            self?.loadData()
+        }
+
+        //隐藏标题
+        header.stateLabel?.isHidden = true
+
+        // 隐藏时间
+        header.lastUpdatedTimeLabel?.isHidden = true
+        tableView.mj_header=header
+        
         //注册轮播图cell
         tableView.register(BannerCell.self, forCellReuseIdentifier: Constant.CELL)
         tableView.register(DiscoveryButtonCell.self, forCellReuseIdentifier: DiscoveryButtonCell.NAME)
         tableView.register(SheetGroupCell.self, forCellReuseIdentifier: SheetGroupCell.NAME)
         tableView.register(SongGroupCell.self, forCellReuseIdentifier: SongGroupCell.NAME)
-//        tableView.register(DiscoveryFooterCell.self, forCellReuseIdentifier: DiscoveryFooterCell.NAME)
+        tableView.register(DiscoveryFooterCell.self, forCellReuseIdentifier: DiscoveryFooterCell.NAME)
         
+    }
+    
+    func startRefresh() {
+        //进入界面后自动刷新，会调用回调方法
+        tableView.mj_header!.beginRefreshing()
+    }
+    
+    func endRefresh()  {
+        tableView.mj_header!.endRefreshing()
     }
     
     override func initDatum() {
         super.initDatum()
-        
-        loadData()
+        startRefresh()
+//        loadData()
     }
     
     func loadData() {
@@ -68,15 +90,14 @@ class DiscoveryController: BaseLogicController {
     func loadSongData() {
         DefaultRepository.shared.songs()
             .subscribeSuccess {[weak self] data in
-//                self?.endRefresh()
+                self?.endRefresh()
                 
                 //添加单曲数据
                 self?.datum.append(SongData(data.data!.data!))
                 
-//                //添加尾部数据
-//                self?.datum.append(FooterData())
+                //添加尾部数据
+                self?.datum.append(FooterData())
                 
-                self?.tableView.reloadData()
                 
                 //请求启动界面广告，当然也可以和轮播图接口一起返回
 //                self?.loadSplashAd()
@@ -97,7 +118,36 @@ class DiscoveryController: BaseLogicController {
             self?.processSongClick(data?.object as! Song)
         }
         
+        //点击事件，根据style区分具体是什么点击
+        SwiftEventBus.onMainThread(self, name: Constant.CLICK_EVENT) { [weak self] sender in
+
+            //获取发送过来的数据
+            let data = sender?.object as! MyStyle
+
+            self?.processClick(data)
+        }
         
+    }
+    
+    func processClick(_ data:MyStyle) {
+        switch data {
+        case .refresh:
+            //底部刷新
+            autoRefresh()
+        default:
+            break
+        }
+    }
+    
+    func autoRefresh() {
+        //滚动到顶部
+        let indexPath = IndexPath(item: 0, section: 0)
+        tableView.scrollToRow(at: indexPath, at: .top, animated: true)
+        
+        //延时300毫秒，执行加载数据，目的是让列表先向上滚动到顶部
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.3) {[weak self] in
+            self?.startRefresh()
+        }
     }
     
     /// 单曲点击
@@ -121,9 +171,9 @@ class DiscoveryController: BaseLogicController {
         else if data is SongData{
             return .song
         }
-//        else if data is FooterData{
-//            return .footer
-//        }
+        else if data is FooterData{
+            return .footer
+        }
         
         return .banner
     }
@@ -165,6 +215,10 @@ extension DiscoveryController{
             
             cell.bind(data as! SongData)
             
+            return cell
+        case .footer:
+            //底部
+            let cell = tableView.dequeueReusableCell(withIdentifier: DiscoveryFooterCell.NAME, for: indexPath)
             return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: Constant.CELL, for: indexPath) as! BannerCell
