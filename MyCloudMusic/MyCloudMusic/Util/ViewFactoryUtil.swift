@@ -76,6 +76,17 @@ class ViewFactoryUtil {
         return r
     }
     
+    /// 创建图片按钮
+    static func button(image:UIImage) -> QMUIButton {
+        let r = QMUIButton()
+        r.adjustsTitleTintColorAutomatically = true
+        r.tg_width.equal(30)
+        r.tg_height.equal(30)
+        r.tintColor = .colorOnSurface
+        r.setImage(image, for: .normal)
+        return r
+    }
+    
     /// 创建TableView
     static func tableView() -> UITableView {
         let r = QMUITableView()
