@@ -7,11 +7,12 @@
 
 import UIKit
 
-class RoomController: BaseLogicController {
+class RoomController: BaseMainController {
 
     override func initViews() {
         super.initViews()
-        setBackgroundColor(.gray)
+        //初始化TableView结构
+        initTableViewSafeArea()
     }
 
 }
