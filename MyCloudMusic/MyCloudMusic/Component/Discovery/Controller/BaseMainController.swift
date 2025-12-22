@@ -20,6 +20,39 @@ class BaseMainController: BaseTitleController {
         toolbarView.addCenterView(searchButton)
     }
     
+    override func initListeners() {
+        super.initListeners()
+        // 注册导航栏手势驱动
+        self.cw_registerShowIntractive(withEdgeGesture: false) { [weak self] direction in
+            if direction == .fromLeft {
+                self?.openDrawer()
+            }
+        }
+        
+    }
+    
+    override func leftClick(_ sender: QMUIButton) {
+        openDrawer()
+    }
+    
+    func openDrawer() {
+        //真实内容滑动到外面
+//        self.cw_showDefaultDrawerViewController(drawerController)
+        
+        //侧滑显示到真实内容上面
+        self.cw_showDrawerViewController(drawerController, animationType: .mask, configuration: nil)
+    }
+    
+    func closeDrawer() {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    /// 侧滑控制器
+    lazy var drawerController: DrawerController = {
+        let r = DrawerController()
+        return r
+    }()
+    
     lazy var searchButton: QMUIButton = {
         let r = QMUIButton()
         r.tg_width.equal(SCREEN_WIDTH - 50 * 2)
@@ -41,4 +74,6 @@ class BaseMainController: BaseTitleController {
     @objc func searchClick(_ sender:QMUIButton) {
         
     }
+    
+    
 }

@@ -67,7 +67,7 @@ target 'MyCloudMusic' do
   #富文本框架
   #https://github.com/a1049145827/BSText
   #OC版本：https://github.com/ibireme/YYText
-  # pod "BSText"
+  pod "BSText"
   
   #腾讯开源的偏好存储框架
   #https://github.com/Tencent/MMKV

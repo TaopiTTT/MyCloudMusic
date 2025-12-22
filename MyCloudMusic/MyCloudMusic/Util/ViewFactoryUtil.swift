@@ -87,6 +87,28 @@ class ViewFactoryUtil {
         return r
     }
     
+    static func buttonLarge(_ data:UIImage) -> QMUIButton {
+        let result = button(image:data)
+        result.tg_width.equal(40)
+        result.tg_height.equal(40)
+        return result
+    }
+    
+    /// 创建更多 图片控件
+    static func moreIconView() -> UIImageView {
+        let result = UIImageView()
+        result.tg_width.equal(15)
+        result.tg_height.equal(15)
+        result.image = R.image.superChevronRight()?.withTintColor()
+        result.tintColor = .black80
+        result.tg_centerY.equal(0)
+        
+        //图片完全显示到控件里面
+        result.contentMode = .scaleAspectFit
+        
+        return result;
+    }
+    
     /// 创建TableView
     static func tableView() -> UITableView {
         let r = QMUITableView()
@@ -163,5 +185,13 @@ class ViewFactoryUtil {
         r.tg_height.equal(PADDING_MIN)
         r.backgroundColor = .colorDivider
         return r
+    }
+    
+    static func orientationContainer(_ orientation:TGOrientation = .horz) -> TGLinearLayout {
+        let result = TGLinearLayout(orientation)
+        result.tg_width.equal(.fill)
+        result.tg_height.equal(.wrap)
+        
+        return result
     }
 }
