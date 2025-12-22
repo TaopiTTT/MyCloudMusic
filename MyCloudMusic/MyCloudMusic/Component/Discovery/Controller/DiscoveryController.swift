@@ -108,7 +108,10 @@ class DiscoveryController: BaseMainController {
     /// 广告点击
     /// - Parameter data: <#data description#>
     func processAdClick(_ data:Ad) {
-        print("ClickResult: \(data.title)")
+//        print("ClickResult: \(data.title)")
+        if data.uri.starts(with: "http") {
+            SuperWebController.start(navigationController!,title: data.title,uri: data.uri)
+        }
     }
     
     override func initListeners() {
