@@ -94,6 +94,21 @@ class ViewFactoryUtil {
         return result
     }
     
+    static func button(title:String,color:UIColor) -> QMUIButton {
+        let result = QMUIButton()
+        result.adjustsTitleTintColorAutomatically = false
+        result.tg_width.equal(.fill)
+        result.tg_height.equal(BUTTON_MEDDLE)
+        result.titleLabel?.font = UIFont.systemFont(ofSize: TEXT_LARGE3)
+        result.setTitle(title, for: .normal)
+        result.setTitleColor(color, for: .normal)
+        result.backgroundColor = .colorBackground
+        
+        //按下高亮时的背景色
+        result.highlightedBackgroundColor = .colorSurfaceClick
+        return result
+    }
+    
     /// 创建更多 图片控件
     static func moreIconView() -> UIImageView {
         let result = UIImageView()

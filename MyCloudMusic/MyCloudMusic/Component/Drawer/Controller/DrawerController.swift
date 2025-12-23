@@ -25,6 +25,9 @@ class DrawerController: BaseLogicController{
         initOtherMenu()
         initAboutMenu()
         
+        //退出按钮
+        contentContainer.addSubview(primaryButton)
+        
     }
     
     //MARK: - 创建控件 用户
@@ -60,7 +63,85 @@ class DrawerController: BaseLogicController{
     
     @objc func userClick(_ data:UITapGestureRecognizer) {
         closeDrawer()
-        startController(LoginHomeController.self)
+//        if PreferenceUtil.isLogin() {
+//            UserDetailController.start(getNavigationController(), id: PreferenceUtil.getUserId())
+//        } else {
+//            startController(LoginHomeController.self)
+//        }
+        
+        loginAfter{
+            UserDetailController.start(getNavigationController(), id: PreferenceUtil.getUserId())
+        }
+    }
+    
+    /// 界面即将展示
+    /// - Parameter animated: <#animated description#>
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        showUserInfo()
+    }
+    
+    /// 界面已经显示出来
+    /// - Parameter animated: <#animated description#>
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        //第一次获取消息数
+//        messageCountChanged()
+    }
+    
+    func showUserInfo() {
+        if PreferenceUtil.isLogin() {
+            //已经登录了
+
+            //获取用户信息
+            loadUserData()
+            
+            primaryButton.show()
+        } else {
+            showNotLogin()
+        }
+    }
+    
+    func loadUserData() {
+        DefaultRepository.shared
+            .userDetail(PreferenceUtil.getUserId())
+            .subscribeSuccess {[weak self] data in
+                self?.show(data.data!)
+            }.disposed(by: rx.disposeBag)
+    }
+    
+    func show(_ data:User) {
+        iconView.showAvatar(data.icon)
+        nicknameView.text = data.nickname
+    }
+    
+    func showNotLogin() {
+        iconView.image = R.image.defaultAvatar()
+        nicknameView.text = R.string.localizable.loginNow()
+        primaryButton.hide()
+    }
+    
+    @objc func primaryClick(_ sender:QMUIButton) {
+        logoutConfirmController.show()
+    }
+    
+    /// 退出确认对话框
+    lazy var logoutConfirmController: SuperDialogController = {
+        let r = SuperDialogController()
+        
+        r.setTitleText(R.string.localizable.confirmLogout())
+        r.setCancelButton(title: R.string
+            .localizable.superCancel())
+        r.setWarningButton(title: R.string.localizable.confirm(), target: self, action: #selector(primaryConfirmClick(_:)))
+        
+        return r
+    }()
+    
+    @objc func primaryConfirmClick(_ sender:QMUIButton) {
+        logoutConfirmController.hide()
+        closeDrawer()
+        AppDelegate.shared.logout()
+        showNotLogin()
     }
     
     lazy var iconView: UIImageView = {
@@ -96,6 +177,14 @@ class DrawerController: BaseLogicController{
         result.tg_right.equal(0)
         result.addTarget(self, action: #selector(scanClick(_:)), for: .touchUpInside)
         return result
+    }()
+    
+    lazy var primaryButton: QMUIButton = {
+        let r = ViewFactoryUtil.primaryHalfFilletOutlineButton()
+        r.setTitle(R.string.localizable.logout(), for: .normal)
+        r.tg_top.equal(PADDING_OUTER)
+        r.addTarget(self, action: #selector(primaryClick(_:)), for: .touchUpInside)
+        return r
     }()
     
     func closeDrawer() {

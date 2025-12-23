@@ -7,6 +7,9 @@ PODS:
   - Kingfisher (7.9.1)
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.7.9)
+  - MMKV (2.3.0):
+    - MMKVCore (~> 2.3.0)
+  - MMKVCore (2.3.0)
   - Moya/Core (15.0.0):
     - Alamofire (~> 5.0)
   - Moya/RxSwift (15.0.0):
@@ -387,6 +390,7 @@ DEPENDENCIES:
   - Kingfisher (= 7.9.1)
   - MBProgressHUD
   - MJRefresh
+  - MMKV
   - Moya/RxSwift
   - "NSObject+Rx"
   - QMUIKit
@@ -405,6 +409,8 @@ SPEC REPOS:
     - Kingfisher
     - MBProgressHUD
     - MJRefresh
+    - MMKV
+    - MMKVCore
     - Moya
     - "NSObject+Rx"
     - QMUIKit
@@ -424,6 +430,8 @@ SPEC CHECKSUMS:
   Kingfisher: 1d14e9f59cbe19389f591c929000332bf70efd32
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: ff9e531227924c84ce459338414550a05d2aea78
+  MMKV: c953dbaac0da392c24b005e763c03ce2638b4ed7
+  MMKVCore: d078dce7d6586a888b2c2ef5343b6242678e3ee8
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   "NSObject+Rx": 61cf1f7306a73dcef8b36649198af0813ec18dfd
   QMUIKit: 3c622fe3c55c0dccfad750634bd9ee5e7ade9a53
@@ -435,6 +443,6 @@ SPEC CHECKSUMS:
   TangramKit: aad3ab8f9617418c9da96d59cddd71134ae8af83
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
 
-PODFILE CHECKSUM: 678450561649b7be3ff4bae5ac26f6cf0f9b840c
+PODFILE CHECKSUM: 40ee3e49e8e359db82c75d0b1d4534349d5b0515
 
 COCOAPODS: 1.16.2

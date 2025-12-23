@@ -75,7 +75,7 @@ class GuideController: BaseLogicController {
     ///登录注册按钮点击
     /// - Parameter sender: <#sender description#>
     @objc func primaryClick(_ sender:QMUIButton) {
-        //        AppDelegate.shared.toLogin()
+        AppDelegate.shared.toLogin()
     }
     
     ///立即体验按钮点击

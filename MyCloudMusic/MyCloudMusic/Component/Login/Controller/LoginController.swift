@@ -8,7 +8,7 @@
 import UIKit
 import TangramKit
 
-class LoginController: BaseTitleController {
+class LoginController: BaseLoginController {
 
     override func initViews() {
         super.initViews()
@@ -101,11 +101,11 @@ class LoginController: BaseTitleController {
         }
         
         //调用父类的登录方法
-//        login(param)
+        login(param)
     }
     
     @objc func registerClick(_ sender:QMUIButton) {
-//        startController(RegisterController.self)
+        startController(RegisterController.self)
     }
     
     @objc func forgotPasswordViewClick(_ sender:QMUIButton) {

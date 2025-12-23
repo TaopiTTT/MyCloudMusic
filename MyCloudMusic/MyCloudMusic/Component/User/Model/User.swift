@@ -115,4 +115,17 @@ class User:BaseCommon{
         return following != nil
     }
     
+    override func mapping(mapper: HelpingMapper) {
+        super.mapping(mapper: mapper)
+        mapper <<< self.wechatId <-- "wechat_id"
+        mapper <<< self.qqId <-- "qq_id"
+        mapper <<< self.appleId <-- "apple_id"
+        mapper <<< self.provinceCode <-- "province_code"
+        mapper <<< self.cityCode <-- "city_code"
+        mapper <<< self.areaCode <-- "area_code"
+        mapper <<< self.followingsCount <-- "followings_count"
+        mapper <<< self.followersCount <-- "followers_count"
+        mapper <<< self.roomId <-- "room_id"
+    }
+    
 }

@@ -20,3 +20,6 @@
 
 //侧滑菜单
 #import "UIViewController+CWLateralSlide.h"
+
+//腾讯开源的偏好存储框架
+#import <MMKV/MMKV.h>

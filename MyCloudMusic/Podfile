@@ -71,7 +71,7 @@ target 'MyCloudMusic' do
   
   #腾讯开源的偏好存储框架
   #https://github.com/Tencent/MMKV
-  # pod 'MMKV'
+  pod 'MMKV'
   
   #验证码输入框
   #https://github.com/feaskters/MHVerifyCodeView

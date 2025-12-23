@@ -91,6 +91,37 @@ class DefaultRepository {
                 .mapObject(DetailResponse<Song>.self)
     }
     
+    func register(_ data:User) -> Observable<DetailResponse<BaseModel>> {
+        return provider
+                    .rx
+                    .request(.register(data: data))
+                    .filterSuccessfulStatusCodes()
+                    .mapString()
+                    .asObservable()
+                    .mapObject(DetailResponse<BaseModel>.self)
+    }
+    
+    func login(_ data:User) -> Observable<DetailResponse<Session>> {
+        return provider
+                    .rx
+                    .request(.login(data: data))
+                    .filterSuccessfulStatusCodes()
+                    .mapString()
+                    .asObservable()
+                    .mapObject(DetailResponse<Session>.self)
+    }
+    
+    /// 用户详情
+    /// - Parameter data: <#data description#>
+    /// - Returns: <#description#>
+    func userDetail(_ data:String,_ nickname:String?=nil) -> Observable<DetailResponse<User>> {
+        return provider
+                .rx
+                .request(.userDetail(data: data,nickname:nickname))
+                .asObservable()
+                .mapString()
+                .mapObject(DetailResponse<User>.self)
+    }
     
     /// 私有构造方法
     private init() {

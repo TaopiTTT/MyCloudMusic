@@ -61,11 +61,11 @@ class SplashController: BaseLogicController {
     }
     
     @objc func next() {
-//        if PreferenceUtil.isLogin() {
-//            AppDelegate.shared.toAd()
-//        } else {
+        if PreferenceUtil.isLogin() {
             AppDelegate.shared.toMain()
-//        }
+        } else {
+            AppDelegate.shared.toMain()
+        }
     }
     
     /// 显示服务条款对话框
