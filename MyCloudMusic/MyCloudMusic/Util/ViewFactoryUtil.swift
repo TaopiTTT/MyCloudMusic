@@ -209,4 +209,39 @@ class ViewFactoryUtil {
         
         return result
     }
+    
+    
+    static func smallVerticalDivider() -> UIView {
+        let r = UIView()
+        r.tg_width.equal(PADDING_MIN)
+        r.tg_height.equal(.fill)
+        r.backgroundColor = .colorDivider
+        return r
+    }
+    
+    static func button(icon:UIImage,title:String) -> QMUIButton {
+        let result = QMUIButton()
+        result.adjustsTitleTintColorAutomatically = true
+        result.tg_width.equal(.fill)
+        result.tg_height.equal(46)
+        result.titleLabel?.font = UIFont.systemFont(ofSize: TEXT_MEDDLE)
+        result.tintColor = .colorOnSurface
+        result.setImage(icon, for: .normal)
+        result.setTitle(title, for: .normal)
+        result.setTitleColor(.colorOnSurface, for: .normal)
+        result.imagePosition = .left
+        return result
+    }
+    
+    static func secoundButton(icon:UIImage,title:String) -> QMUIButton {
+        let result = button(icon: icon, title: title)
+        
+        //设置图片和文本距离
+        result.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: PADDING_SMALL)
+        
+        result.backgroundColor = .clear
+        result.tintColor = .colorOnSurface
+        
+        return result;
+    }
 }

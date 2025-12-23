@@ -29,8 +29,8 @@ enum DefaultService {
     
     case userDetail(data:String,nickname:String?)
     
-//    case sendCode(style:Int,data:CodeRequest)
-//    case checkCode(data:CodeRequest)
+    case sendCode(style:Int,data:CodeRequest)
+    case checkCode(data:CodeRequest)
     
     case comments(page:Int)
 //    case createComment(data:Comment)
@@ -106,10 +106,10 @@ extension DefaultService:TargetType{
         case .userDetail(let data,_):
             return "v1/users/\(data)"
             
-//        case .sendCode:
-//            return "v1/codes"
-//        case .checkCode(_):
-//            return "v1/codes/check"
+        case .sendCode:
+            return "v1/codes"
+        case .checkCode(_):
+            return "v1/codes/check"
 //            
 //        case .comments, .createComment:
 //            return "v1/comments"
@@ -171,7 +171,7 @@ extension DefaultService:TargetType{
     var method: Moya.Method {
         switch self {
 //        case .register, .login, .sendCode, .checkCode, .resetPassword, .createSheet, .createComment, .like, .createFeed, .follow, .createAddress, .recognitionAddress, .confirmOrder, .createOrder, .orderPay, .addProductToCart:
-        case .register, .login:
+        case .register, .login, .sendCode, .checkCode, .resetPassword, .createSheet:
             return .post
         case .cancelLike, .cancelFollow, .deleteAddress:
             return .delete
@@ -201,10 +201,10 @@ extension DefaultService:TargetType{
         case .resetPassword(let data):
             return .requestData(data.toJSONString()!.data(using: .utf8)!)
             
-//        case .sendCode(let style, let data):
-//            return .requestCompositeParameters(bodyParameters: ["phone":data.phone,"email":data.email], bodyEncoding: JSONEncoding.default, urlParameters: ["style":style])
-//        case .checkCode(let data):
-//            return .requestData(data.toJSONString()!.data(using: .utf8)!)
+        case .sendCode(let style, let data):
+            return .requestCompositeParameters(bodyParameters: ["phone":data.phone,"email":data.email], bodyEncoding: JSONEncoding.default, urlParameters: ["style":style])
+        case .checkCode(let data):
+            return .requestData(data.toJSONString()!.data(using: .utf8)!)
             
         case .userDetail(_,let nickname):
             var param:[String:Any]=[:]

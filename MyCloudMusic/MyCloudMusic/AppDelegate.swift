@@ -102,11 +102,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             for it in vcs {
                 if it is LoginHomeController ||
                 it is LoginController ||
-                it is RegisterController
-//                it is InputUserIdentityController ||
-//                it is InputCodeController ||
-//                it is SetPasswordController
-                {
+                it is RegisterController ||
+                it is InputUserIdentityController ||
+                it is InputCodeController ||
+                it is SetPasswordController {
                     continue
                 }
                 

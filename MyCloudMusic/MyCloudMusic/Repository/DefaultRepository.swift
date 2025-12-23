@@ -111,6 +111,66 @@ class DefaultRepository {
                     .mapObject(DetailResponse<Session>.self)
     }
     
+    func resetPassword(_ data:User) -> Observable<DetailResponse<BaseModel>> {
+        return provider
+                    .rx
+                    .request(.resetPassword(data: data))
+                    .filterSuccessfulStatusCodes()
+                    .mapString()
+                    .asObservable()
+                    .mapObject(DetailResponse<BaseModel>.self)
+    }
+    
+    func sendCode(_ style:Int,_ data:CodeRequest) -> Observable<DetailResponse<BaseModel>> {
+        return provider
+                    .rx
+                    .request(.sendCode(style:style,data: data))
+                    .filterSuccessfulStatusCodes()
+                    .mapString()
+                    .asObservable()
+                    .mapObject(DetailResponse<BaseModel>.self)
+    }
+    
+    func checkCode(_ data:CodeRequest) -> Observable<DetailResponse<BaseModel>> {
+        return provider
+                    .rx
+                    .request(.checkCode(data: data))
+                    .filterSuccessfulStatusCodes()
+                    .mapString()
+                    .asObservable()
+                    .mapObject(DetailResponse<BaseModel>.self)
+    }
+    
+    func createSheets(_ userId:String) -> Observable<ListResponse<Sheet>> {
+        return provider
+                    .rx
+                    .request(.createSheets(userId: userId))
+                    .filterSuccessfulStatusCodes()
+                    .mapString()
+                    .asObservable()
+                    .mapObject(ListResponse<Sheet>.self)
+    }
+    
+    func collectSheets(_ userId:String) -> Observable<ListResponse<Sheet>> {
+        return provider
+                    .rx
+                    .request(.collectSheets(userId: userId))
+                    .filterSuccessfulStatusCodes()
+                    .mapString()
+                    .asObservable()
+                    .mapObject(ListResponse<Sheet>.self)
+    }
+    
+    func createSheet(_ data:Sheet) -> Observable<ListResponse<BaseModel>> {
+        return provider
+                    .rx
+                    .request(.createSheet(data: data))
+                    .filterSuccessfulStatusCodes()
+                    .mapString()
+                    .asObservable()
+                    .mapObject(ListResponse<BaseModel>.self)
+    }
+    
     /// 用户详情
     /// - Parameter data: <#data description#>
     /// - Returns: <#description#>

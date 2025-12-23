@@ -6,6 +6,7 @@ PODS:
   - HandyJSON (5.0.2)
   - Kingfisher (7.9.1)
   - MBProgressHUD (1.2.0)
+  - MHVerifyCodeView (1.0.1)
   - MJRefresh (3.7.9)
   - MMKV (2.3.0):
     - MMKVCore (~> 2.3.0)
@@ -389,6 +390,7 @@ DEPENDENCIES:
   - HandyJSON
   - Kingfisher (= 7.9.1)
   - MBProgressHUD
+  - MHVerifyCodeView
   - MJRefresh
   - MMKV
   - Moya/RxSwift
@@ -408,6 +410,7 @@ SPEC REPOS:
     - HandyJSON
     - Kingfisher
     - MBProgressHUD
+    - MHVerifyCodeView
     - MJRefresh
     - MMKV
     - MMKVCore
@@ -429,6 +432,7 @@ SPEC CHECKSUMS:
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   Kingfisher: 1d14e9f59cbe19389f591c929000332bf70efd32
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MHVerifyCodeView: 79e42e1e0e358a3e2fb9555d180f4083569f7224
   MJRefresh: ff9e531227924c84ce459338414550a05d2aea78
   MMKV: c953dbaac0da392c24b005e763c03ce2638b4ed7
   MMKVCore: d078dce7d6586a888b2c2ef5343b6242678e3ee8
@@ -443,6 +447,6 @@ SPEC CHECKSUMS:
   TangramKit: aad3ab8f9617418c9da96d59cddd71134ae8af83
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
 
-PODFILE CHECKSUM: 40ee3e49e8e359db82c75d0b1d4534349d5b0515
+PODFILE CHECKSUM: 51f12b3f5ce23be096dfb8805d94f8dabe5bb0c0
 
 COCOAPODS: 1.16.2

@@ -160,8 +160,8 @@ class DiscoveryController: BaseMainController {
         let indexPath = IndexPath(item: 0, section: 0)
         tableView.scrollToRow(at: indexPath, at: .top, animated: true)
         
-        //延时300毫秒，执行加载数据，目的是让列表先向上滚动到顶部
-        DispatchQueue.main.asyncAfter(deadline: .now()+0.3) {[weak self] in
+        //延时100毫秒，执行加载数据，目的是让列表先向上滚动到顶部
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.1) {[weak self] in
             self?.startRefresh()
         }
     }
@@ -252,6 +252,6 @@ extension DiscoveryController{
 // 实现歌单组协议
 extension DiscoveryController:SheetGroupDelegate{
     func sheetClick(data: Sheet) {
-        print("SheetDetailController sheetClick \(data.title)")
+        SheetDetailController.start(navigationController!, data.id)
     }
 }
