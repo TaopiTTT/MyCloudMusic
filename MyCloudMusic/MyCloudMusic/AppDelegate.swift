@@ -23,6 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        if #available(iOS 15.0, *) {
+            UITableView.appearance().sectionHeaderTopPadding = 0
+        }
+        
         initMMKV()
     
         let controller = SplashController()
@@ -108,6 +112,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 it is SetPasswordController {
                     continue
                 }
+                
                 
                 results.append(it)
             }

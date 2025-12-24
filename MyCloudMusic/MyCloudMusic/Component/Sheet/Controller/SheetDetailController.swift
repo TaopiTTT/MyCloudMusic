@@ -47,9 +47,9 @@ class SheetDetailController: BaseMusicPlayerController {
         tableView.register(SongCell.self, forCellReuseIdentifier: Constant.CELL)
         tableView.register(SheetInfoCell.self, forCellReuseIdentifier: SheetInfoCell.NAME)
         
-//        //注册section
-//        tableView.register(SongGroupHeaderView.self, forHeaderFooterViewReuseIdentifier: SongGroupHeaderView.NAME)
-//        tableView.bounces = false
+        //注册section
+        tableView.register(SongGroupHeaderView.self, forHeaderFooterViewReuseIdentifier: SongGroupHeaderView.NAME)
+        tableView.bounces = false
     }
     
     override func initDatum() {
@@ -68,34 +68,32 @@ class SheetDetailController: BaseMusicPlayerController {
     func show(_ data:Sheet) {
         self.data=data
         
-        datum.append(data)
+//        datum += data.songs ?? []
+        backgroundImageView.show(data.icon)
         
-        datum += data.songs ?? []
-//        backgroundImageView.show(data.icon)
-//        
-//        //使用动画显示背景图片
-//        UIView.animate(withDuration: 0.3) {
-//            //透明度设置为1
-//            self.backgroundImageView.alpha = 1
-//        }
+        //使用动画显示背景图片
+        UIView.animate(withDuration: 0.3) {
+            //透明度设置为1
+            self.backgroundImageView.alpha = 1
+        }
         
-//        //第一组
-//        var groupData=SongGroupData()
-//        groupData.datum = [data]
-//        datum.append(groupData)
-//        
-//        //第二组
-//        if let r = data.songs {
-//            if !r.isEmpty {
-//                //有音乐才设置
-//
-//                //设置数据
-//                groupData=SongGroupData()
-//                groupData.datum = r
-//                datum.append(groupData)
-//                superFooterContainer.backgroundColor = .colorLightWhite
-//            }
-//        }
+        //第一组
+        var groupData=SongGroupData()
+        groupData.datum = [data]
+        datum.append(groupData)
+        
+        //第二组
+        if let r = data.songs {
+            if !r.isEmpty {
+                //有音乐才设置
+
+                //设置数据
+                groupData=SongGroupData()
+                groupData.datum = r
+                datum.append(groupData)
+                superFooterContainer.backgroundColor = .colorLightWhite
+            }
+        }
     
         tableView.reloadData()
     }
@@ -112,9 +110,9 @@ class SheetDetailController: BaseMusicPlayerController {
         return .song
     }
     
-//    /// 播放音乐
-//    /// - Parameter data: <#data description#>
-//    func play(_ data:Song) {
+    /// 播放音乐
+    /// - Parameter data: <#data description#>
+    func play(_ data:Song) {
 //        //把当前歌单所有音乐设置到播放列表
 //        //有些应用
 //        //可能会实现添加到已经播放列表功能
@@ -124,7 +122,7 @@ class SheetDetailController: BaseMusicPlayerController {
 //        MusicListManager.shared().play(data)
 //        
 //        startMusicPlayerController()
-//    }
+    }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -138,44 +136,44 @@ class SheetDetailController: BaseMusicPlayerController {
 }
 
 extension SheetDetailController{
-//    /// 有多少组
-//    /// - Parameter tableView: <#tableView description#>
-//    /// - Returns: <#description#>
-//    func numberOfSections(in tableView: UITableView) -> Int {
-//        return datum.count
-//    }
-//    
-//    /// 当前组有多少个
-//    /// - Parameters:
-//    ///   - tableView: <#tableView description#>
-//    ///   - section: <#section description#>
-//    /// - Returns: <#description#>
-//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        let data = datum[section] as! SongGroupData
-//        return data.datum.count
-//    }
-//    
-//    /// 返回section view
-//    /// - Parameters:
-//    ///   - tableView: <#tableView description#>
-//    ///   - section: <#section description#>
-//    /// - Returns: <#description#>
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        //取出组数据
-//        let groupData=datum[section] as! SongGroupData
-//        
-//        //获取header
-//        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: SongGroupHeaderView.NAME) as! SongGroupHeaderView
-//        
-//        header.bind(groupData)
-//        
-//        header.playAllClick = {[weak self] in
-//            let groupData = self?.datum[1] as! SongGroupData
-////            self?.play(groupData.datum[0] as! Song)
-//        }
-//        
-//        return header
-//    }
+    /// 有多少组
+    /// - Parameter tableView: <#tableView description#>
+    /// - Returns: <#description#>
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return datum.count
+    }
+    
+    /// 当前组有多少个
+    /// - Parameters:
+    ///   - tableView: <#tableView description#>
+    ///   - section: <#section description#>
+    /// - Returns: <#description#>
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let data = datum[section] as! SongGroupData
+        return data.datum.count
+    }
+    
+    /// 返回section view
+    /// - Parameters:
+    ///   - tableView: <#tableView description#>
+    ///   - section: <#section description#>
+    /// - Returns: <#description#>
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        //取出组数据
+        let groupData=datum[section] as! SongGroupData
+        
+        //获取header
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: SongGroupHeaderView.NAME) as! SongGroupHeaderView
+        
+        header.bind(groupData)
+        
+        header.playAllClick = {[weak self] in
+            let groupData = self?.datum[1] as! SongGroupData
+            self?.play(groupData.datum[0] as! Song)
+        }
+        
+        return header
+    }
     
     /// 返回当前位置的cell
     /// - Parameters:
@@ -183,10 +181,9 @@ extension SheetDetailController{
     ///   - indexPath: <#indexPath description#>
     /// - Returns: <#description#>
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let groupData = datum[indexPath.section] as! SongGroupData
-//        let data = groupData.datum[indexPath.row]
-//
-        let data = datum[indexPath.row]
+        let groupData = datum[indexPath.section] as! SongGroupData
+        let data = groupData.datum[indexPath.row]
+
         let type = typeForItemAtData(data)
         
         switch type {
@@ -209,34 +206,34 @@ extension SheetDetailController{
         
     }
     
-//    /// header高度
-//    /// - Parameters:
-//    ///   - tableView: <#tableView description#>
-//    ///   - section: <#section description#>
-//    /// - Returns: <#description#>
-//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        if section == 1 {
-//            return 50
-//        }
-//        
-//        //其他组不显示section
-//        return 0
-//    }
-//    
-//    /// cell点击
-//    /// - Parameters:
-//    ///   - tableView: <#tableView description#>
-//    ///   - indexPath: <#indexPath description#>
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let groupData = datum[indexPath.section] as! SongGroupData
-//        let data = groupData.datum[indexPath.row]
-//        
-//        let type = typeForItemAtData(data)
-//        
-//        if type == .song {
-////            play(data as! Song)
-//        }
-//    }
+    /// header高度
+    /// - Parameters:
+    ///   - tableView: <#tableView description#>
+    ///   - section: <#section description#>
+    /// - Returns: <#description#>
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 1 {
+            return 50
+        }
+        
+        //其他组不显示section
+        return 0
+    }
+    
+    /// cell点击
+    /// - Parameters:
+    ///   - tableView: <#tableView description#>
+    ///   - indexPath: <#indexPath description#>
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let groupData = datum[indexPath.section] as! SongGroupData
+        let data = groupData.datum[indexPath.row]
+        
+        let type = typeForItemAtData(data)
+        
+        if type == .song {
+//            play(data as! Song)
+        }
+    }
 }
 
 extension SheetDetailController{
