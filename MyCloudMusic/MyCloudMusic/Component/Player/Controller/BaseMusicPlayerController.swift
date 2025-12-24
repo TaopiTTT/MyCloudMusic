@@ -12,7 +12,7 @@ class BaseMusicPlayerController: BaseTitleController {
     /// 启动播放界面
     func startMusicPlayerController() {
         //简单播放器界面
-//        startController(SimplePlayerController.self)
+        startController(SimplePlayerController.self)
         
         //黑胶唱片播放界面
 //        startController(MusicPlayerController.self)

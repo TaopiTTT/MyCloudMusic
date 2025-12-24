@@ -169,7 +169,12 @@ class DiscoveryController: BaseMainController {
     /// 单曲点击
     /// - Parameter data: <#data description#>
     func processSongClick(_ data:Song) {
-        print("DiscoveryController processSongClick \(data.title)")
+//        print("DiscoveryController processSongClick \(data.title)")
+//        MusicListManager.shared().setDatum([data])
+//        MusicListManager.shared().play(data)
+        
+        startMusicPlayerController()
+        
     }
     
     /// 获取列表类型

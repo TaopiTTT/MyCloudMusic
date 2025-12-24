@@ -79,11 +79,11 @@ target 'MyCloudMusic' do
   
   #腾讯WCDB是一个高效、完整、易用的移动数据库框架，基于SQLCipher，支持iOS, macOS和Android
   #https://github.com/Tencent/wcdb
-  # pod 'WCDB.swift'
+  pod 'WCDB.swift'
   
   #面向泛前端产品研发全生命周期的效率平台，查看数据库,网络请求,内存泄漏
   #https://xingyun.xiaojukeji.com/docs/dokit/#/iosGuide
-    # pod 'DoraemonKit/Core', :configurations => ['Debug'] #必选
+  pod 'DoraemonKit/Core', :configurations => ['Debug'] #必选
   #  pod 'DoraemonKit/WithGPS', '~> 3.0.4', :configurations => ['Debug'] #可选
   #  pod 'DoraemonKit/WithLoad', '~> 3.0.4', :configurations => ['Debug'] #可选
   #  pod 'DoraemonKit/WithLogger', '~> 3.0.4', :configurations => ['Debug'] #可选
@@ -94,7 +94,7 @@ target 'MyCloudMusic' do
   #腾讯云开源的一款播放器组件，简单几行代码即可拥有类似腾讯视频强大的播放功能，包括横竖屏切换、清晰度选择、手势和小窗等基础功能，还支持视频缓存，软硬解切换和倍速播放等特殊功能，相比系统播放器，支持格式更多，兼容性更好，功能更强大，同时还具备首屏秒开、低延迟的优点，以及视频缩略图等高级能力。
   #https://cloud.tencent.com/document/product/881/20208
   #编译报错解决方法：https://www.jianshu.com/p/103c0bf7d523
-  # pod 'SuperPlayer'
+  pod 'SuperPlayer'
   
   #图片预览框架，效果都不是很好，后面会重写
   #https://github.com/fcbox/Lantern

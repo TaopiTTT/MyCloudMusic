@@ -9,7 +9,7 @@ import UIKit
 import TangramKit
 import SwiftEventBus
 
-class BaseMainController: BaseTitleController {
+class BaseMainController: BaseMusicPlayerController {
     override func initViews() {
         super.initViews()
         setBackgroundColor(.colorBackgroundLight)
