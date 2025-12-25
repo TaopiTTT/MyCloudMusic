@@ -55,8 +55,8 @@ class LoginController: BaseLoginController {
         //swift中这样判断,需要在Build Settings 搜索 Other Swift Flags,设置Debug 添加 -D DEBUG
         #if DEBUG
         //添加测试账号，方便测试
-        usernameView.textFieldView.text="13141111222"
-        passwordView.textFieldView.text="ixueaedu"
+        usernameView.textFieldView.text="13212312311"
+        passwordView.textFieldView.text="123456"
         #endif
     }
     
