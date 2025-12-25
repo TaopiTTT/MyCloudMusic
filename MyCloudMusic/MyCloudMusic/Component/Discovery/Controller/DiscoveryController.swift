@@ -170,8 +170,8 @@ class DiscoveryController: BaseMainController {
     /// - Parameter data: <#data description#>
     func processSongClick(_ data:Song) {
 //        print("DiscoveryController processSongClick \(data.title)")
-//        MusicListManager.shared().setDatum([data])
-//        MusicListManager.shared().play(data)
+        MusicListManager.shared().setDatum([data])
+        MusicListManager.shared().play(data)
         
         startMusicPlayerController()
         

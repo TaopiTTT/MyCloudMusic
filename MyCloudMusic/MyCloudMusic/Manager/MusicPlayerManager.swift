@@ -16,27 +16,16 @@ import Foundation
 import MediaPlayer
 
 class MusicPlayerManager : NSObject{
-    /// 保存音乐播放进度的间隔
-    private static let SAVE_PROGRESS_TIME_INTERVAL:TimeInterval = 2
-    
     private static var instance:MusicPlayerManager?
     
     /// 当前播放的音乐
-    var data:Song?
+    private var data:Song?
     
     /// 播放器
     private var player:AVPlayer!
     
     /// 播放状态
     var status:PlayStatus = .none
-    
-    /// 定时器返回的对象
-    private var playTimeObserve:Any?
-    
-    ///播放完毕回调
-    var complete:((_ data:Song)->Void)!
-    
-    private var lastSaveProgressTime:TimeInterval = 0
     
     /// 代理对象，目的是将不同的状态分发出去
     weak open var delegate:MusicPlayerManagerDelegate?{
@@ -60,6 +49,12 @@ class MusicPlayerManager : NSObject{
         }
     }
     
+    ///播放完毕回调
+    var complete:((_ data:Song)->Void)!
+    
+    /// 定时器返回的对象
+    private var playTimeObserve:Any?
+    
     /// 获取单例的播放管理器
     ///
     /// - Returns: <#return value description#>
@@ -81,15 +76,11 @@ class MusicPlayerManager : NSObject{
     ///   - uri: 绝对音乐地址
     ///   - data: 音乐对象
     func play(uri:String,data:Song) {
-        //请求获取音频会话焦点
-//        SuperAudioSessionManager.requestAudioFocus()
-        
         //保存音乐对象
         self.data = data
-        
         status = .playing
-        
         var url:URL?=nil
+        
         if uri.starts(with: "http") {
             //网络地址
             url = URL(string: uri)
@@ -119,8 +110,6 @@ class MusicPlayerManager : NSObject{
         
         //启动进度分发定时器
         startPublishProgress()
-        
-//        prepareLyric()
     }
     
     /// 暂停
@@ -164,18 +153,6 @@ class MusicPlayerManager : NSObject{
         startPublishProgress()
     }
     
-    /// 是否在播放
-    /// - Returns: <#description#>
-    func isPlaying() -> Bool {
-        return status == .playing
-    }
-    
-    /// 移动到指定位置播放
-    func seekTo(data:Float) {
-        let positionTime = CMTime(seconds: Double(data), preferredTimescale: 1)
-        player.seek(to: positionTime)
-    }
-    
     /// 开启进度回调通知
     private func startPublishProgress() {
         //判断是否启动了
@@ -204,21 +181,21 @@ class MusicPlayerManager : NSObject{
             //回调代理
             delegate.onProgress(data: self.data!)
             
-            //保存播放进度，目的是进程杀死后，继续上次播放
-            //当然可以监听应用退出在保存
-
-            //获取当前时间0秒后的时间，就是当前
-            let date = Date(timeIntervalSinceNow: 0)
-
-            let currentTimeMillis=date.timeIntervalSince1970
-            let d=currentTimeMillis-self.lastSaveProgressTime
-            if d>MusicPlayerManager.SAVE_PROGRESS_TIME_INTERVAL {
-                //间隔大于指定值才保存，这样做是避免频繁操作
-                //具体的存储时间，存储间隔根据业务需求来更改
+//            //保存播放进度，目的是进程杀死后，继续上次播放
+//            //当然可以监听应用退出在保存
+//
+//            //获取当前时间0秒后的时间，就是当前
+//            let date = Date(timeIntervalSinceNow: 0)
+//
+//            let currentTimeMillis=date.timeIntervalSince1970
+//            let d=currentTimeMillis-self.lastSaveProgressTime
+//            if d>MusicPlayerManager.SAVE_PROGRESS_TIME_INTERVAL {
+//                //间隔大于指定值才保存，这样做是避免频繁操作
+//                //具体的存储时间，存储间隔根据业务需求来更改
 //                SuperDatabaseManager.shared.saveSong(self.data!)
-
-                self.lastSaveProgressTime = currentTimeMillis
-            }
+//
+//                self.lastSaveProgressTime = currentTimeMillis
+//            }
 
         })
     }
@@ -228,6 +205,18 @@ class MusicPlayerManager : NSObject{
             player.removeTimeObserver(playTimeObserve)
             self.playTimeObserve = nil
         }
+    }
+    
+    /// 移动到指定位置播放
+    func seekTo(data:Float) {
+        let positionTime = CMTime(seconds: Double(data), preferredTimescale: 1)
+        player.seek(to: positionTime)
+    }
+    
+    /// 是否在播放
+    /// - Returns: <#description#>
+    func isPlaying() -> Bool {
+        return status == .playing
     }
     
     private func initListeners() {
@@ -275,7 +264,7 @@ class MusicPlayerManager : NSObject{
                 //回调代理
                 delegate?.onPrepared(data:data!)
                 
-                updateMediaInfo()
+//                updateMediaInfo()
             case .failed:
                 //播放失败了
                 status = .error
@@ -286,8 +275,6 @@ class MusicPlayerManager : NSObject{
                 status = .none
             }
         }
-        
-        
     }
     
     /// 更新系统媒体控制中心信息
@@ -315,9 +302,8 @@ class MusicPlayerManager : NSObject{
                 }
             }
         }
-
     }
-
+    
     private func setMediaInfo(_ image:UIImage)  {
         //初始化一个可变字典
         var songInfo:[String:Any] = [:]
@@ -357,55 +343,9 @@ class MusicPlayerManager : NSObject{
         MPNowPlayingInfoCenter.default().nowPlayingInfo = songInfo
     }
     
-//    func prepareLyric() {
-//        //歌词处理
-//        //真实项目可能会
-//        //将歌词这个部分拆分到其他组件中
-//        if data!.parsedLyric != nil && data!.parsedLyric!.datum.count > 0 {
-//            //解析好了
-//            onLyricReady()
-//        } else if SuperStringUtil.isNotBlank(data!.lyric){
-//            //有歌词，但是没有解析
-//            parseLyric()
-//        } else {
-//            //没有歌词，并且不是本地音乐才请求
-//
-//            //真实项目中可以会缓存歌词
-//            //获取歌词数据
-//            DefaultRepository.shared
-//                .songDetail(data!.id)
-//                .subscribeSuccess { data in
-//                    //请求成功
-//                    self.data!.style = data.data!.style
-//                    self.data!.lyric = data.data!.lyric
-//                    
-//                    self.parseLyric()
-//                }
-//        }
-//    }
-    
-//    func parseLyric() {
-//        if SuperStringUtil.isNotBlank(data?.lyric) {
-//            //有歌词
-//            
-//            //在这里解析的好处是
-//            //外面不用管，直接使用
-//            data?.parsedLyric = LyricParser.parse(data!.style,data!.lyric!)
-//        }
-//        
-//        //通知歌词准备好了
-//        onLyricReady()
-//    }
-    
-    func onLyricReady() {
-        if let r = delegate {
-            r.onLyricReady(data: data!)
-        }
-    }
     
     static let STATUS = "status"
 }
-
 
 /// 播放状态枚举
 enum PlayStatus {

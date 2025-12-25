@@ -116,10 +116,10 @@ class SheetDetailController: BaseMusicPlayerController {
         //把当前歌单所有音乐设置到播放列表
         //有些应用
         //可能会实现添加到已经播放列表功能
-//        MusicListManager.shared().setDatum(self.data.songs!)
-//        
-//        //播放当前音乐
-//        MusicListManager.shared().play(data)
+        MusicListManager.shared().setDatum(self.data.songs!)
+        
+        //播放当前音乐
+        MusicListManager.shared().play(data)
         
         startMusicPlayerController()
     }
