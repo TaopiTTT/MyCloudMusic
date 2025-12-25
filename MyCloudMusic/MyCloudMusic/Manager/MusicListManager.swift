@@ -26,7 +26,7 @@ class MusicListManager {
     var isPlay = false
     
     /// 循环模式,默认列表循环
-//    var model:MusicPlayRepeatModel = .list
+    var model:MusicPlayRepeatModel = .list
     
     /// 获取单例的播放列表管理器
     ///
@@ -42,19 +42,19 @@ class MusicListManager {
     private init() {
         //初始化音乐播放管理器
         musicPlayerManager = MusicPlayerManager.shared()
-//        
-//        //设置播放完毕回调
-//        musicPlayerManager.complete = {d in
-//            //判断播放循环模式
-//            if self.model == .one {
-//                //单曲循环
-//                self.play(d)
-//            }else{
-//                //其他模式
-//                self.play(self.next())
-//            }
-//        }
-//        
+        
+        //设置播放完毕回调
+        musicPlayerManager.complete = {d in
+            //判断播放循环模式
+            if self.model == .one {
+                //单曲循环
+                self.play(d)
+            }else{
+                //其他模式
+                self.play(self.next())
+            }
+        }
+        
 //        initPlayList()
     }
     
@@ -141,9 +141,96 @@ class MusicListManager {
         }
     }
     
+    @discardableResult
+    /// 更改循环模式
+    func changeLoopModel() -> MusicPlayRepeatModel {
+        //将当前循环模式转为int
+        var model = self.model.rawValue
+        
+        //循环模式+1
+        model += 1
+        
+        //判断边界
+        if model > MusicPlayRepeatModel.random.rawValue {
+            //超出了范围
+            model = 0
+        }
+        
+        self.model = MusicPlayRepeatModel(rawValue: model)!
+        
+        return self.model
+    }
     
+    /// 获取上一个
+    func previous() -> Song {
+        var index = 0
+        switch model {
+        case .random:
+            //随机循环
+            
+            //在0~datum.size-1范围中
+            //产生一个随机数
+            index = Int(arc4random()) % datum.count
+        default:
+            //列表循环
+            let datumOC = datum as NSArray
+            index = datumOC.index(of: data!)
+            
+            //如果当前播放的音乐是最后一首音乐
+            if index == 0 {
+                //当前播放的是第一首音乐
+                index = datum.count - 1
+            } else {
+                index -= 1
+            }
+        }
+        
+        return datum[index]
+    }
     
+    /// 获取下一个
+    func next() -> Song {
+        var index = 0
+        switch model {
+        case .random:
+            //随机循环
+            
+            //在0~datum.size-1范围中
+            //产生一个随机数
+            index = Int(arc4random()) % datum.count
+        default:
+            //列表循环
+            let datumOC = datum as NSArray
+            index = datumOC.index(of: data!)
+            
+            //如果当前播放的音乐是最后一首音乐
+            if index == datum.count - 1 {
+                //当前播放的是最后一首音乐
+                index = 0
+            } else {
+                index += 1
+            }
+        }
+        
+        return datum[index]
+    }
     
+    /// 从该位置播放
+    /// - Parameter data: <#data description#>
+    func seekTo(_ data:Float)  {
+        musicPlayerManager.seekTo(data: data)
+        
+        //如果暂停了就继续播放
+        if !musicPlayerManager.isPlaying() {
+            resume()
+        }
+    }
     
-    
+}
+
+//音乐循环状态
+enum MusicPlayRepeatModel:Int {
+    case list=0 //列表循环
+    case one //单曲循环
+    case random //列表随机
 }

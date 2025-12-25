@@ -91,6 +91,22 @@ class SimplePlayerController: BaseTitleController {
             
     }
     
+    override func initDatum() {
+        super.initDatum()
+        
+        initPlayData()
+        
+        //显示循环模式
+        showLoopModel()
+        
+//        var result = LyricParser.parse(VALUE0,SimplePlayerController.LYRIC_LRC)
+//        print("SimplePlayerController parse lrc \(result.datum)")
+//        
+//        //KSC歌词解析
+//        result = LyricParser.parse(VALUE10,SimplePlayerController.LYRIC_KSC)
+//        print("SimplePlayerController parse ksc \(result.datum)")
+    }
+    
     override func initListeners() {
         super.initListeners()
         //监听应用进入前台了
@@ -114,7 +130,7 @@ class SimplePlayerController: BaseTitleController {
         startView.text = SuperDateUtil.second2MinuteSecond(sender.value)
         
         //音乐切换到拖拽位置播放
-        MusicPlayerManager.shared().seekTo(data: sender.value)
+        MusicListManager.shared().seekTo(sender.value)
     }
     
     /// 进度条按下
@@ -188,7 +204,7 @@ class SimplePlayerController: BaseTitleController {
     
     
     @objc func onPreviousClick(_ sender:QMUIButton) {
-//        MusicListManager.shared().play(MusicListManager.shared().previous())
+        MusicListManager.shared().play(MusicListManager.shared().previous())
     }
     
     @objc func onPlayClick(_ sender:QMUIButton) {
@@ -196,16 +212,31 @@ class SimplePlayerController: BaseTitleController {
     }
     
     @objc func onNextClick(_ sender:QMUIButton) {
-//        MusicListManager.shared().play(MusicListManager.shared().next())
+        MusicListManager.shared().play(MusicListManager.shared().next())
         
     }
     
     @objc func onLoopModelClick(_ sender:QMUIButton) {
-//        //更改循环模式
-//        MusicListManager.shared().changeLoopModel()
-//        
-//        //显示循环模式
-//        showLoopModel()
+        //更改循环模式
+        MusicListManager.shared().changeLoopModel()
+        
+        //显示循环模式
+        showLoopModel()
+    }
+    
+    /// 显示循环模式
+    func showLoopModel() {
+        //获取当前循环模式
+        let model = MusicListManager.shared().model
+        
+        switch model {
+        case .list:
+            loopModelButtonView.setTitle("列表循环", for: .normal)
+        case .random:
+            loopModelButtonView.setTitle("随机循环", for: .normal)
+        default:
+            loopModelButtonView.setTitle("单曲循环", for: .normal)
+        }
     }
     
     /// 显示播放数据
@@ -222,8 +253,8 @@ class SimplePlayerController: BaseTitleController {
         //显示播放状态
         showMusicPlayStatus()
         
-//        //选中当前播放的音乐
-//        scrollPosition()
+        //选中当前播放的音乐
+        scrollPosition()
 //        
 //        //显示歌词数据
 //        showLyricData()
@@ -293,6 +324,28 @@ class SimplePlayerController: BaseTitleController {
         playButtonView.setTitle("暂停", for: .normal)
     }
     
+    /// 选中当前播放的音乐
+    func scrollPosition()  {
+        //获取当前音乐在播放列表中的索引
+        let data = MusicListManager.shared().data!
+        
+        let datumOC = MusicListManager.shared().datum as NSArray
+        let index = datumOC.index(of: data)
+        
+        if index != -1 {
+            //创建indexPath
+            let indexPath = IndexPath(row: index, section: 0)
+            
+            //延迟后选中当前音乐
+            //因为前面执行可能是删除Cell操作
+            DispatchQueue.main.asyncAfter(deadline: .now()+0.5){
+                self.tableView.selectRow(at: indexPath, animated: true, scrollPosition: .middle)
+            }
+        }
+        
+        
+    }
+    
 }
 
 // MARK: -  播放管理器代理
@@ -303,9 +356,9 @@ extension SimplePlayerController:MusicPlayerManagerDelegate{
 
         //显示时长
         showDuration()
-//        
-//        //选中当前音乐
-//        scrollPosition()
+        
+        //选中当前音乐
+        scrollPosition()
     }
     
     func onPaused(data: Song) {
@@ -329,9 +382,31 @@ extension SimplePlayerController:MusicPlayerManagerDelegate{
     }
 }
 
-//音乐循环状态
-enum MusicPlayRepeatModel:Int {
-    case list=0 //列表循环
-    case one //单曲循环
-    case random //列表随机
+// MARK: -  列表数据源和代理
+extension SimplePlayerController{
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return MusicListManager.shared().datum.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let data = MusicListManager.shared().datum[indexPath.row]
+        
+        var cell = tableView.dequeueReusableCell(withIdentifier: Constant.CELL)
+        
+        if cell == nil{
+            //也可以在这里创建，也可以在前面注册
+            cell = UITableViewCell(style: .value1, reuseIdentifier: Constant.CELL)
+        }
+        
+        cell!.textLabel?.text = data.title
+        
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let data = MusicListManager.shared().datum[indexPath.row]
+        
+        MusicListManager.shared().play(data)
+    }
 }
+
