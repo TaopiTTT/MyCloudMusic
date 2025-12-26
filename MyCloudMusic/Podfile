@@ -79,7 +79,7 @@ target 'MyCloudMusic' do
   
   #腾讯WCDB是一个高效、完整、易用的移动数据库框架，基于SQLCipher，支持iOS, macOS和Android
   #https://github.com/Tencent/wcdb
-  pod 'WCDB.swift'
+  pod 'WCDB.swift',"1.0.8.2"
   
   #面向泛前端产品研发全生命周期的效率平台，查看数据库,网络请求,内存泄漏
   #https://xingyun.xiaojukeji.com/docs/dokit/#/iosGuide

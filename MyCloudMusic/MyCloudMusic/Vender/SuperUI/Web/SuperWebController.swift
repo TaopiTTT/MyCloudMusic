@@ -150,7 +150,7 @@ class SuperWebController: BaseTitleController {
     static let CONTENT_WRAPPER_START = "<!DOCTYPE html><html><head><title></title><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\"><style type=\"text/css\"> body{font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;word-wrap: break-word;word-break: normal;} h2{text-align: center;} img {max-width: 100%;} pre{word-wrap: break-word!important;overflow: auto;}</style></head><body>"
     static let CONTENT_WRAPPER_END = "</body></html>"
 //    static let WEBVIEW_BASE_URL = "http://ixuea.com"
-    static let WEBVIEW_BASE_URL = "http://10.0.0.47:9178/"
+    static let WEBVIEW_BASE_URL = "http://10.0.0.10:9178/"
     static let TITLE = "title"
 }
 

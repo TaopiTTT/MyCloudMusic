@@ -357,6 +357,8 @@ PODS:
   - SDWebImage (5.21.5):
     - SDWebImage/Core (= 5.21.5)
   - SDWebImage/Core (5.21.5)
+  - SQLiteRepairKit (1.2.2):
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
   - SuperPlayer (12.8.19668):
     - Masonry
     - SDWebImage
@@ -407,9 +409,10 @@ PODS:
   - SwiftEventBus (5.0.0)
   - TangramKit (1.4.2)
   - TXLiteAVSDK_Player (12.9.20085)
-  - WCDB.swift (2.1.15):
-    - WCDBOptimizedSQLCipher (= 1.4.8)
-  - WCDBOptimizedSQLCipher (1.4.8)
+  - WCDB.swift (1.0.8.2):
+    - SQLiteRepairKit (~> 1.2.0)
+    - WCDBOptimizedSQLCipher (~> 1.2.0)
+  - WCDBOptimizedSQLCipher (1.2.1)
   - YYImage (1.0.4):
     - YYImage/Core (= 1.0.4)
   - YYImage/Core (1.0.4)
@@ -433,7 +436,7 @@ DEPENDENCIES:
   - SwifterSwift
   - SwiftEventBus
   - TangramKit
-  - WCDB.swift
+  - WCDB.swift (= 1.0.8.2)
 
 SPEC REPOS:
   trunk:
@@ -457,6 +460,7 @@ SPEC REPOS:
     - R.swift
     - RxSwift
     - SDWebImage
+    - SQLiteRepairKit
     - SuperPlayer
     - SwifterSwift
     - SwiftEventBus
@@ -487,15 +491,16 @@ SPEC CHECKSUMS:
   R.swift: f573269ca45b2ab066c082e363dd4c2b297b0d71
   RxSwift: 31649ace6aceeb422e16ff71c60804f9c3281ed9
   SDWebImage: e9c98383c7572d713c1a0d7dd2783b10599b9838
+  SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
   SuperPlayer: 99de4f5ac094998706fb9cca19c6b62f8f732a82
   SwifterSwift: 517fa61daf5b4c5e3ed13b9f35f4c26b310cfb97
   SwiftEventBus: b30f617a6aca5a9336464b4d3f5931034762f2d5
   TangramKit: aad3ab8f9617418c9da96d59cddd71134ae8af83
   TXLiteAVSDK_Player: 65e71580bb3b9440d12977036b953ea9d6365e5a
-  WCDB.swift: cc8c9ba279270f8609f87bb2245435e958354558
-  WCDBOptimizedSQLCipher: 871994f7f620302fdf87a2729c099a1efa2223da
+  WCDB.swift: 05d509d7a0e60fb6e11c34eb7e4027c0fab5849f
+  WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
 
-PODFILE CHECKSUM: 2b83f2ca69bc36b86c983a86a51020bca06782c0
+PODFILE CHECKSUM: 2563b7b8488b87aa5c904230bb6fb688b2e08b74
 
 COCOAPODS: 1.16.2

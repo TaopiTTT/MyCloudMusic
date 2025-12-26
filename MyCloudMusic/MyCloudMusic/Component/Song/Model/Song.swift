@@ -9,7 +9,12 @@ import UIKit
 
 import HandyJSON
 
-class Song: BaseCommon {
+//腾讯开源的数据库框架
+import WCDBSwift
+
+class Song: BaseCommon,TableCodable {
+    static let NAME = "Song"
+    
     /// 标题
     var title:String!
     
@@ -39,6 +44,8 @@ class Song: BaseCommon {
      */
     var lyric:String? = nil
     
+    /// 解析后的歌词
+    var parsedLyric:Lyric?
     
     // MARK: -  播放后才有值
     /// 总进度
@@ -89,4 +96,98 @@ class Song: BaseCommon {
         mapper <<< self.clicksCount <-- "clicks_count"
         mapper <<< self.commentsCount <-- "comments_count"
     }
+    
+    required init(from decoder: Decoder) throws {
+        super.init()
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        id = try container.decode(String.self, forKey: Song.CodingKeys.id)
+        title = try container.decode(String.self, forKey: .title)
+        icon = try container.decode(String.self, forKey: .icon)
+        uri = try container.decode(String.self, forKey: .uri)
+        clicksCount = try container.decode(Int.self, forKey: .clicksCount)
+        commentsCount = try container.decode(Int.self, forKey: .commentsCount)
+        style = try container.decode(Int.self, forKey: .style)
+        duration = try container.decode(Float.self, forKey: .duration)
+        progress = try container.decode(Float.self, forKey: .progress)
+        list = try container.decode(Bool.self, forKey: .list)
+        source = try container.decode(Int.self, forKey: .source)
+        path = try container.decode(String.self, forKey: .path)
+        lyric = try container.decode(String.self, forKey: .lyric)
+        singerId = try container.decode(String.self, forKey: .singerId)
+        singerNickname = try container.decode(String.self, forKey: .singerNickname)
+        singerIcon = try container.decode(String.self, forKey: .singerIcon)
+        createdAt = try? container.decode(String.self, forKey: .createdAt)
+        updatedAt = try? container.decode(String.self, forKey: .updatedAt)
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try? container.encode(id, forKey: .id)
+        try? container.encode(title, forKey: .title)
+        try? container.encodeIfPresent(icon, forKey: .icon)
+        try? container.encode(uri, forKey: .uri)
+        try? container.encode(clicksCount, forKey: .clicksCount)
+        try? container.encode(commentsCount, forKey: .commentsCount)
+        try? container.encode(style, forKey: .style)
+        try? container.encode(duration, forKey: .duration)
+        try? container.encode(progress, forKey: .progress)
+        try? container.encode(list, forKey: .list)
+        try? container.encode(source, forKey: .source)
+        try? container.encodeIfPresent(path, forKey: .path)
+        try? container.encodeIfPresent(lyric, forKey: .lyric)
+        try? container.encode(singerId, forKey: .singerId)
+        try? container.encode(singerNickname, forKey: .singerNickname)
+        try? container.encode(singerIcon, forKey: .singerIcon)
+        try? container.encode(createdAt, forKey: .createdAt)
+        try? container.encode(updatedAt, forKey: .updatedAt)
+    }
+
+    required init() {
+
+    }
+    
+    func convertLocal() {
+        singerId = singer.id
+        singerNickname = singer.nickname
+        singerIcon = singer.icon
+    }
+
+    func localConvert() {
+        singer = User()
+        singer.id=singerId
+        singer.nickname=singerNickname
+        singer.icon=singerIcon
+    }
+    
+    //WCDB模型绑定
+    enum CodingKeys: String, CodingTableKey {
+        typealias Root = Song
+        static let objectRelationalMapping = TableBinding(CodingKeys.self)
+        case id
+        case title
+        case icon
+        case uri
+        case clicksCount
+        case commentsCount
+        case style
+        case duration
+        case progress
+        case list
+        case source
+        case path
+        case lyric
+        case singerId
+        case singerNickname
+        case singerIcon
+        case createdAt
+        case updatedAt
+
+        static var columnConstraintBindings: [CodingKeys: ColumnConstraintBinding]? {
+            return [
+                id: ColumnConstraintBinding(isPrimary: true), //主键
+                title: ColumnConstraintBinding(isNotNull: true) //索引
+            ]
+        }
+    }
+
 }
