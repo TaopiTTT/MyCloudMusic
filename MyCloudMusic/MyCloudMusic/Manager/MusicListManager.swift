@@ -61,11 +61,11 @@ class MusicListManager {
     /// 设置音乐列表
     /// - Parameter datum: <#datum description#>
     func setDatum(_ datum:[Song]) {
-//        //将原来数据list标志设置为false
-//       DataUtil.changePlayListFlag(self.datum, false)
-//
-//       //保存到数据库
-//       saveAll()
+        //将原来数据list标志设置为false
+        DataUtil.changePlayListFlag(self.datum, false)
+
+        //保存到数据库
+        saveAll()
         
         //清空原来的数据
         self.datum.removeAll()
@@ -73,13 +73,13 @@ class MusicListManager {
         //添加新的数据
         self.datum += datum
         
-//        //更改播放列表标志
-//        DataUtil.changePlayListFlag(self.datum, true)
-//
-//        //保存到数据库
-//        saveAll()
-//
-//        sendMusicListChanged()
+        //更改播放列表标志
+        DataUtil.changePlayListFlag(self.datum, true)
+
+        //保存到数据库
+        saveAll()
+
+        sendMusicListChanged()
     }
     
     /// 播放
@@ -224,6 +224,14 @@ class MusicListManager {
         if !musicPlayerManager.isPlaying() {
             resume()
         }
+    }
+    
+    func saveAll()  {
+        SuperDatabaseManager.shared.saveAllSong(datum)
+    }
+    
+    func sendMusicListChanged() {
+        SwiftEventBus.post(Constant.EVENT_MUSIC_LIST_CHANGED,sender: nil)
     }
     
 }

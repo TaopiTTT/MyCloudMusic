@@ -52,6 +52,7 @@ class DiscoveryController: BaseMainController {
         super.initDatum()
         startRefresh()
 //        loadData()
+        
     }
     
     func loadData() {

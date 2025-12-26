@@ -39,9 +39,9 @@ class Song: BaseCommon,TableCodable {
     /// 歌词类型
     var style:Int = 0
     
-    /**
-     * 歌词内容
-     */
+//    /**
+//     * 歌词内容
+//     */
     var lyric:String? = nil
     
     /// 解析后的歌词
@@ -97,97 +97,111 @@ class Song: BaseCommon,TableCodable {
         mapper <<< self.commentsCount <-- "comments_count"
     }
     
-    required init(from decoder: Decoder) throws {
-        super.init()
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        id = try container.decode(String.self, forKey: Song.CodingKeys.id)
-        title = try container.decode(String.self, forKey: .title)
-        icon = try container.decode(String.self, forKey: .icon)
-        uri = try container.decode(String.self, forKey: .uri)
-        clicksCount = try container.decode(Int.self, forKey: .clicksCount)
-        commentsCount = try container.decode(Int.self, forKey: .commentsCount)
-        style = try container.decode(Int.self, forKey: .style)
-        duration = try container.decode(Float.self, forKey: .duration)
-        progress = try container.decode(Float.self, forKey: .progress)
-        list = try container.decode(Bool.self, forKey: .list)
-        source = try container.decode(Int.self, forKey: .source)
-        path = try container.decode(String.self, forKey: .path)
-        lyric = try container.decode(String.self, forKey: .lyric)
-        singerId = try container.decode(String.self, forKey: .singerId)
-        singerNickname = try container.decode(String.self, forKey: .singerNickname)
-        singerIcon = try container.decode(String.self, forKey: .singerIcon)
-        createdAt = try? container.decode(String.self, forKey: .createdAt)
-        updatedAt = try? container.decode(String.self, forKey: .updatedAt)
-    }
-    
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try? container.encode(id, forKey: .id)
-        try? container.encode(title, forKey: .title)
-        try? container.encodeIfPresent(icon, forKey: .icon)
-        try? container.encode(uri, forKey: .uri)
-        try? container.encode(clicksCount, forKey: .clicksCount)
-        try? container.encode(commentsCount, forKey: .commentsCount)
-        try? container.encode(style, forKey: .style)
-        try? container.encode(duration, forKey: .duration)
-        try? container.encode(progress, forKey: .progress)
-        try? container.encode(list, forKey: .list)
-        try? container.encode(source, forKey: .source)
-        try? container.encodeIfPresent(path, forKey: .path)
-        try? container.encodeIfPresent(lyric, forKey: .lyric)
-        try? container.encode(singerId, forKey: .singerId)
-        try? container.encode(singerNickname, forKey: .singerNickname)
-        try? container.encode(singerIcon, forKey: .singerIcon)
-        try? container.encode(createdAt, forKey: .createdAt)
-        try? container.encode(updatedAt, forKey: .updatedAt)
-    }
-
-    required init() {
-
-    }
-    
-    func convertLocal() {
-        singerId = singer.id
-        singerNickname = singer.nickname
-        singerIcon = singer.icon
-    }
-
-    func localConvert() {
-        singer = User()
-        singer.id=singerId
-        singer.nickname=singerNickname
-        singer.icon=singerIcon
-    }
-    
-    //WCDB模型绑定
-    enum CodingKeys: String, CodingTableKey {
-        typealias Root = Song
-        static let objectRelationalMapping = TableBinding(CodingKeys.self)
-        case id
-        case title
-        case icon
-        case uri
-        case clicksCount
-        case commentsCount
-        case style
-        case duration
-        case progress
-        case list
-        case source
-        case path
-        case lyric
-        case singerId
-        case singerNickname
-        case singerIcon
-        case createdAt
-        case updatedAt
-
-        static var columnConstraintBindings: [CodingKeys: ColumnConstraintBinding]? {
-            return [
-                id: ColumnConstraintBinding(isPrimary: true), //主键
-                title: ColumnConstraintBinding(isNotNull: true) //索引
-            ]
+    // MARK: - 初始化器（必须在类定义内部）
+        required override init() {
+            super.init()
         }
-    }
+        
+
+        private enum JsonKeys: String, CodingKey {
+            case id, title, icon, uri
+            case clicksCount, commentsCount
+            case style, duration, progress
+            case list, source, path, lyric
+            case singerId, singerNickname, singerIcon
+            case createdAt, updatedAt
+        }
+        
+        required init(from decoder: Decoder) throws {
+            super.init()
+            let container = try decoder.container(keyedBy: JsonKeys.self)
+            
+            id = try container.decodeIfPresent(String.self, forKey: .id) ?? ""
+            title = try container.decodeIfPresent(String.self, forKey: .title) ?? ""
+            icon = try container.decodeIfPresent(String.self, forKey: .icon) ?? ""
+            uri = try container.decodeIfPresent(String.self, forKey: .uri) ?? ""
+            clicksCount = try container.decodeIfPresent(Int.self, forKey: .clicksCount) ?? 0
+            commentsCount = try container.decodeIfPresent(Int.self, forKey: .commentsCount) ?? 0
+            style = try container.decodeIfPresent(Int.self, forKey: .style) ?? 0
+            duration = try container.decodeIfPresent(Float.self, forKey: .duration) ?? 0
+            progress = try container.decodeIfPresent(Float.self, forKey: .progress) ?? 0
+            list = try container.decodeIfPresent(Bool.self, forKey: .list) ?? false
+            source = try container.decodeIfPresent(Int.self, forKey: .source) ?? 0
+            path = try container.decodeIfPresent(String.self, forKey: .path)
+            lyric = try container.decodeIfPresent(String.self, forKey: .lyric)
+            singerId = try container.decodeIfPresent(String.self, forKey: .singerId) ?? ""
+            singerNickname = try container.decodeIfPresent(String.self, forKey: .singerNickname) ?? ""
+            singerIcon = try container.decodeIfPresent(String.self, forKey: .singerIcon) ?? ""
+            createdAt = try container.decodeIfPresent(String.self, forKey: .createdAt)
+            updatedAt = try container.decodeIfPresent(String.self, forKey: .updatedAt)
+        }
+        
+        func encode(to encoder: Encoder) throws {
+            var container = encoder.container(keyedBy: JsonKeys.self)
+            try container.encode(id, forKey: .id)
+            try container.encode(title, forKey: .title)
+            try container.encode(icon, forKey: .icon)
+            try container.encode(uri, forKey: .uri)
+            try container.encode(clicksCount, forKey: .clicksCount)
+            try container.encode(commentsCount, forKey: .commentsCount)
+            try container.encode(style, forKey: .style)
+            try container.encode(duration, forKey: .duration)
+            try container.encode(progress, forKey: .progress)
+            try container.encode(list, forKey: .list)
+            try container.encode(source, forKey: .source)
+            try container.encodeIfPresent(path, forKey: .path)
+            try container.encodeIfPresent(lyric, forKey: .lyric)
+            try container.encode(singerId, forKey: .singerId)
+            try container.encode(singerNickname, forKey: .singerNickname)
+            try container.encode(singerIcon, forKey: .singerIcon)
+            try container.encodeIfPresent(createdAt, forKey: .createdAt)
+            try container.encodeIfPresent(updatedAt, forKey: .updatedAt)
+        }
+        
+        // MARK: - Singer 转换
+        func convertLocal() {
+            singerId = singer.id
+            singerNickname = singer.nickname
+            singerIcon = singer.icon
+        }
+        
+        func localConvert() {
+            singer = User()
+            singer.id = singerId
+            singer.nickname = singerNickname
+            singer.icon = singerIcon
+        }
+        
+        // MARK: - WCDB 模型绑定
+        enum CodingKeys: String, CodingTableKey {
+            typealias Root = Song
+            static let objectRelationalMapping = TableBinding(CodingKeys.self)
+            
+            case id
+            case title
+            case icon
+            case uri
+            case clicksCount
+            case commentsCount
+            case style
+            case duration
+            case progress
+            case list
+            case source
+            case path
+            case lyric
+            case singerId
+            case singerNickname
+            case singerIcon
+            case createdAt
+            case updatedAt
+            
+            static var columnConstraintBindings: [CodingKeys: ColumnConstraintBinding]? {
+                return [
+                    .id: ColumnConstraintBinding(isPrimary: true),
+                    .title: ColumnConstraintBinding(isNotNull: true)
+                ]
+            }
+        }
 
 }
