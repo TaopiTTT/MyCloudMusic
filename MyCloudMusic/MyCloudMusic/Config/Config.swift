@@ -11,17 +11,25 @@ class Config {
     // 是否为调试模式
     static let DEBUG = true
     
-    /// 部署好的
-//    static let ENDPOINT = "http://my-cloud-music-api-sp3-dev.ixuea.com/"
-//    static let ENDPOINT = "http://10.0.0.10:9178/"
+    // 实验室WIFI
+    static let ENDPOINT = "http://10.0.0.10:9178/"
+    
+    // 个人热点
 //    static let ENDPOINT = "http://192.168.39.227:9178/"
-    static let ENDPOINT = "http://localhost:9178/"
+    
+    // Air
+//    static let ENDPOINT = "http://localhost:9178/"
     
     /**
      * 资源端点
      */
-//    static let RESOURCE_ENDPOINT = "http://course-music-dev.ixuea.com/"
-//    static let RESOURCE_ENDPOINT = "http://10.0.0.10:9178/"
+    
+    // 实验室WIFI
+    static let RESOURCE_ENDPOINT = "http://10.0.0.10:9178/"
+    
+    // 个人热点
 //    static let RESOURCE_ENDPOINT = "http://192.168.39.227:9178/"
-    static let RESOURCE_ENDPOINT = "http://localhost:9178/"
+    
+    // Air
+//    static let RESOURCE_ENDPOINT = "http://localhost:9178/"
 }

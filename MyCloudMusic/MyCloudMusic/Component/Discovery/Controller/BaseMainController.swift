@@ -1,3 +1,4 @@
+
 //
 //  BaseMainController.swift
 //  通用控制器
@@ -29,6 +30,11 @@ class BaseMainController: BaseMusicPlayerController {
             }
         }
         
+        //注册播放列表改变了监听事件
+        SwiftEventBus.onMainThread(self, name: Constant.EVENT_MUSIC_LIST_CHANGED) { [weak self] sender in
+            self?.onMusicListChanged()
+        }
+        
     }
     
     override func leftClick(_ sender: QMUIButton) {
@@ -45,6 +51,30 @@ class BaseMainController: BaseMusicPlayerController {
     
     func closeDrawer() {
         dismiss(animated: true, completion: nil)
+    }
+    
+    func onMusicListChanged() {
+        let datum = MusicListManager.shared().datum
+        if datum.count > 0 {
+            if smallAudioControlPageView.superview == nil {
+                //添加迷你播放控制器
+                superFooterContentContainer.addSubview(smallAudioControlPageView)
+            }
+            
+//            //显示播放数据
+//            initPlayData()
+//            
+//            DispatchQueue.main.asyncAfter(deadline: .now()+0.5) {
+//                //显示播放进度
+//                self.showProgress()
+//            }
+//            
+//            //显示播放状态
+//            showMusicPlayStatus()
+        } else {
+            //隐藏迷你控制器
+            smallAudioControlPageView.removeFromSuperview()
+        }
     }
     
     /// 侧滑控制器
@@ -71,9 +101,30 @@ class BaseMainController: BaseMusicPlayerController {
         return r
     }()
     
+    lazy var smallAudioControlPageView: SmallAudioControlPageView = {
+        let r = SmallAudioControlPageView()
+        r.tg_width.equal(.fill)
+        r.tg_height.equal(50)
+        return r
+    }()
+    
     @objc func searchClick(_ sender:QMUIButton) {
         
     }
     
     
+}
+
+extension BaseMainController {
+    /// 视图即将可见方法
+    ///will：即将
+    ///did：已经
+    ///其他方法命名也都有这个规律
+    /// - Parameter animated: <#animated description#>
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+//        print("BaseMainController viewWillAppear")
+        
+        onMusicListChanged()
+    }
 }
