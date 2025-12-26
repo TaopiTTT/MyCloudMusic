@@ -244,4 +244,38 @@ class ViewFactoryUtil {
         
         return result;
     }
+    
+    static func pageCollectionView() -> UICollectionView {
+        let result = UICollectionView(frame: .zero, collectionViewLayout: pageCollectionViewFlowLayout())
+        result.isPagingEnabled = true
+        result.backgroundColor = .clear
+        
+        //不显示滚动条
+        result.showsHorizontalScrollIndicator=false
+        result.showsVerticalScrollIndicator = false
+
+        //tableView的内容从tableView顶部距离开始显示，不要自动偏移状态栏尺寸
+        result.contentInsetAdjustmentBehavior = .never
+        
+        result.tg_width.equal(.fill)
+        result.tg_height.equal(.fill)
+        
+        return result
+    }
+    
+    static func pageCollectionViewFlowLayout() -> UICollectionViewFlowLayout {
+        let result = UICollectionViewFlowLayout()
+        result.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+
+        //滚动方向
+        result.scrollDirection = .horizontal
+
+        //每个Cell的行间距
+        result.minimumLineSpacing = 0
+
+        //每个Cell的列间距
+        result.minimumInteritemSpacing = 0
+
+        return result
+    }
 }
