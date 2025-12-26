@@ -55,7 +55,53 @@ class MusicListManager {
             }
         }
         
-//        initPlayList()
+        initPlayList()
+    }
+    
+    func initPlayList() {
+        datum.removeAll()
+        
+        //查询播放列表
+        let datum=SuperDatabaseManager.shared.findPlayList()
+        if datum.count > 0 {
+            //添加到现在的播放列表
+            self.datum += datum
+            
+            //获取最后播放音乐id
+            let id = PreferenceUtil.getLastPlaySongId()
+            if SuperStringUtil.isNotBlank(id) {
+                //有最后播放音乐的id
+
+                //在播放列表中找到该音乐
+                for it in datum {
+                    if it.id == id {
+                        data = it
+                    }
+                }
+                
+                if data == nil {
+                    //表示没找到
+                    //可能各种原因
+                    defaultPlaySong()
+                } else {
+                    //找到了
+                }
+            }else{
+                //如果没有最后播放音乐
+                //默认就是第一首
+                defaultPlaySong()
+            }
+            
+            musicPlayerManager.data = data
+//            musicPlayerManager.prepareLyric()
+        }
+        
+        
+//        sendMusicListChanged()
+    }
+    
+    func defaultPlaySong() {
+        data = datum[0]
     }
     
     /// 设置音乐列表
@@ -89,8 +135,8 @@ class MusicListManager {
         
         let path = data.uri.absoluteUri()
         
-//        //标记为播放了
-//        isPlay = true
+        //标记为播放了
+        isPlay = true
 //        
 //        var path:String!
 //        
@@ -109,9 +155,9 @@ class MusicListManager {
 //        }
 //        
         musicPlayerManager.play(uri: path, data: data)
-//        
-//        //设置最后播放音乐的Id
-//        PreferenceUtil.setLastPlaySongId(data.id)
+        
+        //设置最后播放音乐的Id
+        PreferenceUtil.setLastPlaySongId(data.id)
 
     }
     

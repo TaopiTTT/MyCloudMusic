@@ -16,16 +16,21 @@ import Foundation
 import MediaPlayer
 
 class MusicPlayerManager : NSObject{
+    /// 保存音乐播放进度的间隔
+    private static let SAVE_PROGRESS_TIME_INTERVAL:TimeInterval = 2
+    
     private static var instance:MusicPlayerManager?
     
     /// 当前播放的音乐
-    private var data:Song?
+    var data:Song?
     
     /// 播放器
     private var player:AVPlayer!
     
     /// 播放状态
     var status:PlayStatus = .none
+    
+    private var lastSaveProgressTime:TimeInterval = 0
     
     /// 代理对象，目的是将不同的状态分发出去
     weak open var delegate:MusicPlayerManagerDelegate?{
@@ -181,21 +186,21 @@ class MusicPlayerManager : NSObject{
             //回调代理
             delegate.onProgress(data: self.data!)
             
-//            //保存播放进度，目的是进程杀死后，继续上次播放
-//            //当然可以监听应用退出在保存
-//
-//            //获取当前时间0秒后的时间，就是当前
-//            let date = Date(timeIntervalSinceNow: 0)
-//
-//            let currentTimeMillis=date.timeIntervalSince1970
-//            let d=currentTimeMillis-self.lastSaveProgressTime
-//            if d>MusicPlayerManager.SAVE_PROGRESS_TIME_INTERVAL {
-//                //间隔大于指定值才保存，这样做是避免频繁操作
-//                //具体的存储时间，存储间隔根据业务需求来更改
-//                SuperDatabaseManager.shared.saveSong(self.data!)
-//
-//                self.lastSaveProgressTime = currentTimeMillis
-//            }
+            //保存播放进度，目的是进程杀死后，继续上次播放
+            //当然可以监听应用退出在保存
+
+            //获取当前时间0秒后的时间，就是当前
+            let date = Date(timeIntervalSinceNow: 0)
+
+            let currentTimeMillis=date.timeIntervalSince1970
+            let d=currentTimeMillis-self.lastSaveProgressTime
+            if d>MusicPlayerManager.SAVE_PROGRESS_TIME_INTERVAL {
+                //间隔大于指定值才保存，这样做是避免频繁操作
+                //具体的存储时间，存储间隔根据业务需求来更改
+                SuperDatabaseManager.shared.saveSong(self.data!)
+
+                self.lastSaveProgressTime = currentTimeMillis
+            }
 
         })
     }
