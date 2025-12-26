@@ -75,6 +75,21 @@ class SmallAudioControlPageView: TGLinearLayout {
         
     }
     
+    func scrollPosition(_ data:IndexPath) {
+        DispatchQueue.main.asyncAfter(deadline: .now()+0.5){
+            self.collectionView.scrollToItem(at: data, at: .centeredHorizontally, animated: false)
+        }
+    }
+    
+    func setPlaying(_ data:Bool) {
+        let r = data ? R.image.pause()!.withTintColor() : R.image.playCircleBlack()!.withTintColor()
+        playButtonView.setImage(r, for: .normal)
+    }
+    
+    func setProgress(_ progress:Float) {
+        
+    }
+    
     
 }
 
