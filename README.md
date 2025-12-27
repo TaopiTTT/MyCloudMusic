@@ -39,7 +39,7 @@ git clone https://github.com/TaopiTTT/MyCloudMusic.git
 
 ## 安装依赖
 
-（直接克隆后目录中会有Podfile，为避免出现莫名其妙的Bug，推荐删除后按照以下流程重新安装克隆）
+（直接克隆后目录中会有Podfile，为避免出现莫名其妙的Bug，推荐删除后按照以下流程重新安装依赖）
 
 在`MyCloudMusic`目录中，首先执行
 
