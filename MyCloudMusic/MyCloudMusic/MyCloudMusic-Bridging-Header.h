@@ -23,3 +23,9 @@
 
 //腾讯开源的偏好存储框架
 #import <MMKV/MMKV.h>
+
+//遮罩视图
+//https://github.com/QuintGao/GKCover
+#import "GKCover.h"
+
+

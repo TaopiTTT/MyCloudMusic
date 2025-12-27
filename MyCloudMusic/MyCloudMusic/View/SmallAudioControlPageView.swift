@@ -34,11 +34,6 @@ class SmallAudioControlPageView: TGLinearLayout {
     }
     
     func innerInit() {
-//        let r = UILabel()
-//        r.tg_width.equal(.wrap)
-//        r.tg_height.equal(.wrap)
-//        r.text = "Tao"
-//        addSubview(r)
         
         //分割线
         addSubview(ViewFactoryUtil.smallDivider())
@@ -88,6 +83,12 @@ class SmallAudioControlPageView: TGLinearLayout {
     
     func setProgress(_ progress:Float) {
         
+    }
+    
+    /// 获取当前位置的index
+    /// - Returns: <#description#>
+    func getCurrentIndex() -> Int {
+        return Int(collectionView.contentOffset.x / collectionView.frame.width)
     }
     
     
@@ -162,3 +163,29 @@ extension SmallAudioControlPageView:UICollectionViewDelegateFlowLayout{
     }
 }
 
+// MARK: - 列表滚动
+extension SmallAudioControlPageView{
+    /// 开始拖拽时调用
+    /// - Parameter scrollView: <#scrollView description#>
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        isDrag = true
+    }
+    
+    /// 滚动结束（惯性滚动）
+    /// - Parameter scrollView: <#scrollView description#>
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        isDrag = false
+        
+        //判断黑胶唱片位置对应的音乐是否和现在播放的是一首
+        let index = getCurrentIndex()
+        let song = MusicListManager.shared().datum[index]
+        if MusicListManager.shared().data!.id == song.id {
+            //一样
+        } else {
+            //不一样
+
+            //播放当前位置的音乐
+            MusicListManager.shared().play(song)
+        }
+    }
+}

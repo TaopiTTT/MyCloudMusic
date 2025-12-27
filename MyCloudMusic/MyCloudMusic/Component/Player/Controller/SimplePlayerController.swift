@@ -83,11 +83,6 @@ class SimplePlayerController: BaseTitleController {
         loopModelButtonView.addTarget(self, action:#selector(onLoopModelClick(_:)), for: .touchUpInside)
         controlContainer.addSubview(loopModelButtonView)
 
-//        let data = Song()
-//        data.title = "测试音乐"
-//        MusicPlayerManager.shared()
-//            .play(uri: "http://192.168.39.227:9178/assets/Wind.mp3", data: Song())
-////            .play(uri: "http://10.0.0.47:9178/assets/Wind.mp3", data: Song())
             
     }
     

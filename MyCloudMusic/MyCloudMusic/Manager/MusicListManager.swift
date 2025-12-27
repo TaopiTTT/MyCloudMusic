@@ -280,6 +280,56 @@ class MusicListManager {
         SwiftEventBus.post(Constant.EVENT_MUSIC_LIST_CHANGED,sender: nil)
     }
     
+    /// 删除音乐
+    /// - Parameter index: <#index description#>
+    func delete(_ index:Int) {
+        //获取要删除的音乐
+        let song = datum[index]
+        
+        if song.id == data!.id {
+            //删除的音乐就是当前播放的音乐
+
+            if musicPlayerManager.isPlaying() {
+                //停止当前播放
+                pause()
+            }
+            
+            //并播放下一首音乐
+            if datum.isEmpty {
+                data = nil
+            } else {
+                play(next())
+            }
+        }
+        
+        
+        //删除
+        datum.remove(at: index)
+        
+        song.list = false
+        SuperDatabaseManager.shared.saveSong(song)
+        
+        sendMusicListChanged()
+    }
+    
+    func deleteAll() {
+        //如果在播放音乐就暂停
+        if musicPlayerManager.isPlaying() {
+            pause()
+        }
+        
+        //将原来数据list标志设置为false
+        DataUtil.changePlayListFlag(datum, false)
+
+        //保存到数据库
+        saveAll()
+        
+        //清空列表
+        datum.removeAll()
+
+        sendMusicListChanged()
+    }
+    
 }
 
 //音乐循环状态

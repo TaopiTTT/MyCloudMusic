@@ -81,6 +81,9 @@ class MusicPlayerManager : NSObject{
     ///   - uri: 绝对音乐地址
     ///   - data: 音乐对象
     func play(uri:String,data:Song) {
+        //请求获取音频会话焦点
+        SuperAudioSessionManager.requestAudioFocus()
+        
         //保存音乐对象
         self.data = data
         status = .playing
@@ -140,7 +143,7 @@ class MusicPlayerManager : NSObject{
     /// 继续播放
     func resume() {
         //请求获取音频会话焦点
-//        SuperAudioSessionManager.requestAudioFocus()
+        SuperAudioSessionManager.requestAudioFocus()
         
         status = .playing
         
